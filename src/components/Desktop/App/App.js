@@ -3,7 +3,7 @@ import React from "react";
 const App = () => {
   return (
     <div>
-      <h1> Application For Mobile</h1>
+      <h1> Application For Desktop</h1>
     </div>
   );
 };
