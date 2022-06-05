@@ -5,8 +5,8 @@ import {
   isBrowser,
   isMobile,
 } from "react-device-detect";
-import MobileLayout from "../components/Layout/MobileLayout";
-import DesktopLayout from "../components/Layout/DesktopLayout";
+import MobileLayout from "../Layout/MobileLayout";
+import DesktopLayout from "../Layout/DesktopLayout";
 
 function MyApp({ Component, pageProps }) {
   return (

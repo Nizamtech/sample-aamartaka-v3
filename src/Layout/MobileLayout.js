@@ -1,5 +1,5 @@
 import React from "react";
-import MobileNavbar from "../Navbar/MobileNavbar";
+import MobileNavbar from "../components/Shared/Navbar/MobileNavbar";
 
 const MobileLayout = ({ children }) => {
   return (
