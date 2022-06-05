@@ -9,7 +9,7 @@ const About = () => {
       <h1>About For Desktop</h1>
       <div className="flex flex-col justify-center items-center">
         <AccordionLayout
-          title="Accordion 1"
+          title="Dashboard"
           index={1}
           activeIndex={activeIndex}
           setActiveIndex={setActiveIndex}
@@ -18,7 +18,7 @@ const About = () => {
         </AccordionLayout>
 
         <AccordionLayout
-          title="Accordion 2"
+          title="Lead Section"
           index={2}
           activeIndex={activeIndex}
           setActiveIndex={setActiveIndex}
