@@ -5,7 +5,7 @@ import Mobile_Dashboard from "../components/Mobile/Dashboard/Mobile_Dashboard";
 import DashboardDeskTop from "../components/Desktop/Dashboard/Dashboard";
 const Dashboard = ({ isMobile }) => {
   return (
-    <div className="mx-auto bg-slate-200 h-screen">
+    <div className="mx-auto bg-slate-200 h-full">
       {isMobile ? <Mobile_Dashboard /> : <Mobile_Dashboard />}
     </div>
   );
