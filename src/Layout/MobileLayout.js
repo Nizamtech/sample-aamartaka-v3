@@ -7,7 +7,6 @@ const MobileLayout = ({ children }) => {
     <div className="mobile">
       <MobileNavbar />
       {children}
-      <h1>Mobile Footer</h1>;
     </div>
   );
 };

@@ -9,14 +9,14 @@ const Mobile_Dashboard = () => {
   return (
     <div>
       <div className="flex justify-evenly w-full bg-white border-t-2  text-xl ">
-        <button
-          onClick={() => router.push("/dashboard")}
-          className="  text-sky-500 font-bold py-2 px-4 rounded-l "
-        >
+        <button className="  text-sky-500 font-bold py-2 px-4 rounded-l ">
           ATTENDANCE
         </button>
         <span className="border-2"></span>
-        <button className="  text-sky-500 font-bold py-2 px-4 rounded-r">
+        <button
+          onClick={() => router.push("/states")}
+          className="  text-sky-500 font-bold py-2 px-4 rounded-r"
+        >
           STATES
         </button>
       </div>
