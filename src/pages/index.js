@@ -7,6 +7,7 @@ import {
   isBrowser,
   isMobile,
 } from "react-device-detect";
+import Dashboard from "../components/Desktop/Dashboard/Dashboard";
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -24,10 +25,7 @@ export default function Home() {
           <h1>Mobile Subscriber</h1>
         </MobileView>
         <BrowserView>
-          <h1>Desktop Slide</h1>
-          <h1>Desktop Cart</h1>
-          <h1>Desktop News</h1>
-          <h1>Desktop Subscriber</h1>
+          <Dashboard />
         </BrowserView>
       </main>
     </div>

@@ -7,14 +7,16 @@ const About = () => {
   return (
     <div>
       <h1>About For Desktop</h1>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center ">
         <AccordionLayout
           title="Dashboard"
           index={1}
           activeIndex={activeIndex}
           setActiveIndex={setActiveIndex}
         >
-          This is Accordion 1 Content
+          <h1 className="duration-100 transition">
+            This is Accordion 1 Content
+          </h1>
         </AccordionLayout>
 
         <AccordionLayout
