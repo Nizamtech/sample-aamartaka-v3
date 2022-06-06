@@ -14,16 +14,21 @@ const DashboardCard = ({ title, body, color, icon }) => {
           >
             {title}
           </h5>
-          <img
-            src={icon}
-            alt={title}
-            height="35px"
-            width="35px"
-            className="flex mx-auto mt-1 justify-end items-end"
-          />
+          {body && (
+            <h1 className={`text-[${color}]  text-center text-4xl font-bold`}>
+              {body}
+            </h1>
+          )}
+          {icon && (
+            <img
+              src={icon}
+              alt={title}
+              height="35px"
+              width="35px"
+              className="flex mx-auto mt-1 justify-end items-end"
+            />
+          )}
         </a>
-        {/* https://i.ibb.co/sqGNsWz/dashboard.png
-https://i.ibb.co/v3bKJQ5/document.png */}
       </Link>
     </div>
   );

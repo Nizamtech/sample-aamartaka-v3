@@ -4,25 +4,27 @@ import React from "react";
 const MobileNavbar = () => {
   return (
     <div>
-      <nav className="nav">
-        <Link href="/">
-          <a style={{ color: "red" }}>M Home</a>
-        </Link>
-        <Link href="/user">
-          <a>M User</a>
-        </Link>
-        {/* <Link href="/contactForm">
-          <a>Contact Form</a>
-        </Link> */}
-        <Link href="/app">
-          <a>M App</a>
-        </Link>
-        <Link href="/pic">
-          <a>M Picture</a>
-        </Link>
-        <Link href="/about">
-          <a>M About</a>
-        </Link>
+      <nav className="nav flex justify-between items-center">
+        <div>
+          <h1 className="text-2xl">
+            Hi <span className="font-bold text-red-400">Jhon</span>{" "}
+          </h1>
+        </div>
+        <div className="flex justify-between items-center ">
+          {/* <img
+            src="https://i.ibb.co/FWrwLGM/icons8-points-64.png"
+            alt=""
+            width="50px"
+            height="50px"
+          /> */}
+          <h1 className="font-bold text-orange-500">Points</h1>
+          <h1 className=" bg-red-500 text-white border-2 border-white rounded-full p-1 ml-3 text-xs">
+            20
+          </h1>
+          {/* <div className="p-2 h-8 w-8 my-1 border-2 border-white rounded-full bg-green-400 z-2">
+            20
+          </div> */}
+        </div>
       </nav>
     </div>
   );
