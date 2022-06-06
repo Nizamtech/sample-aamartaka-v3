@@ -3,12 +3,16 @@ import Link from "next/link";
 import styles from "../../../styles/Dashboard.module.scss";
 import DashboardCard from "./DashboardCard";
 import dashboardIcon from "../../../images/document.png";
+import { useRouter } from "next/router";
 const Mobile_Dashboard = () => {
-  console.log("dashboardIcon", dashboardIcon);
+  const router = useRouter();
   return (
     <div>
       <div className="flex justify-evenly w-full bg-white border-t-2  text-xl ">
-        <button className="  text-sky-500 font-bold py-2 px-4 rounded-l ">
+        <button
+          onClick={() => router.push("/dashboard")}
+          className="  text-sky-500 font-bold py-2 px-4 rounded-l "
+        >
           ATTENDANCE
         </button>
         <span className="border-2"></span>

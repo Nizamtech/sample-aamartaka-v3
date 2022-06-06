@@ -48,12 +48,12 @@ try {
 
   // A list of local resources we always want to be cached.
   const PRECACHE_URLS = [
-    "/",
-    "user",
-    "about",
-    "contactForm",
-    "app",
-    "pic",
+    // "/",
+    // "user",
+    // "about",
+    // "contactForm",
+    // "app",
+    // "pic",
     // `any url`, // Alias for index.html
   ];
 
