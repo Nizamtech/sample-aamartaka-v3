@@ -4,7 +4,7 @@ import React from "react";
 const MobileNavbar = () => {
   return (
     <div>
-      <nav className="nav flex justify-between items-center">
+      <nav className="nav flex justify-between items-center h-20  ">
         <div>
           <h1 className="text-2xl">
             Hi <span className="font-bold text-red-400">Jhon</span>{" "}

@@ -4,22 +4,24 @@ import styles from "../../../styles/Dashboard.module.scss";
 import DashboardCard from "./DashboardCard";
 import dashboardIcon from "../../../images/document.png";
 import { useRouter } from "next/router";
+import Image from "next/image";
 const Mobile_Dashboard = () => {
   const router = useRouter();
   return (
     <div>
-      <div className="flex justify-evenly w-full bg-white border-t-2  text-xl ">
-        <button className="  text-sky-500 font-bold py-2 px-4 rounded-l ">
+      <div className="grid grid-cols-2 w-full bg-white   text-xl ">
+        <button className=" text-white bg-sky-400 font-bold py-2 px-4  w-full border-r">
           ATTENDANCE
         </button>
-        <span className="border-2"></span>
+        {/* <span className="border-2"></span> */}
         <button
           onClick={() => router.push("/states")}
-          className="  text-sky-500 font-bold py-2 px-4 rounded-r"
+          className="text-white bg-sky-400 font-bold py-2 px-4  w-full  border-l"
         >
           STATES
         </button>
       </div>
+
       <div className={` grid grid-cols-3 place-items-center p-4 gap-4 `}>
         <DashboardCard
           title="Dashboard"
@@ -41,11 +43,17 @@ const Mobile_Dashboard = () => {
           color="#4DCCFF"
           icon={"https://i.ibb.co/zHwnrsw/icons8-visit-80.png"}
         />
-        <DashboardCard
-          title="Lead Section"
-          color="#EB5757"
-          icon={"https://i.ibb.co/QdPPdGN/icons8-statistic-64.png"}
-        />
+        <Link href={"/lead"}>
+          <a>
+            {" "}
+            <DashboardCard
+              title="Lead Section"
+              color="#EB5757"
+              icon={"https://i.ibb.co/QdPPdGN/icons8-statistic-64.png"}
+            />
+          </a>
+        </Link>
+
         <DashboardCard
           title="Dashboard"
           color="#939CA0"
@@ -55,7 +63,7 @@ const Mobile_Dashboard = () => {
       {/* file collection section  */}
       <div className="bg-red-500 text-white font-bold  px-4 py-2 w-full flex justify-between">
         <h1>3 File Colection Pending</h1>
-        <img
+        <Image
           src="https://i.ibb.co/MC53tdP/arrow-right.png"
           alt=""
           width="30px"

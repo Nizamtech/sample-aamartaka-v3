@@ -1,7 +1,7 @@
 import React from "react";
 import DashboardTable from "./DashboardTable";
-import ListCard from "./ListCard";
-import Table2 from "./Table2";
+import ListCard from "../Lead/ListCard";
+import Table2 from "../Lead/Table2";
 
 const Mobile_States = () => {
   return (
@@ -9,10 +9,7 @@ const Mobile_States = () => {
       {/* <h1>This is States Components</h1> */}
       {/* <DashboardTable /> */}
       <Table2 />
-      <ListCard />
-      <ListCard />
-      <ListCard />
-      <ListCard />
+      {/* <ListCard /> */}
     </div>
   );
 };
