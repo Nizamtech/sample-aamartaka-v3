@@ -8,7 +8,6 @@ const User = ({ counter, handleInc, handleDec }) => {
       <h1>{counter}</h1>
       <button onClick={handleInc}>+</button>
       <button onClick={handleDec}>-</button>
-
       {/* according start from here 1 */}
       <div className="accordion" id="accordionExample">
         <div className="accordion-item bg-white border border-gray-200">
@@ -45,21 +44,20 @@ const User = ({ counter, handleInc, handleDec }) => {
               data-bs-parent="#accordionExample"
             >
               <div className="accordion-body py-4 px-5">
-                <strong>This is the first item's accordion body.</strong> It is
-                shown by default, until the collapse plugin adds the appropriate
+                <strong>This is the first accordion body.</strong> It is shown
+                by default, until the collapse plugin adds the appropriate
                 classes that we use to style each element. These classes control
                 the overall appearance, as well as the showing and hiding via
                 CSS transitions. You can modify any of this with custom CSS or
-                overriding our default variables. It's also worth noting that
-                just about any HTML can go within the{" "}
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                overriding our default variables. also worth noting that just
+                about any HTML can go within the <code>.accordion-body</code>,
+                though the transition does limit overflow.
               </div>
             </div>
           )}
         </div>
       </div>
-      {/* according end here  1*/}
+      according end here 1
     </div>
   );
 };
