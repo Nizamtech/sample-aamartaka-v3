@@ -2,9 +2,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import data from "../../../../public/assets/data/data.json";
 const Table2 = () => {
-  console.log("data", data);
   const router = useRouter();
-  const handleitem = () => {};
 
   return (
     <div className="w-full bg-white rounded-lg shadow-lg">
