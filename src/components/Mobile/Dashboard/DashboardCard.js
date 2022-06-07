@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-const DashboardCard = ({ title, body, color, icon }) => {
+const DashboardCard = ({ title, body, color, icon, anm }) => {
   return (
     <div>
       <div
@@ -24,7 +24,7 @@ const DashboardCard = ({ title, body, color, icon }) => {
             alt={title}
             height="35px"
             width="35px"
-            className="flex mx-auto mt-1 justify-end items-end"
+            className={`${anm} flex mx-auto mt-1 justify-end items-end`}
           />
         )}
       </div>

@@ -64,6 +64,7 @@ const Mobile_Dashboard = () => {
       <div className="bg-red-500 text-white font-bold  px-4 py-2 w-full flex justify-between">
         <h1>3 File Colection Pending</h1>
         <Image
+          className="animate-pulse"
           src="https://i.ibb.co/kSHHB22/arrow-31-256.png"
           alt=""
           width="30px"
@@ -103,6 +104,8 @@ https://i.ibb.co/fprmq67/icons8-process-improvement-80.png */}
         </div>
         <div className={` grid grid-cols-3 place-items-center p-4 gap-4 `}>
           <DashboardCard
+            className="animate-spin"
+            anm="animate-spin"
             title="In process"
             // body={40}
             color="#4DCCFF"
@@ -110,12 +113,14 @@ https://i.ibb.co/fprmq67/icons8-process-improvement-80.png */}
           />
           <DashboardCard
             title="Decline"
+            anm="animate-pulse"
             // body={70}
             color="#EB5757"
             icon={"https://i.ibb.co/x7jfTDk/icons8-rejected-64.png"}
           />
           <DashboardCard
             title="Disbursed"
+            anm="animate-bounce"
             // body={20}
             color="#5F67EC"
             icon={" https://i.ibb.co/60wZzzR/icons8-bank-64.png"}
