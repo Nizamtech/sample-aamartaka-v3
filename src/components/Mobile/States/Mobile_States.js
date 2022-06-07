@@ -7,8 +7,8 @@ const Mobile_States = () => {
   return (
     <div>
       {/* <h1>This is States Components</h1> */}
-      {/* <DashboardTable />
-      <Table2 /> */}
+      <DashboardTable />
+      <Table2 />
       <ListCard />
     </div>
   );
