@@ -64,7 +64,7 @@ const Mobile_Dashboard = () => {
       <div className="bg-red-500 text-white font-bold  px-4 py-2 w-full flex justify-between">
         <h1>3 File Colection Pending</h1>
         <Image
-          src="https://i.ibb.co/MC53tdP/arrow-right.png"
+          src="https://i.ibb.co/kSHHB22/arrow-31-256.png"
           alt=""
           width="30px"
           height="20px"
