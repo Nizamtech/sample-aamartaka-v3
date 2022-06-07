@@ -11,4 +11,7 @@ module.exports = withPWA({
     scope: "/app",
     sw: "/service-worker.js",
   },
+  images: {
+    domains: ["i.ibb.co"],
+  },
 });
