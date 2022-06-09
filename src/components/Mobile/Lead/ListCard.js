@@ -16,18 +16,6 @@ const ListCard = ({ data }) => {
         <div className=" my-4">
           {/* header  */}
           <div className="ml-5 flex ">
-            {/* <button
-            onClick={() => {
-              router.back();
-            }}
-          >
-            <Image
-              width="20px"
-              height="20px"
-              src={"https://i.ibb.co/6nqQvMm/icons8-back-64.png"}
-              alt=" Back"
-            />
-          </button> */}
             <div className="ml-4 ">
               <h1 className="text-xl text-slate-800 font-bold">{data?.name}</h1>
               <h1 className="text-lg text-white">{data?.profession}</h1>
@@ -106,135 +94,138 @@ const ListCard = ({ data }) => {
           <hr className="my-2 border-1 border-white " />
           <div className="grid grid-cols-3 place-items-center my-8 gap-4 ">
             {/* call div  */}
-            <div className="flex flex-col  justify-center items-center">
-              <div
-                onClick={() => setShowModal(true)}
-                className="bg-white rounded-md h-16 w-16 flex myShadow justify-center items-center"
-              >
-                <div className="flex flex-col  justify-center items-center bg-[#8EC2E4] h-14 w-14 rounded-md">
-                  <Image
-                    src="https://i.ibb.co/fSyHNQ1/icons8-phone-96.png"
-                    alt=""
-                    width="40px"
-                    height="40px"
-                  />
+            <Link href={`/lead/leadaction`}>
+              <a className="flex flex-col  justify-center items-center">
+                {" "}
+                <div
+                  // onClick={() => router.push("/lead/leadaction")}
+                  className="bg-white rounded-md h-16 w-16 flex myShadow justify-center items-center"
+                >
+                  <div className="flex flex-col  justify-center items-center bg-[#8EC2E4] h-14 w-14 rounded-md">
+                    <Image
+                      src="https://i.ibb.co/fSyHNQ1/icons8-phone-96.png"
+                      alt=""
+                      width="40px"
+                      height="40px"
+                    />
+                  </div>
                 </div>
-              </div>
-              <small className="mt-1 text-md text-black font-bold">Call</small>
-            </div>
+                <small className="mt-1 text-md text-black font-bold text-center">
+                  Call
+                </small>
+              </a>
+            </Link>
 
             {/* sms  */}
 
-            <div className="flex flex-col  justify-center items-center">
-              <div
-                onClick={() => router.push("/lead/leadAction")}
-                className="bg-white rounded-md h-16 w-16 flex  myShadow  justify-center items-center"
-              >
-                <div className="flex flex-col  justify-center items-center bg-[#EBAC8E] h-14 w-14 rounded-md">
-                  <Image
-                    src="https://i.ibb.co/WgnHDz3/icons8-sms-96.png"
-                    alt=""
-                    width="40px"
-                    height="40px"
-                  />
+            <Link href={`/lead/leadaction`}>
+              <a className="flex flex-col  justify-center items-center">
+                {" "}
+                <div className="bg-white rounded-md h-16 w-16 flex  myShadow  justify-center items-center">
+                  <div className="flex flex-col  justify-center items-center bg-[#EBAC8E] h-14 w-14 rounded-md">
+                    <Image
+                      src="https://i.ibb.co/WgnHDz3/icons8-sms-96.png"
+                      alt=""
+                      width="40px"
+                      height="40px"
+                    />
+                  </div>
                 </div>
-              </div>
-              <small className="mt-1 text-md text-black font-bold">SMS</small>
-            </div>
+                <small className="mt-1 text-md text-black font-bold">SMS</small>
+              </a>
+            </Link>
 
-            {/* <div className="flex flex-col justify-center items-center">
-            <img
-              src="https://i.ibb.co/WgnHDz3/icons8-sms-96.png"
-              alt=""
-              width="30px"
-              height="30px"
-            />
-            <small className=" mt-1 text-xs">SMS</small>
-          </div> */}
-            {/* Schedule  */}
-
-            <div className="flex flex-col  justify-center items-center">
-              <div
-                onClick={() => router.push("/lead/leadAction")}
-                className="bg-white rounded-md h-16 w-16 flex  myShadow justify-center items-center"
-              >
-                <div className="flex flex-col  justify-center items-center bg-[#9C9FE7] h-14 w-14 rounded-md">
-                  <Image
-                    src="https://i.ibb.co/4s6VLW1/icons8-furnitureandhousehold-64.png"
-                    alt=""
-                    width="40px"
-                    height="40px"
-                  />
+            <Link href={`/lead/leadaction`}>
+              <a className="flex flex-col  justify-center items-center">
+                <div
+                  onClick={() => router.push("")}
+                  className="bg-white rounded-md h-16 w-16 flex  myShadow justify-center items-center"
+                >
+                  <div className="flex flex-col  justify-center items-center bg-[#9C9FE7] h-14 w-14 rounded-md">
+                    <Image
+                      src="https://i.ibb.co/4s6VLW1/icons8-furnitureandhousehold-64.png"
+                      alt=""
+                      width="40px"
+                      height="40px"
+                    />
+                  </div>
                 </div>
-              </div>
-              <small className="mt-1 text-md text-black font-bold">
-                Schedule
-              </small>
-            </div>
+                <small className="mt-1 text-md text-black font-bold">
+                  Schedule
+                </small>
+              </a>
+            </Link>
 
             {/* follow-up  */}
 
-            <div className="flex flex-col  justify-center items-center">
-              <div
-                onClick={() => router.push("/lead/leadAction")}
-                className="bg-white rounded-md h-16 w-16 flex myShadow justify-center items-center"
-              >
-                <div className="flex flex-col  justify-center items-center bg-[#A3DD8A] h-14 w-14 rounded-md">
-                  <Image
-                    src="https://i.ibb.co/v3YzgNg/icons8-follow-up-64.png"
-                    alt=""
-                    width="40px"
-                    height="40px"
-                  />
+            <Link href={`/lead/leadaction`}>
+              <a className="flex flex-col  justify-center items-center">
+                {" "}
+                <div
+                  onClick={() => router.push("/lead/leadaction")}
+                  className="bg-white rounded-md h-16 w-16 flex myShadow justify-center items-center"
+                >
+                  <div className="flex flex-col  justify-center items-center bg-[#A3DD8A] h-14 w-14 rounded-md">
+                    <Image
+                      src="https://i.ibb.co/v3YzgNg/icons8-follow-up-64.png"
+                      alt=""
+                      width="40px"
+                      height="40px"
+                    />
+                  </div>
                 </div>
-              </div>
-              <small className="mt-1 text-md text-black font-bold">
-                Follow Up
-              </small>
-            </div>
+                <small className="mt-1 text-md text-black font-bold">
+                  Follow Up
+                </small>
+              </a>
+            </Link>
 
             {/* update  */}
-            <div className="flex flex-col  justify-center items-center">
-              <div
-                onClick={() => router.push("/lead/leadAction")}
-                className="bg-white rounded-md h-16 w-16 flex myShadow justify-center items-center"
-              >
-                <div className="flex flex-col  justify-center items-center bg-[#C08CE7] h-14 w-14 rounded-md">
-                  <Image
-                    src="https://i.ibb.co/6rcLZzD/icons8-update-96.png"
-                    alt=""
-                    width="40px"
-                    height="40px"
-                  />
+            <Link href={`/lead/leadaction`}>
+              <a className="flex flex-col  justify-center items-center">
+                {" "}
+                <div
+                  onClick={() => router.push("/lead/leadaction")}
+                  className="bg-white rounded-md h-16 w-16 flex myShadow justify-center items-center"
+                >
+                  <div className="flex flex-col  justify-center items-center bg-[#C08CE7] h-14 w-14 rounded-md">
+                    <Image
+                      src="https://i.ibb.co/6rcLZzD/icons8-update-96.png"
+                      alt=""
+                      width="40px"
+                      height="40px"
+                    />
+                  </div>
                 </div>
-              </div>
-              <small className=" mt-1 text-md text-black font-bold">
-                Update
-              </small>
-            </div>
+                <small className=" mt-1 text-md text-black font-bold">
+                  Update
+                </small>
+              </a>
+            </Link>
 
             {/* Forward   */}
 
-            <div
-              href="/lead/leadAction"
-              // onClick={() => router.push("/lead/leadAction")}
-              className="flex flex-col  justify-center items-center"
-            >
-              <div className="bg-white rounded-md h-16 w-16 flex  myShadow justify-center items-center">
-                <div className="flex flex-col  justify-center items-center bg-[#E68E8D] h-14 w-14 rounded-md">
-                  <Image
-                    src="https://i.ibb.co/chYZ6xm/icons8-forward-64.png"
-                    alt=""
-                    width="40px"
-                    height="40px"
-                  />
+            <Link href={`/lead/leadaction`}>
+              <a className="flex flex-col  justify-center items-center">
+                {" "}
+                <div className="bg-white rounded-md h-16 w-16 flex  myShadow justify-center items-center">
+                  <div
+                    onClick={() => router.push("/lead/leadaction")}
+                    className="flex flex-col  justify-center items-center bg-[#E68E8D] h-14 w-14 rounded-md"
+                  >
+                    <Image
+                      src="https://i.ibb.co/chYZ6xm/icons8-forward-64.png"
+                      alt=""
+                      width="40px"
+                      height="40px"
+                    />
+                  </div>
                 </div>
-              </div>
-
-              <small className=" mt-1 text-md text-black font-bold">
-                Forward
-              </small>
-            </div>
+                <small className=" mt-1 text-md text-black font-bold">
+                  Forward
+                </small>
+              </a>
+            </Link>
           </div>
         </div>
       </div>

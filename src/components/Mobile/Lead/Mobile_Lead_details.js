@@ -11,24 +11,17 @@ const Mobile_Lead_details = ({ id }) => {
     console.log(result);
   }, [id]);
   console.log(userData);
+  console.log(data);
 
-  return (
-    <>
-      {userData ? (
-        <ListCard data={userData} />
-      ) : (
-        <h1 className="text-center text-gray-900 font-bold text-5xl">
-          Loading...
-        </h1>
-      )}
-    </>
-  );
+  return <>{userData ? <ListCard data={userData} /> : <h1>Loading...</h1>}</>;
 };
 
 export async function getServerSideProps(context) {
-  console.log("context", context, id);
+  console.log(context.req);
+  const data = data.find((item) => item.id == 3);
+  console.log("context", context, id, data);
   return {
-    props: {}, // will be passed to the page component as props
+    props: { data },
   };
 }
 
