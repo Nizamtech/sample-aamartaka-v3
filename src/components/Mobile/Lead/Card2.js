@@ -1,34 +1,52 @@
 import React from "react";
-
-const Card2 = () => {
+import Image from "next/image";
+import Link from "next/link";
+const Card2 = ({ item }) => {
   return (
-    <div>
-      <div className=" shadow-lg rounded-md m-2 bg-white  shadow-slate-300 ">
-        <div className="flex justify-between items-center p-2   w-full ">
-          <div className="bg-white py-1 text-slate-900  border-b-0">
-            <h1 className="px-2 col-span-2">Name</h1>
-            <h1 className="px-2 text-black font-bold">Nizam Uddin</h1>
+    <Link href={`/lead/${item.id}`} className="overflow-scroll font-poppins">
+      <div className="rounded-md m-2 bg-white myShadow">
+        <div className="flex justify-between items-center w-full px-5 py-1">
+          <div className="grid grid-cols-3 w-full ">
+            <div className="bg-white col-span-2  text-slate-900  border-b-0 ">
+              <p className=" px-1 text-[11px] font-bold">{item?.name}</p>
+              <p className="text-[10px] px-1 text-gray-700 ">{item?.company}</p>
+              <p className="text-[10px] px-1 text-gray-700">
+                {item?.profession}
+              </p>
+            </div>
+            <div className="bg-white  text-slate-900  border-b-0 ">
+              <p className=" px-1 text-[10px] font-bold ml-1 ">Follow Up</p>
+              <p className="text-[10px] px-1 text-gray-700 ml-1">
+                {item?.scheduleDate}
+              </p>
+              <p className="text-[10px] px-1  flex justify-start items-center text-gray-700 ">
+                {/* <span>
+                  <Image
+                    src="https://i.ibb.co/xMpL73X/taka.png"
+                    alt=""
+                    width="16px"
+                    height="16px"
+                  />
+                </span> */}
+                {item?.salary}
+              </p>
+            </div>
           </div>
-          <div className="bg-white py-1 text-slate-900  border-b-0">
-            <h1 className="px-2 col-span-2">Profession</h1>
-            <h1 className="px-2 text-black font-bold">Salaried</h1>
-          </div>
+
+          <Image
+            className="animate-pulse"
+            src="https://i.ibb.co/2N7BLpz/arrow-32-64-1.png"
+            alt=""
+            width="20px"
+            height="20px"
+          />
         </div>
-        <div className="flex justify-between items-center p-2    w-full ">
-          <div className="bg-white py-1 text-slate-900  border-b-0">
-            <h1 className="px-2 col-span-2">Salary</h1>
-            <h1 className="px-2 text-black font-bold">12000</h1>
-          </div>
-          <div className="bg-white py-1 text-slate-900  border-b-0">
-            <h1 className="px-2 col-span-2">Visit Date</h1>
-            <h1 className="px-2 text-black font-bold">2022-06-05</h1>
-          </div>
-        </div>
-        <button className="w-full bg-sky-400 p-1 rounded-md text-white text-xl flex justify-center items-center my-2">
+
+        {/* <button className="w-full bg-sky-400 p-1 rounded-md text-white text-xl flex justify-center items-center my-2">
           View
-        </button>
+        </button> */}
       </div>
-    </div>
+    </Link>
   );
 };
 

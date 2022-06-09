@@ -6,8 +6,8 @@
     "salary": 194191,
     "company": "InnoZ",
     "location": "79702 Southridge Place",
-    "visit Date": "3/1/2022",
-    "schedule Date": "6/9/2021",
+    "visitDate": "3/1/2022",
+    "scheduleDate": "6/9/2021",
     "scheduleTime": "6:44 PM"
   },
   {
@@ -17,8 +17,8 @@
     "salary": 156601,
     "company": "Yotz",
     "location": "983 La Follette Park",
-    "visit Date": "12/23/2021",
-    "schedule Date": "7/16/2021",
+    "visitDate": "12/23/2021",
+    "scheduleDate": "7/16/2021",
     "scheduleTime": "1:33 AM"
   },
   {
@@ -28,8 +28,8 @@
     "salary": 336265,
     "company": "Abatz",
     "location": "7 Laurel Park",
-    "visit Date": "3/14/2022",
-    "schedule Date": "9/29/2021",
+    "visitDate": "3/14/2022",
+    "scheduleDate": "9/29/2021",
     "scheduleTime": "11:08 AM"
   },
   {
@@ -39,8 +39,8 @@
     "salary": 486549,
     "company": "Riffpedia",
     "location": "522 Oneill Junction",
-    "visit Date": "9/22/2021",
-    "schedule Date": "3/20/2022",
+    "visitDate": "9/22/2021",
+    "scheduleDate": "3/20/2022",
     "scheduleTime": "7:28 PM"
   },
   {
@@ -50,8 +50,8 @@
     "salary": 127644,
     "company": "Blogtag",
     "location": "9 Fuller Hill",
-    "visit Date": "11/28/2021",
-    "schedule Date": "11/6/2021",
+    "visitDate": "11/28/2021",
+    "scheduleDate": "11/6/2021",
     "scheduleTime": "7:16 PM"
   },
   {
@@ -61,8 +61,8 @@
     "salary": 185131,
     "company": "Youspan",
     "location": "6 Dayton Crossing",
-    "visit Date": "10/31/2021",
-    "schedule Date": "7/4/2021",
+    "visitDate": "10/31/2021",
+    "scheduleDate": "7/4/2021",
     "scheduleTime": "5:35 AM"
   },
   {
@@ -72,8 +72,8 @@
     "salary": 254234,
     "company": "Einti",
     "location": "344 Truax Circle",
-    "visit Date": "1/30/2022",
-    "schedule Date": "8/26/2021",
+    "visitDate": "1/30/2022",
+    "scheduleDate": "8/26/2021",
     "scheduleTime": "10:37 PM"
   },
   {
@@ -83,8 +83,8 @@
     "salary": 272645,
     "company": "JumpXS",
     "location": "6534 Banding Way",
-    "visit Date": "3/5/2022",
-    "schedule Date": "9/11/2021",
+    "visitDate": "3/5/2022",
+    "scheduleDate": "9/11/2021",
     "scheduleTime": "4:57 PM"
   },
   {
@@ -94,8 +94,8 @@
     "salary": 422462,
     "company": "Realcube",
     "location": "048 Golf Course Junction",
-    "visit Date": "3/12/2022",
-    "schedule Date": "4/21/2022",
+    "visitDate": "3/12/2022",
+    "scheduleDate": "4/21/2022",
     "scheduleTime": "10:09 AM"
   },
   {
@@ -105,8 +105,8 @@
     "salary": 288997,
     "company": "Gabvine",
     "location": "38047 Holmberg Alley",
-    "visit Date": "8/11/2021",
-    "schedule Date": "10/7/2021",
+    "visitDate": "8/11/2021",
+    "scheduleDate": "10/7/2021",
     "scheduleTime": "4:53 AM"
   },
   {
@@ -116,8 +116,8 @@
     "salary": 16829,
     "company": "Devshare",
     "location": "24 Arrowood Point",
-    "visit Date": "5/26/2022",
-    "schedule Date": "8/1/2021",
+    "visitDate": "5/26/2022",
+    "scheduleDate": "8/1/2021",
     "scheduleTime": "2:01 PM"
   },
   {
@@ -127,8 +127,8 @@
     "salary": 261363,
     "company": "Meezzy",
     "location": "13602 Fieldstone Parkway",
-    "visit Date": "12/17/2021",
-    "schedule Date": "1/6/2022",
+    "visitDate": "12/17/2021",
+    "scheduleDate": "1/6/2022",
     "scheduleTime": "3:18 PM"
   },
   {
@@ -138,8 +138,8 @@
     "salary": 370281,
     "company": "Gabspot",
     "location": "32674 Hazelcrest Center",
-    "visit Date": "6/14/2021",
-    "schedule Date": "9/15/2021",
+    "visitDate": "6/14/2021",
+    "scheduleDate": "9/15/2021",
     "scheduleTime": "1:41 AM"
   },
   {
@@ -149,8 +149,8 @@
     "salary": 488550,
     "company": "Photofeed",
     "location": "7 Grasskamp Lane",
-    "visit Date": "5/29/2022",
-    "schedule Date": "10/17/2021",
+    "visitDate": "5/29/2022",
+    "scheduleDate": "10/17/2021",
     "scheduleTime": "5:19 AM"
   },
   {
@@ -160,8 +160,8 @@
     "salary": 54566,
     "company": "Dabtype",
     "location": "833 Lakewood Way",
-    "visit Date": "11/27/2021",
-    "schedule Date": "10/11/2021",
+    "visitDate": "11/27/2021",
+    "scheduleDate": "10/11/2021",
     "scheduleTime": "6:36 AM"
   },
   {
@@ -171,8 +171,8 @@
     "salary": 488849,
     "company": "Bubblebox",
     "location": "486 Thackeray Pass",
-    "visit Date": "12/27/2021",
-    "schedule Date": "9/16/2021",
+    "visitDate": "12/27/2021",
+    "scheduleDate": "9/16/2021",
     "scheduleTime": "1:28 PM"
   },
   {
@@ -182,8 +182,8 @@
     "salary": 431113,
     "company": "Layo",
     "location": "639 Hudson Street",
-    "visit Date": "11/28/2021",
-    "schedule Date": "3/17/2022",
+    "visitDate": "11/28/2021",
+    "scheduleDate": "3/17/2022",
     "scheduleTime": "6:08 AM"
   },
   {
@@ -193,8 +193,8 @@
     "salary": 382594,
     "company": "Feedfire",
     "location": "2813 Texas Junction",
-    "visit Date": "5/2/2022",
-    "schedule Date": "8/14/2021",
+    "visitDate": "5/2/2022",
+    "scheduleDate": "8/14/2021",
     "scheduleTime": "11:21 AM"
   },
   {
@@ -204,8 +204,8 @@
     "salary": 348035,
     "company": "Eidel",
     "location": "2918 Welch Alley",
-    "visit Date": "9/6/2021",
-    "schedule Date": "10/18/2021",
+    "visitDate": "9/6/2021",
+    "scheduleDate": "10/18/2021",
     "scheduleTime": "3:54 PM"
   },
   {
@@ -215,8 +215,8 @@
     "salary": 181381,
     "company": "Quatz",
     "location": "1 Independence Plaza",
-    "visit Date": "9/5/2021",
-    "schedule Date": "8/26/2021",
+    "visitDate": "9/5/2021",
+    "scheduleDate": "8/26/2021",
     "scheduleTime": "2:47 PM"
   }
 ]

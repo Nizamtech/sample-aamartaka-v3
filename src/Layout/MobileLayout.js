@@ -5,7 +5,7 @@ import stylesheet from "../styles/Mobile.module.scss";
 const MobileLayout = ({ children }) => {
   return (
     <div className="mobile">
-      <MobileNavbar />
+      {/* <MobileNavbar /> */}
       {children}
     </div>
   );

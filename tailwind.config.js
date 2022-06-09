@@ -5,7 +5,12 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        exo2: ["Exo 2", "monospace"],
+        poppins: ["Poppins", "monospace"],
+      },
+    },
   },
   plugins: [],
 };

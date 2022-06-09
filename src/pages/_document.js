@@ -93,6 +93,11 @@ class MyDocument extends Document {
           <meta name="description" content="Aamar taka " />
           <meta name="keywords" content="Personal load, Car loan, DPS" />
           <meta name="author" content="Amar Taka" />
+
+          <link
+            href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&family=Poppins:ital,wght@0,200;1,100&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />

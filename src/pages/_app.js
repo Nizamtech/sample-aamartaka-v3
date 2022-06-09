@@ -32,6 +32,10 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Amara taka</title>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Exo+2:wght@200&family=Poppins:ital,wght@0,200;1,100&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       {isMobile ? (
         <MobileLayout>

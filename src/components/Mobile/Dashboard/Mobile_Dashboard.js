@@ -5,10 +5,12 @@ import DashboardCard from "./DashboardCard";
 import dashboardIcon from "../../../images/document.png";
 import { useRouter } from "next/router";
 import Image from "next/image";
+import MobileNavbar from "../../Shared/Navbar/MobileNavbar";
 const Mobile_Dashboard = () => {
   const router = useRouter();
   return (
     <div>
+      <MobileNavbar />
       <div className="grid grid-cols-2 w-full bg-white   text-xl ">
         <button className=" text-white bg-sky-400 font-bold py-2 px-4  w-full border-r">
           ATTENDANCE
