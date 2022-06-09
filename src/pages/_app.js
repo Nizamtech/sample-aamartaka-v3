@@ -37,16 +37,19 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
       </Head>
-      {isMobile ? (
-        <MobileLayout>
-          {" "}
-          <Component {...pageProps} isMobile={isMobile} />
-        </MobileLayout>
-      ) : (
-        <DesktopLayout>
-          <Component {...pageProps} isMobile={isMobile} />
-        </DesktopLayout>
-      )}
+      {
+        isMobile ? (
+          <MobileLayout>
+            {" "}
+            <Component {...pageProps} isMobile={isMobile} />
+          </MobileLayout>
+        ) : null
+        // (
+        //   <DesktopLayout>
+        //     <Component {...pageProps} isMobile={isMobile} />
+        //   </DesktopLayout>
+        // )
+      }
     </>
   );
 }

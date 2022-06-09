@@ -8,8 +8,10 @@ const Mobile_Lead_details = ({ id }) => {
   useEffect(() => {
     const result = data.find((item) => item.id == id);
     setUserData(result);
+    console.log(result);
   }, [id]);
   console.log(userData);
+
   return (
     <>
       {userData ? (
