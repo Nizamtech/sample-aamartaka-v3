@@ -94,7 +94,7 @@ const ListCard = ({ data }) => {
           <hr className="my-2 border-1 border-white " />
           <div className="grid grid-cols-3 place-items-center my-8 gap-4 ">
             {/* call div  */}
-            <Link href={`/lead/leadaction`}>
+            <Link href={`/lead/leadaction/call`}>
               <a className="flex flex-col  justify-center items-center">
                 {" "}
                 <div
@@ -118,7 +118,7 @@ const ListCard = ({ data }) => {
 
             {/* sms  */}
 
-            <Link href={`/lead/leadaction`}>
+            <Link href={`/lead/leadaction/sms`}>
               <a className="flex flex-col  justify-center items-center">
                 {" "}
                 <div className="bg-white rounded-md h-16 w-16 flex  myShadow  justify-center items-center">
@@ -135,12 +135,9 @@ const ListCard = ({ data }) => {
               </a>
             </Link>
 
-            <Link href={`/lead/leadaction`}>
+            <Link href={`/lead/leadaction/schedule`}>
               <a className="flex flex-col  justify-center items-center">
-                <div
-                  onClick={() => router.push("")}
-                  className="bg-white rounded-md h-16 w-16 flex  myShadow justify-center items-center"
-                >
+                <div className="bg-white rounded-md h-16 w-16 flex  myShadow justify-center items-center">
                   <div className="flex flex-col  justify-center items-center bg-[#9C9FE7] h-14 w-14 rounded-md">
                     <Image
                       src="https://i.ibb.co/4s6VLW1/icons8-furnitureandhousehold-64.png"
@@ -158,13 +155,10 @@ const ListCard = ({ data }) => {
 
             {/* follow-up  */}
 
-            <Link href={`/lead/leadaction`}>
+            <Link href={`/lead/leadaction/schedule`}>
               <a className="flex flex-col  justify-center items-center">
                 {" "}
-                <div
-                  onClick={() => router.push("/lead/leadaction")}
-                  className="bg-white rounded-md h-16 w-16 flex myShadow justify-center items-center"
-                >
+                <div className="bg-white rounded-md h-16 w-16 flex myShadow justify-center items-center">
                   <div className="flex flex-col  justify-center items-center bg-[#A3DD8A] h-14 w-14 rounded-md">
                     <Image
                       src="https://i.ibb.co/v3YzgNg/icons8-follow-up-64.png"
@@ -181,13 +175,10 @@ const ListCard = ({ data }) => {
             </Link>
 
             {/* update  */}
-            <Link href={`/lead/leadaction`}>
+            <Link href={`/lead/leadaction/follow-up`}>
               <a className="flex flex-col  justify-center items-center">
                 {" "}
-                <div
-                  onClick={() => router.push("/lead/leadaction")}
-                  className="bg-white rounded-md h-16 w-16 flex myShadow justify-center items-center"
-                >
+                <div className="bg-white rounded-md h-16 w-16 flex myShadow justify-center items-center">
                   <div className="flex flex-col  justify-center items-center bg-[#C08CE7] h-14 w-14 rounded-md">
                     <Image
                       src="https://i.ibb.co/6rcLZzD/icons8-update-96.png"
@@ -205,14 +196,11 @@ const ListCard = ({ data }) => {
 
             {/* Forward   */}
 
-            <Link href={`/lead/leadaction`}>
+            <Link href={`/lead/leadaction/forward`}>
               <a className="flex flex-col  justify-center items-center">
                 {" "}
                 <div className="bg-white rounded-md h-16 w-16 flex  myShadow justify-center items-center">
-                  <div
-                    onClick={() => router.push("/lead/leadaction")}
-                    className="flex flex-col  justify-center items-center bg-[#E68E8D] h-14 w-14 rounded-md"
-                  >
+                  <div className="flex flex-col  justify-center items-center bg-[#E68E8D] h-14 w-14 rounded-md">
                     <Image
                       src="https://i.ibb.co/chYZ6xm/icons8-forward-64.png"
                       alt=""

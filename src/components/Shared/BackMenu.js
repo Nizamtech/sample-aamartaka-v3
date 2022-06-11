@@ -9,10 +9,10 @@ const BackMenu = ({ title }) => {
         onClick={() => {
           router.back();
         }}
-        className="ml-5 mr-5 my-2"
+        className="ml-5 mr-5 my-2 flex items-center justify-center "
       >
         <Image
-          className="pt-2"
+          className="pt-3"
           width="20px"
           height="20px"
           src={"https://i.ibb.co/HdWwCFp/arrow-96-64-1.png"}
