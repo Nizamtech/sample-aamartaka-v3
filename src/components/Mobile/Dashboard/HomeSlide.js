@@ -1,17 +1,17 @@
 import SwiperCore, { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import DashboardCard from "./DashboardCard";
 import Link from "next/link";
 import Image from "next/image";
+import HomeCard from "./HomeCard";
 
 SwiperCore.use([Autoplay, Pagination]);
 
 const HomeSlide = () => {
   const data = [
     {
-      title: "Lead",
+      title: "Lead Section",
       color: "#FB9259",
-      icon: "https://i.ibb.co/sqGNsWz/dashboard.png",
+      icon: "https://i.ibb.co/QdPPdGN/icons8-statistic-64.png",
       link: "/lead",
     },
     {
@@ -35,18 +35,18 @@ const HomeSlide = () => {
   ];
 
   return (
-    <div className=" mx-2 p-2 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+    <div className="flex items-center mx-2 p-4 bg-white rounded-lg border border-gray-200 shadow-md ">
       <Swiper
         loop={true}
         grabCursor={true}
-        slidesPerView={3}
-        spaceBetween={5}
+        slidesPerView={4}
+        spaceBetween={15}
         breakpoints={{
           300: {
-            slidesPerView: 3,
+            slidesPerView: 4,
           },
           550: {
-            slidesPerView: 3,
+            slidesPerView: 4,
           },
           900: {
             slidesPerView: 3,
@@ -60,15 +60,17 @@ const HomeSlide = () => {
         {data.map((item, key) => (
           <>
             <SwiperSlide key={key}>
-              <DashboardCard
-                title={item.title}
-                color={item.color}
-                icon={item.icon}
-              />
+              <HomeCard title={item.title} icon={item.icon} />
             </SwiperSlide>
           </>
         ))}
       </Swiper>
+      {/* <Image
+        width="50px"
+        height="50px"
+        src={"https://i.ibb.co/Ht67F5q/arrow-37-64.png"}
+        alt="Arrow"
+      /> */}
     </div>
   );
 };

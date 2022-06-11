@@ -31,12 +31,8 @@ const Mobile_Dashboard = () => {
       <Home_Header />
 
       <HomeSlide />
-      <div className={` grid grid-cols-3 place-items-center p-4 gap-4 `}>
-        {/* <DashboardCard
-          title="Dashboard"
-          color="#FB9259"
-          icon={"https://i.ibb.co/sqGNsWz/dashboard.png"}
-        /> */}
+      {/* <div className={` grid grid-cols-3 place-items-center p-4 gap-4 `}>
+      
         <DashboardCard
           title="Sales Plans"
           color="#36B37E"
@@ -62,9 +58,9 @@ const Mobile_Dashboard = () => {
             />
           </a>
         </Link>
-      </div>
+      </div> */}
       {/* file collection section  */}
-      <div className="bg-red-500 text-white font-bold  px-4 py-2 w-full flex justify-between">
+      <div className="bg-red-500 text-white font-bold  px-4 py-2 w-full flex justify-between mt-2">
         <h1>3 File Colection Pending</h1>
         <Image
           className="animate-pulse"

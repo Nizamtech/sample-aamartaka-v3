@@ -21,7 +21,7 @@ const BackMenu = ({ title }) => {
       </button>
       <h1
         style={{ letterSpacing: "5px" }}
-        className="text-sm font-poppins my-2 font-bold  "
+        className="text-sm font-exo my-2 font-bold  "
       >
         {title}
       </h1>

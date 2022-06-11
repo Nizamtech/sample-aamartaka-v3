@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import Image from "next/image";
 
 export default function Modal({ showModal, setShowModal }) {
   return (
@@ -12,7 +11,9 @@ export default function Modal({ showModal, setShowModal }) {
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 {/*header*/}
                 <div className="flex items-start justify-between p-2 border-b border-solid border-slate-200 rounded-t">
-                  <h3 className="text-3xl font-semibold">ATTENDANCE</h3>
+                  <h3 className="text-xl font-semibold tracking-[5px]">
+                    ATTENDANCE
+                  </h3>
                   <button
                     className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                     onClick={() => setShowModal(false)}
@@ -24,24 +25,40 @@ export default function Modal({ showModal, setShowModal }) {
                 </div>
                 {/*body*/}
                 <div className=" p-6 flex flex-col">
-                  <button
-                    type="button"
-                    className="text-white bg-[#050708] hover:bg-[#050708]/80 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#050708]/40 dark:focus:ring-gray-600 mr-2 mb-2"
-                  >
-                    Attende Start
-                  </button>
-                  <button
-                    type="button"
-                    className="text-white bg-[#050708] hover:bg-[#050708]/80 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#050708]/40 dark:focus:ring-gray-600 mr-2 mb-2"
-                  >
-                    Attende End
-                  </button>
-                  <button
-                    type="button"
-                    className="text-white bg-[#050708] hover:bg-[#050708]/80 focus:ring-4 focus:outline-none focus:ring-[#050708]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:hover:bg-[#050708]/40 dark:focus:ring-gray-600 mr-2 mb-2"
-                  >
-                    Another
-                  </button>
+                  <div className="myShadow flex items-center  text-black font-bold py-2 px-4 rounded-lg my-2 ">
+                    <Image
+                      src="https://i.ibb.co/hsHy4m0/immigration.png"
+                      alt="attendence"
+                      width="30px"
+                      height="30px"
+                    />
+                    <button className="text-xl mx-3" type="button ">
+                      Attende Start
+                    </button>
+                  </div>
+
+                  <div className="myShadow flex items-center  text-black font-bold py-2 px-4 rounded-lg my-2 ">
+                    <Image
+                      src="https://i.ibb.co/hsHy4m0/immigration.png"
+                      alt="attendence"
+                      width="30px"
+                      height="30px"
+                    />
+                    <button className="text-xl mx-3" type="button ">
+                      Attende End
+                    </button>
+                  </div>
+                  <div className="myShadow flex items-center  text-black font-bold py-2 px-4 rounded-lg my-2 ">
+                    <Image
+                      src="https://i.ibb.co/hsHy4m0/immigration.png"
+                      alt="attendence"
+                      width="30px"
+                      height="30px"
+                    />
+                    <button className="text-xl mx-3" type="button ">
+                      Another
+                    </button>
+                  </div>
                 </div>
                 {/*footer*/}
                 <div className="flex items-center justify-end p-2 border-t border-solid border-slate-200 rounded-b">

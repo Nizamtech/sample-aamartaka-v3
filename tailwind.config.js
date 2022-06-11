@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        exo2: ["Exo 2", "monospace"],
+        exo: ["Exo", "monospace"],
         poppins: ["Poppins", "monospace"],
       },
     },

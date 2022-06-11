@@ -9,6 +9,7 @@
 @import "swiper/css/effect-fade";
 @import "swiper/css/navigation";
 @import "swiper/css/pagination";
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200&family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Poppins:ital,wght@0,200;1,100&display=swap");
 
 html,
 body {
@@ -95,4 +96,13 @@ a {
   background-color: black;
   padding: 1px 10px;
   border-radius: 50%;
+}
+
+.gradientBG {
+  background: rgb(98, 169, 191);
+  background: linear-gradient(
+    90deg,
+    rgba(98, 169, 191, 1) 0%,
+    rgba(0, 181, 255, 1) 100%
+  );
 }
