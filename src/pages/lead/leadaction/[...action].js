@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import BackMenu from "../../../components/Shared/backMenu";
+import BackMenu from "../../../components/Shared/BackMenu";
 const Action = () => {
   const router = useRouter();
   const action = router.query.action;

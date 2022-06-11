@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import BackMenu from "../../Shared/backMenu";
+import BackMenu from "../../Shared/BackMenu";
 import waveBG from "../../../../public/assets/images/Background.svg";
 import { useState } from "react";
 import Modal from "../../Shared/Modal";

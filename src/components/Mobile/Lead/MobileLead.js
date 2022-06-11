@@ -4,7 +4,7 @@ import Card2 from "./Card2";
 import Mobile_LeadCard from "./Mobile_LeadCard";
 import Table2 from "./Table2";
 import data from "../../../../public/assets/data/data.json";
-import BackMenu from "../../Shared/backMenu";
+import BackMenu from "../../Shared/BackMenu";
 const MobileLead = () => {
   return (
     <div className="bg-blue-400 details">
