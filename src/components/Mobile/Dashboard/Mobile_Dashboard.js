@@ -6,32 +6,39 @@ import dashboardIcon from "../../../images/document.png";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import MobileNavbar from "../../Shared/Navbar/MobileNavbar";
+import HomeSlide from "./HomeSlide";
+import Home_Header from "./Home_Header";
+import Home_Footer from "./Home_Footer";
 const Mobile_Dashboard = () => {
   const router = useRouter();
   return (
     <div>
       <MobileNavbar />
-      <div className="grid grid-cols-2 w-full bg-white   text-xl ">
+
+      {/* <div className="grid grid-cols-2 w-full bg-white   text-xl ">
         <button className=" text-white bg-sky-400 font-bold py-2 px-4  w-full border-r">
           ATTENDANCE
         </button>
-        {/* <span className="border-2"></span> */}
+      
         <button
           onClick={() => router.push("/states")}
           className="text-white bg-sky-400 font-bold py-2 px-4  w-full  border-l"
         >
-          STATES
+          STATS
         </button>
-      </div>
+      </div> */}
 
+      <Home_Header />
+
+      <HomeSlide />
       <div className={` grid grid-cols-3 place-items-center p-4 gap-4 `}>
-        <DashboardCard
+        {/* <DashboardCard
           title="Dashboard"
           color="#FB9259"
           icon={"https://i.ibb.co/sqGNsWz/dashboard.png"}
-        />
+        /> */}
         <DashboardCard
-          title="Sales Status"
+          title="Sales Plans"
           color="#36B37E"
           icon={"https://i.ibb.co/8j1pHjn/icons8-signal-64.png"}
         />
@@ -41,7 +48,7 @@ const Mobile_Dashboard = () => {
           icon={"https://i.ibb.co/VB2X2xB/icons8-company-96.png"}
         />
         <DashboardCard
-          title="Company Visited"
+          title="Visited Company "
           color="#4DCCFF"
           icon={"https://i.ibb.co/zHwnrsw/icons8-visit-80.png"}
         />
@@ -55,12 +62,6 @@ const Mobile_Dashboard = () => {
             />
           </a>
         </Link>
-
-        <DashboardCard
-          title="Dashboard"
-          color="#939CA0"
-          icon={"https://i.ibb.co/sqGNsWz/dashboard.png"}
-        />
       </div>
       {/* file collection section  */}
       <div className="bg-red-500 text-white font-bold  px-4 py-2 w-full flex justify-between">
@@ -129,6 +130,7 @@ https://i.ibb.co/fprmq67/icons8-process-improvement-80.png */}
           />
         </div>
       </div>
+      <Home_Footer />
     </div>
   );
 };

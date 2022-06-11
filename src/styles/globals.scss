@@ -5,6 +5,11 @@
 @import "react-date-range/dist/styles.css"; // main style file
 @import "react-date-range/dist/theme/default.css";
 @import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200&family=Poppins:ital,wght@0,200;1,100&display=swap");
+@import "swiper/css";
+@import "swiper/css/effect-fade";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
 html,
 body {
   padding: 0;
@@ -56,12 +61,38 @@ a {
 
 .anim {
   animation: slide-from-bottom 0.7s ease-in-out;
+  float: bottom;
 }
 @keyframes slide-from-bottom {
   0% {
-    margin-top: 25%;
+    margin-bottom: -25%;
   }
   100% {
-    margin-top: 0;
+    margin-bottom: 0;
   }
+}
+
+.overlay {
+  transition: 0.5s ease;
+}
+.text,
+.icon {
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.product-link:hover .overlay {
+  height: 100%;
+  background-color: transparent;
+}
+.product-link:hover .text {
+  display: none;
+}
+.product-link:hover .icon {
+  display: block !important;
+  color: #f77426 !important;
+  font-size: 40px !important;
+  background-color: black;
+  padding: 1px 10px;
+  border-radius: 50%;
 }
