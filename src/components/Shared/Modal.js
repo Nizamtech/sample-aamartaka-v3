@@ -1,6 +1,7 @@
 import Image from "next/image";
-
+import { useRouter } from "next/router";
 export default function Modal({ showModal, setShowModal }) {
+  const router = useRouter();
   return (
     <>
       {showModal ? (
@@ -32,7 +33,11 @@ export default function Modal({ showModal, setShowModal }) {
                       width="30px"
                       height="30px"
                     />
-                    <button className="text-xl mx-3" type="button ">
+                    <button
+                      onClick={router.push("/test")}
+                      className="text-xl mx-3"
+                      type="button "
+                    >
                       Attend Start
                     </button>
                   </div>
