@@ -33,7 +33,7 @@ export default function Modal({ showModal, setShowModal }) {
                       height="30px"
                     />
                     <button className="text-xl mx-3" type="button ">
-                      Attende Start
+                      Attend Start
                     </button>
                   </div>
 
@@ -45,7 +45,7 @@ export default function Modal({ showModal, setShowModal }) {
                       height="30px"
                     />
                     <button className="text-xl mx-3" type="button ">
-                      Attende End
+                      Attend End
                     </button>
                   </div>
                   <div className="myShadow flex items-center  text-black font-bold py-2 px-4 rounded-lg my-2 ">

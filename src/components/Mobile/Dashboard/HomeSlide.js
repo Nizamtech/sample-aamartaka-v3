@@ -60,7 +60,12 @@ const HomeSlide = () => {
         {data.map((item, key) => (
           <>
             <SwiperSlide key={key}>
-              <HomeCard title={item.title} icon={item.icon} />
+              <Link href={item.link}>
+                <a>
+                  {" "}
+                  <HomeCard title={item.title} icon={item.icon} />
+                </a>
+              </Link>
             </SwiperSlide>
           </>
         ))}
