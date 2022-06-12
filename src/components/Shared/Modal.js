@@ -61,7 +61,7 @@ export default function Modal({ showModal, setShowModal }) {
                       height="30px"
                     />
                     <button className="text-xl mx-3" type="button ">
-                      Another
+                      Details
                     </button>
                   </div>
                 </div>

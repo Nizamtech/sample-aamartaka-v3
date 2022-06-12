@@ -15,9 +15,9 @@ const Test = () => {
       <div>
         <Webcam
           audio={false}
-          height={720}
+          height={250}
           screenshotFormat="image/jpeg"
-          width={1280}
+          width={250}
           videoConstraints={videoConstraints}
         >
           {({ getScreenshot }) => (
