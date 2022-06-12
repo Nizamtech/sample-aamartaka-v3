@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 const BackMenu = ({ title }) => {
   const router = useRouter();
   return (
-    <div className="flex items-center justify-start bg-white w-full">
+    <div className="flex items-center justify-start bg-white w-full py-3">
       <button
         onClick={() => {
           router.back();
