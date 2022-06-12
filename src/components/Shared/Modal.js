@@ -25,7 +25,7 @@ export default function Modal({ showModal, setShowModal }) {
                 </div>
                 {/*body*/}
                 <div className=" p-6 flex flex-col">
-                  <div className="myShadow flex items-center  text-black font-bold py-2 px-4 rounded-lg my-2 ">
+                  <div className="myShadow flex items-center  text-black font-bold py-4 px-4 rounded-lg my-2 ">
                     <Image
                       src="https://i.ibb.co/hsHy4m0/immigration.png"
                       alt="attendence"
@@ -37,7 +37,7 @@ export default function Modal({ showModal, setShowModal }) {
                     </button>
                   </div>
 
-                  <div className="myShadow flex items-center  text-black font-bold py-2 px-4 rounded-lg my-2 ">
+                  <div className="myShadow flex items-center  text-black font-bold py-4 px-4 rounded-lg my-2 ">
                     <Image
                       src="https://i.ibb.co/hsHy4m0/immigration.png"
                       alt="attendence"
@@ -48,7 +48,7 @@ export default function Modal({ showModal, setShowModal }) {
                       Attend End
                     </button>
                   </div>
-                  <div className="myShadow flex items-center  text-black font-bold py-2 px-4 rounded-lg my-2 ">
+                  <div className="myShadow flex items-center  text-black font-bold py-4 px-4 rounded-lg my-2 ">
                     <Image
                       src="https://i.ibb.co/hsHy4m0/immigration.png"
                       alt="attendence"
