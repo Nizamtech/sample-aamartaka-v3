@@ -2,8 +2,22 @@ import React, { useState } from "react";
 import Webcam from "react-webcam";
 import { useRouter } from "next/router";
 const WebCamera = ({ handleBase64Upload }) => {
+  const [state, setState] = useState({});
+
   const start = () => {
     audio.play();
+  };
+
+  const position = async () => {
+    await navigator.geolocation.getCurrentPosition(
+      (position) =>
+        setState({
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude,
+        }),
+      (err) => console.log(err)
+    );
+    console.log(state.latitude);
   };
 
   // var audio = new Audio("./camera.mp3");
@@ -17,9 +31,13 @@ const WebCamera = ({ handleBase64Upload }) => {
     const imageSrc = webcamRef.current.getScreenshot();
     console.log(imageSrc);
 
+    position();
     setImgSrc(imageSrc);
-    new Audio(audio).play();
+
+    // new Audio(audio).play();
   }, [webcamRef, setImgSrc]);
+
+  console.log(state);
 
   return (
     <div>
@@ -35,7 +53,7 @@ const WebCamera = ({ handleBase64Upload }) => {
             </button>
             <button
               className="bg-blue-500 text-white p-2 rounded hover:bg-blue-800 m-2 my-4  px-3 py-2  flext justify-center items-center mx-auto w-40 "
-              onClick={() => handleBase64Upload()}
+              onClick={() => handleBase64Upload}
             >
               Submit
             </button>
