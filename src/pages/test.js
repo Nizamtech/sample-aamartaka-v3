@@ -28,7 +28,7 @@ const Test = () => {
           />
         </div>
         <button
-          className="absolute top-0 bg-blue-500 text-white p-2 rounded hover:bg-blue-800 m-2 my-4  px-3 py-2  flext justify-center items-center mx-auto w-full"
+          className="absolute top-96 bg-blue-500 text-white p-2 rounded hover:bg-blue-800 m-2 my-4  px-3 py-2  flext justify-center items-center mx-auto w-full"
           onClick={capture}
         >
           Capture photo
