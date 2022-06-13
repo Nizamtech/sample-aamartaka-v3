@@ -14,7 +14,7 @@ const WebCamera = ({ handleBase64Upload }) => {
   return (
     <div>
       {imgSrc !== null ? (
-        <div>
+        <div className=" bg-white w-full">
           <img src={imgSrc} />
           <div className="flex justify-between items-center">
             <button
@@ -43,7 +43,7 @@ const WebCamera = ({ handleBase64Upload }) => {
             // videoConstraints={videoConstraints}
           />
 
-          <div className=" absolute bottom-0 w-full ">
+          <div className=" absolute bottom-0 w-full bg-transparent ">
             <button
               onClick={capture}
               className=" flex justify-center items-center mx-auto"
@@ -52,7 +52,7 @@ const WebCamera = ({ handleBase64Upload }) => {
                 className="mx-auto"
                 width="100px"
                 height="100px"
-                src="https://i.ibb.co/gJ02ML6/icons8-unchecked-radio-button-96.png"
+                src="https://i.ibb.co/XsTrNxp/camera.png"
                 alt=""
               />
             </button>
