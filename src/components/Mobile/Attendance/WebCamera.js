@@ -2,17 +2,23 @@ import React, { useState } from "react";
 import Webcam from "react-webcam";
 import { useRouter } from "next/router";
 const WebCamera = ({ handleBase64Upload }) => {
-  var audio = new Audio("./camera.mp3");
-  console.log(audio);
+  const start = () => {
+    audio.play();
+  };
+
+  // var audio = new Audio("./camera.mp3");
+  // console.log(audio);
 
   const router = useRouter();
   const webcamRef = React.useRef(null);
   const [imgSrc, setImgSrc] = useState(null);
+
   const capture = React.useCallback(() => {
     const imageSrc = webcamRef.current.getScreenshot();
     console.log(imageSrc);
-    audio.play();
+
     setImgSrc(imageSrc);
+    new Audio(audio).play();
   }, [webcamRef, setImgSrc]);
 
   return (
@@ -47,7 +53,7 @@ const WebCamera = ({ handleBase64Upload }) => {
             // videoConstraints={videoConstraints}
           />
 
-          <div className=" absolute bottom-0 w-full bg-transparent ">
+          <div className=" absolute bottom-0 w-full bg-none ">
             <button
               onClick={capture}
               className=" flex justify-center items-center mx-auto"
