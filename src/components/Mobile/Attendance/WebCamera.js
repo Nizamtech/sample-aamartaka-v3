@@ -16,8 +16,9 @@ const WebCamera = ({ handleBase64Upload }) => {
   const capture = React.useCallback(() => {
     const imageSrc = webcamRef.current.getScreenshot();
     console.log(imageSrc);
-    new Audio(audio).play();
+
     setImgSrc(imageSrc);
+    new Audio(audio).play();
   }, [webcamRef, setImgSrc]);
 
   return (
