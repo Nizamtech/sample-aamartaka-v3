@@ -1,23 +1,96 @@
 import React, { useState } from "react";
 import Webcam from "react-webcam";
 import { useRouter } from "next/router";
+
+import Geocode from "react-geocode";
+
 const WebCamera = ({ handleBase64Upload }) => {
+  Geocode.setApiKey("AIzaSyAKkmoH E5VSamY14T7_xF-ZPDdUtZnVmws");
+  Geocode.setLanguage("en");
+  Geocode.setRegion("es");
+
   const [state, setState] = useState({});
 
   const start = () => {
     audio.play();
   };
 
-  const position = async () => {
-    await navigator.geolocation.getCurrentPosition(
-      (position) =>
+  const position = () => {
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        // getAddress(position.coords.latitude, position.coords.longitude);
+        getAddress2(position.coords.latitude, position.coords.longitude);
         setState({
           latitude: position.coords.latitude,
           longitude: position.coords.longitude,
-        }),
+        });
+      },
       (err) => console.log(err)
     );
     console.log(state.latitude);
+  };
+
+  // get address from lat and lng
+  const getAddress = (lat, lon) => {
+    console.log("enter the box");
+
+    Geocode.fromLatLng(lat, lon).then(
+      (response) => {
+        const address = response.results[0].formatted_address;
+        console.log("address", response, address);
+      },
+      (error) => {
+        console.error(error);
+      }
+    );
+  };
+
+  // get address 2 from lat and lng
+
+  const getAddress2 = (lat, lon) => {
+    Geocode.fromLatLng(lat, lon).then(
+      (response) => {
+        const address = response.results[0].formatted_address;
+        let area, city, state2, state3, state, country;
+        for (
+          let i = 0;
+          i < response.results[0].address_components.length;
+          i++
+        ) {
+          for (
+            let j = 0;
+            j < response.results[0].address_components[i].types.length;
+            j++
+          ) {
+            switch (response.results[0].address_components[i].types[j]) {
+              case "locality":
+                city = response.results[0].address_components[i].long_name;
+                break;
+              case "neighborhood":
+                area = response.results[0].address_components[i].long_name;
+                break;
+              case "administrative_area_level_1":
+                state = response.results[0].address_components[i].long_name;
+                break;
+              case "administrative_area_level_2":
+                state2 = response.results[0].address_components[i].long_name;
+                break;
+              case "administrative_area_level_3":
+                state3 = response.results[0].address_components[i].long_name;
+                break;
+              case "country":
+                country = response.results[0].address_components[i].long_name;
+                break;
+            }
+          }
+        }
+        console.log(area, city, state, state2, state3, country);
+        console.log(address, response);
+      },
+      (error) => {
+        console.error(error);
+      }
+    );
   };
 
   // var audio = new Audio("./camera.mp3");
@@ -32,6 +105,8 @@ const WebCamera = ({ handleBase64Upload }) => {
     console.log(imageSrc);
 
     position();
+    // getAddress();
+    console.log("After Geocode");
     setImgSrc(imageSrc);
 
     // new Audio(audio).play();
@@ -53,7 +128,7 @@ const WebCamera = ({ handleBase64Upload }) => {
             </button>
             <button
               className="bg-blue-500 text-white p-2 rounded hover:bg-blue-800 m-2 my-4  px-3 py-2  flext justify-center items-center mx-auto w-40 "
-              onClick={() => handleBase64Upload}
+              // onClick={() => handleBase64Upload}
             >
               Submit
             </button>

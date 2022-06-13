@@ -3,6 +3,8 @@ import Image from "next/image";
 import Modal from "../../Shared/Modal";
 import { useState } from "react";
 import Footer_modal from "../../Shared/Footer_modal";
+import Webcam from "react-webcam";
+
 const Home_Footer = () => {
   const [showModal, setShowModal] = useState(false);
   // const handleClose = () => setShowModal(false);
