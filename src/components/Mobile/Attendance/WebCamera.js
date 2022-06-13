@@ -2,12 +2,16 @@ import React, { useState } from "react";
 import Webcam from "react-webcam";
 import { useRouter } from "next/router";
 const WebCamera = ({ handleBase64Upload }) => {
+  var audio = new Audio("./camera.mp3");
+  console.log(audio);
+
   const router = useRouter();
   const webcamRef = React.useRef(null);
   const [imgSrc, setImgSrc] = useState(null);
   const capture = React.useCallback(() => {
     const imageSrc = webcamRef.current.getScreenshot();
     console.log(imageSrc);
+    audio.play();
     setImgSrc(imageSrc);
   }, [webcamRef, setImgSrc]);
 
