@@ -34,7 +34,7 @@ export default function Modal({ showModal, setShowModal }) {
                       height="30px"
                     />
                     <button
-                      onClick={router.push("/test")}
+                      onClick={()=>router.push("/attendance")}
                       className="text-xl mx-3"
                       type="button "
                     >
