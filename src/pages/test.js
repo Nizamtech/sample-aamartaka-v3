@@ -17,16 +17,18 @@ const Test = () => {
       {" "}
       <BackMenu title="This Test Page" />
       <div>
-        <Webcam
-          audio={false}
-          height={500}
-          ref={webcamRef}
-          screenshotFormat="image/jpeg"
-          width="100%"
-          videoConstraints={videoConstraints}
-        />
+        <div className="relative">
+          <Webcam
+            audio={false}
+            height={500}
+            ref={webcamRef}
+            screenshotFormat="image/jpeg"
+            width="100%"
+            // videoConstraints={videoConstraints}
+          />
+        </div>
         <button
-          className="my-4 bg-cyan-500 text-white px-3 py-2 rounded-md flext justify-center items-center mx-auto w-full"
+          className="absolute top-0 bg-blue-500 text-white p-2 rounded hover:bg-blue-800 m-2 my-4  px-3 py-2  flext justify-center items-center mx-auto w-full"
           onClick={capture}
         >
           Capture photo

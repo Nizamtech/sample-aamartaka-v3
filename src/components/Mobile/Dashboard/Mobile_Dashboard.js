@@ -61,7 +61,7 @@ const Mobile_Dashboard = () => {
       </div> */}
       {/* file collection section  */}
       <div className="bg-red-500 text-white font-bold  px-4 py-2 w-full flex justify-between mt-2">
-        <h1>3 File Colection Pending</h1>
+        <h1>3 File Collection Pending</h1>
         <Image
           className="animate-pulse"
           src="https://i.ibb.co/kSHHB22/arrow-31-256.png"
