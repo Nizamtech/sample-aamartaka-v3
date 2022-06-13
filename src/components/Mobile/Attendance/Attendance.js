@@ -2,7 +2,7 @@ import React from "react";
 import BackMenu from "../../Shared/BackMenu";
 import WebCamera from "./WebCamera";
 
-const Attendance = () => {
+const Attendance = ({attend}) => {
   // BASE64 IMAGE UPLOADING
   const [base64, setBase64] = React.useState(null);
   const [base64Error, setBase64Error] = React.useState(null);
@@ -37,6 +37,7 @@ const Attendance = () => {
 
   return (
     <div>
+        <h1>{attend}</h1>
       <BackMenu title="Attendence " />
       <WebCamera handleBase64Upload={handleBase64Upload} />
     </div>

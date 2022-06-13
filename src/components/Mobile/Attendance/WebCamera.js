@@ -35,7 +35,7 @@ const WebCamera = ({ handleBase64Upload }) => {
             </button>
             <button
               className="bg-blue-500 text-white p-2 rounded hover:bg-blue-800 m-2 my-4  px-3 py-2  flext justify-center items-center mx-auto w-40 "
-              onClick={() => handleBase64Upload}
+              onClick={() => handleBase64Upload()}
             >
               Submit
             </button>

@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
+import Link from "next/link";
+
 export default function Modal({ showModal, setShowModal }) {
   const router = useRouter();
   return (
@@ -33,13 +35,14 @@ export default function Modal({ showModal, setShowModal }) {
                       width="30px"
                       height="30px"
                     />
-                    <button
-                      onClick={()=>router.push("/attendance")}
+                    <Link
+                      // onClick={()=>router.push("/attendance")}
+                      href={'/attendance/start'}
                       className="text-xl mx-3"
                       type="button "
                     >
-                      Attend Start
-                    </button>
+                    <a>  Attend Start</a>
+                    </Link>
                   </div>
 
                   <div className="myShadow flex items-center  text-black font-bold py-4 px-4 rounded-lg my-2 ">
@@ -49,9 +52,9 @@ export default function Modal({ showModal, setShowModal }) {
                       width="30px"
                       height="30px"
                     />
-                    <button className="text-xl mx-3" type="button ">
-                      Attend End
-                    </button>
+                    <Link href={'/attendance/end'} className="text-xl mx-3" type="button ">
+                    <a>  Attend End</a>
+                    </Link>
                   </div>
                   <div className="myShadow flex items-center  text-black font-bold py-4 px-4 rounded-lg my-2 ">
                     <Image
@@ -60,9 +63,9 @@ export default function Modal({ showModal, setShowModal }) {
                       width="30px"
                       height="30px"
                     />
-                    <button className="text-xl mx-3" type="button ">
-                      Details
-                    </button>
+                    <Link href={'/attendance/details'} className="text-xl mx-3" type="button ">
+                     <a> Details</a>
+                    </Link>
                   </div>
                 </div>
                 {/*footer*/}
