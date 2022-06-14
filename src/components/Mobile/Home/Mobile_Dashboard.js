@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import styles from "../../../styles/Dashboard.module.scss";
-import DashboardCard from "./DashboardCard";
+import Card from "./Card";
 import dashboardIcon from "../../../images/document.png";
 import { useRouter } from "next/router";
 import Image from "next/image";
@@ -78,19 +78,19 @@ const Mobile_Dashboard = () => {
         </div>
 
         <div className={` grid grid-cols-3 place-items-center p-4 gap-4 `}>
-          <DashboardCard
+          <Card
             title="In process"
             body={40}
             color="#4DCCFF"
             // icon={"https://i.ibb.co/fprmq67/icons8-process-improvement-80.png"}
           />
-          <DashboardCard
+          <Card
             title="Rejected"
             body={70}
             color="#EB5757"
             // icon={"https://i.ibb.co/x7jfTDk/icons8-rejected-64.png"}
           />
-          <DashboardCard
+          <Card
             title="Others Bank"
             body={20}
             color="#5F67EC"
@@ -105,7 +105,7 @@ const Mobile_Dashboard = () => {
           <h1>Converted Lead Section</h1>
         </div>
         <div className={` grid grid-cols-3 place-items-center p-4 gap-4 `}>
-          <DashboardCard
+          <Card
             className="animate-spin"
             anm="animate-spin"
             title="In process"
@@ -113,14 +113,14 @@ const Mobile_Dashboard = () => {
             color="#4DCCFF"
             icon={"https://i.ibb.co/fprmq67/icons8-process-improvement-80.png"}
           />
-          <DashboardCard
+          <Card
             title="Decline"
             anm="animate-pulse"
             // body={70}
             color="#EB5757"
             icon={"https://i.ibb.co/x7jfTDk/icons8-rejected-64.png"}
           />
-          <DashboardCard
+          <Card
             title="Disbursed"
             anm="animate-bounce"
             // body={20}

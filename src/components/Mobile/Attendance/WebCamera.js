@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import Webcam from "react-webcam";
 import { useRouter } from "next/router";
-
 import Geocode from "react-geocode";
 
 const WebCamera = ({ handleBase64Upload }) => {
-  Geocode.setApiKey("AIzaSyAKkmoH E5VSamY14T7_xF-ZPDdUtZnVmws");
+  Geocode.setApiKey(process.env.GOOGLE_API_KEY);
   Geocode.setLanguage("en");
   Geocode.setRegion("es");
 

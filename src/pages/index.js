@@ -8,7 +8,7 @@ import {
   isMobile,
 } from "react-device-detect";
 import Dashboard from "../components/Desktop/Dashboard/Dashboard";
-import Mobile_Dashboard from "../components/Mobile/Dashboard/Mobile_Dashboard";
+import Mobile_Dashboard from "../components/Mobile/Home/Mobile_Dashboard";
 export default function Home() {
   return (
     <div className={styles.container}>
