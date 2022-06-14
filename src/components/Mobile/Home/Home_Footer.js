@@ -4,8 +4,10 @@ import Modal from "../../Shared/Modal";
 import { useState } from "react";
 import Footer_modal from "../../Shared/Footer_modal";
 import Webcam from "react-webcam";
+import { useRouter } from "next/router";
 
 const Home_Footer = () => {
+  const router = useRouter();
   const [showModal, setShowModal] = useState(false);
   // const handleClose = () => setShowModal(false);
   // const handleShow = () => setShowModal(true);
@@ -34,7 +36,7 @@ const Home_Footer = () => {
         </div>
         <div>
           {" "}
-          <button onClick={handleAttendance} className="text-xl">
+          <button onClick={() => router.push("/dashboard")} className="text-xl">
             STATS
           </button>
         </div>
