@@ -26,17 +26,23 @@ const Attendence_Details_Card = () => {
             alt=""
           />
           <div className="p-1">
-            <div className="grid grid-cols-3 place-content-between text-xs font-exo">
-              <h1 className=" font-bold text-[10px]">Start Time:</h1>
-              <h1 className="col-span-2 text-[10px]">02:00 PM</h1>
+            <div className="grid grid-cols-5 place-content-between text-xs font-exo">
+              <h1 className="col-span-2 font-bold text-[10px]">Start Time:</h1>
+              <h1 className="col-span-3 text-[10px]">02:00 PM</h1>
             </div>
-            <div className="grid grid-cols-3 place-content-between text-xs font-exo">
-              <h1 className=" font-bold text-[10px]">Location:</h1>
-              <h1 className=" col-span-2 text-[10px]">
+            <div className="grid grid-cols-5 place-content-between text-xs font-exo">
+              <h1 className="col-span-2 font-bold text-[10px]">Location:</h1>
+              <h1 className=" col-span-3 text-[10px]">
                 Gulshan ,Banani, Dhaka,Bangladesh
               </h1>
             </div>
           </div>
+          <button
+            className=" font-exo text-sm text-cyan-500 flex justify-center items-center mx-auto"
+            onClick={handleAttendance}
+          >
+            View Map
+          </button>
         </div>
 
         <div className=" ">
@@ -61,10 +67,15 @@ const Attendence_Details_Card = () => {
               </div>
             </div>
           </div>
+          <button
+            className=" font-exo text-sm text-cyan-500 flex justify-center items-center mx-auto"
+            onClick={handleAttendance}
+          >
+            View Map
+          </button>
         </div>
       </div>
       <AttendenceModal showModal={showModal} setShowModal={setShowModal} />
-      <button onClick={handleAttendance}>View</button>
     </div>
   );
 };
