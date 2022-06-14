@@ -26,14 +26,14 @@ const Attendence_Details_Card = () => {
             alt=""
           />
           <div className="p-1">
-            <div className="grid grid-cols-5 place-content-between text-xs font-exo">
-              <h1 className="col-span-2 font-bold text-[10px]">Start Time:</h1>
-              <h1 className="col-span-3 text-[10px]">02:00 PM</h1>
+            <div className="flex justify-between items-center text-xs font-exo">
+              <h1 className="font-bold text-[10px]">Start Time:</h1>
+              <h1 className="text-[10px]">02:00 PM</h1>
             </div>
-            <div className="grid grid-cols-5 place-content-between text-xs font-exo">
+            <div className="grid grid-cols-7 place-content-between text-xs font-exo">
               <h1 className="col-span-2 font-bold text-[10px]">Location:</h1>
-              <h1 className=" col-span-3 text-[10px]">
-                Gulshan ,Banani, Dhaka,Bangladesh
+              <h1 className=" col-span-5 text-[10px] text-justify">
+                Gulshan ,Banani, Dhaka
               </h1>
             </div>
           </div>
@@ -55,14 +55,14 @@ const Attendence_Details_Card = () => {
               alt=""
             />
             <div className="p-1">
-              <div className="grid grid-cols-3 place-content-between text-xs font-exo">
+              <div className="flex justify-between items-center text-xs font-exo">
                 <h1 className=" font-bold text-[10px]">Start Time:</h1>
-                <h1 className="col-span-2 text-[10px]">02:00 PM</h1>
+                <h1 className="text-[10px]">02:00 PM</h1>
               </div>
-              <div className="grid grid-cols-3 place-content-between text-xs font-exo">
-                <h1 className=" font-bold text-[10px]">Location:</h1>
-                <h1 className=" col-span-2 text-[10px]">
-                  Gulshan ,Banani, Dhaka,Bangladesh
+              <div className="grid grid-cols-7 place-content-between text-xs font-exo">
+                <h1 className="col-span-2 font-bold text-[10px] ">Location:</h1>
+                <h1 className=" col-span-5 text-[10px] text-justify">
+                  Gulshan , Banani, Dhaka
                 </h1>
               </div>
             </div>
