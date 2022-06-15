@@ -39,22 +39,22 @@ const HomeSlide = () => {
       <Swiper
         loop={true}
         grabCursor={true}
-        slidesPerView={4}
+        slidesPerView={3.6}
         spaceBetween={15}
-        breakpoints={{
-          300: {
-            slidesPerView: 4,
-          },
-          550: {
-            slidesPerView: 4,
-          },
-          900: {
-            slidesPerView: 3,
-          },
-          1020: {
-            slidesPerView: 4,
-          },
-        }}
+        // breakpoints={{
+        //   300: {
+        //     slidesPerView: 4,
+        //   },
+        //   550: {
+        //     slidesPerView: 4,
+        //   },
+        //   900: {
+        //     slidesPerView: 3,
+        //   },
+        //   1020: {
+        //     slidesPerView: 4,
+        //   },
+        // }}
         className="mySwiper"
       >
         {data.map((item, key) => (

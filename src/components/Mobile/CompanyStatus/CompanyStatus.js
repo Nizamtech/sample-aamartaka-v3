@@ -42,14 +42,22 @@ const CompanyStatus = () => {
   ];
 
   const colourOptions = [
-    { label: "aamartaka" },
-    { label: "Robi" },
-    { label: "Grameen" },
-    { label: "Asha" },
-    { label: "Lonka Bangla" },
-    { label: "Indigo" },
-    { label: "Nizam" },
+    { label: "aamartaka", value: "value" },
+    { label: "Robi", value: "value" },
+    { label: "Grameen", value: "value" },
+    { label: "Asha", value: "value" },
+    { label: "Lonka Bangla", value: "value" },
+    { label: "Indigo", value: "value" },
+    { label: "Nizam", value: "value" },
   ];
+  // const options = [
+  //   { value: "chocolate", label: "Chocolate" },
+  //   { value: "strawberry", label: "Strawberry" },
+  //   { value: "vanilla", label: "Vanilla" },
+  //   { value: "chocolate2", label: "Chocolate2" },
+  //   { value: "strawberry2", label: "Strawberry2" },
+  //   { value: "vanilla2", label: "Vanilla2" },
+  // ];
 
   const filterColors = (inputValue) => {
     return colourOptions.filter((i) =>
