@@ -188,7 +188,7 @@ const NewLead = () => {
                 required
                 type="number"
                 name="yearlyTransaction"
-                max="1000000000"
+                max="100000000"
                 min="1000"
                 onChange={handleChange}
                 placeholder="ex: 45000"
@@ -223,11 +223,11 @@ const NewLead = () => {
 
           <label> Status</label>
           <Select
+            defaultValue={"in process"}
             required
             name="Status"
             onChange={setStatus}
             options={statusData}
-            placeholder="Status"
             className="my-2"
           />
 
