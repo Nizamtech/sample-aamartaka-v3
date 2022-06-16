@@ -127,14 +127,22 @@ a {
 }
 .widraw {
   box-sizing: border-box;
-
   position: absolute;
-  width: 72px;
+  width: 55px;
   height: 25px;
   left: 276.87px;
   top: 101px;
-
   background: #fff0b4;
   border: 1px solid #ffd202;
   border-radius: 11px;
+}
+
+.homeFooter {
+  position: absolute;
+  width: 361px;
+  height: 78px;
+  left: 0px;
+  top: 683px;
+  background: #ffffff;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
 }
