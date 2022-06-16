@@ -6,7 +6,7 @@ const SubmittedCard = ({ title, body, color, icon, anm }) => {
     <div>
       <div
         href="#"
-        className="flex flex-col justify-between items-center  p-3 h-[85px] w-20 max-w-sm min-w-min  bg-white rounded-lg border-gray-200  hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+        className="flex flex-col justify-between items-center  p-3 h-[85px] w-24 max-w-sm min-w-min  bg-white rounded-lg border-gray-200  hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
       >
         {body && (
           <h1 className={`text-center text-[${color}] text-4xl font-bold`}>
@@ -15,7 +15,7 @@ const SubmittedCard = ({ title, body, color, icon, anm }) => {
         )}
 
         <h5
-          className={`mb-2 text-[10px] font-bold tracking-tigh text-slate-900  text-center mt-1`}
+          className={`mb-2 text-xs font-bold tracking-tigh text-slate-900  text-center mt-1`}
         >
           {title}
         </h5>

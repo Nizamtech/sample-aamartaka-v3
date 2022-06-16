@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import BackIcon from "../../../public/assets/icons/swoosh-left.svg";
 const BackMenu = ({ title }) => {
   const router = useRouter();
   return (
@@ -9,19 +10,19 @@ const BackMenu = ({ title }) => {
         onClick={() => {
           router.back();
         }}
-        className="ml-5 mr-5 my-2 flex items-center justify-center "
+        className="ml-5 mr-2 my-2 flex items-center justify-center "
       >
         <Image
           className="pt-3"
-          width="20px"
-          height="20px"
-          src={"https://i.ibb.co/HdWwCFp/arrow-96-64-1.png"}
+          width="25px"
+          height="25px"
+          src={BackIcon}
           alt="back"
         />
       </button>
       <h1
-        style={{ letterSpacing: "5px" }}
-        className="text-sm font-exo my-2 font-bold  "
+        style={{ letterSpacing: "1px" }}
+        className="text-[16px] font-exo my-2 font-bold text-[#434343]  "
       >
         {title}
       </h1>

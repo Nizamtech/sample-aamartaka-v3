@@ -7,7 +7,7 @@ import data from "../../../../public/assets/data/data.json";
 import BackMenu from "../../Shared/BackMenu";
 const MobileLead = () => {
   return (
-    <div className="bg-blue-400 details">
+    <div className="bg-gray-200 ">
       {/* <Table2 /> */}
       {/* <Mobile_LeadCard /> */}
       <BackMenu title={"lead List"} />

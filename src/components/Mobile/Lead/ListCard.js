@@ -12,13 +12,15 @@ const ListCard = ({ data }) => {
   return (
     <div>
       <BackMenu title={"Details"} />
-      <div className={`w-screen border my-2 details font-poppins`}>
+      <div
+        className={`w-screen border my-2 font-exo bg-[#C7EDF6] h-screen overflow-scroll`}
+      >
         <div className=" my-4">
           {/* header  */}
           <div className="ml-5 flex ">
             <div className="ml-4 ">
               <h1 className="text-xl text-slate-800 font-bold">{data?.name}</h1>
-              <h1 className="text-lg text-white">{data?.profession}</h1>
+              <h1 className="text-lg text-slate-600">{data?.profession}</h1>
             </div>
           </div>
 

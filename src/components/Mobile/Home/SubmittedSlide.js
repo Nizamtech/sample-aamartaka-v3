@@ -7,28 +7,28 @@ const SubmittedSlide = () => {
   const data = [
     {
       title: "In Process",
-      color: "#FB9259",
+      color: "#4DCCFF",
       icon: "https://i.ibb.co/QdPPdGN/icons8-statistic-64.png",
       link: "/lead",
       body: "23",
     },
     {
       title: "Send Query",
-      color: "#36B37E",
+      color: "#5F67EC",
       icon: "https://i.ibb.co/8j1pHjn/icons8-signal-64.png",
       link: "/salesplans",
       body: "15",
     },
     {
       title: "Decline",
-      color: "#5F67EC",
+      color: "#EB5757",
       icon: "https://i.ibb.co/VB2X2xB/icons8-company-96.png",
       link: "/companystatus",
       body: "30",
     },
     {
       title: "Approved",
-      color: "#4DCCFF",
+      color: "#36B37E",
       icon: "https://i.ibb.co/zHwnrsw/icons8-visit-80.png",
       link: "/visitedcompany",
       body: "40",
