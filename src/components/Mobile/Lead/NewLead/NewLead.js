@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import BackMenu from "../../../Shared/BackMenu";
 import Select from "react-select";
+
 const NewLead = () => {
   const [profession, setProfession] = useState(null);
   const [salaryType, setSalaryType] = useState(null);
@@ -85,8 +86,11 @@ const NewLead = () => {
   ];
 
   const handleChange = (e) => {
+
     const field = e.target.name;
     const value = e.target.value;
+
+
     const newData = { ...selectedOption };
     newData[field] = value;
 
@@ -125,6 +129,7 @@ const NewLead = () => {
   return (
     <div>
       <BackMenu title="New Lead" />
+
       <div className="mx-2">
         <form onSubmit={handleSubmit}>
           <label> Name</label>
