@@ -86,10 +86,12 @@ const NewLead = () => {
   ];
 
   const handleChange = (e) => {
-
     const field = e.target.name;
     const value = e.target.value;
 
+    if (field === "phone") {
+      log;
+    }
 
     const newData = { ...selectedOption };
     newData[field] = value;
@@ -145,10 +147,12 @@ const NewLead = () => {
           <label> Phone</label>
           <input
             required
-            type="number"
+            type="text"
             name="phone"
-            max={9999999999}
-            min={1000000000}
+            onInput={`javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)`}
+            maxLength="11"
+            // max={9999999999}
+            // min={1000000000}
             onChange={handleChange}
             placeholder="Phone Number"
             className="my-2 focus:outline-[#2684FF] focus:duration-400 font-exo w-full h-8 border py-4 px-3 rounded-[3px] border-[#CCCCCC] "

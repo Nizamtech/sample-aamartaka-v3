@@ -16,32 +16,36 @@ const Home_Footer = () => {
   };
 
   return (
-    <div>
+    <div className="absolute w-full mt-6 ">
       {/* <Footer_modal showModal={showModal} setShowModal={setShowModal} /> */}
-      <div className="px-2 sticky bottom-0 amin z-50  bg-white  rounded-b-lg border  border-gray-200 shadow-md grid grid-cols-3 place-content-between place-items-center">
-        <div>
-          <button onClick={handleAttendance} className="text-xl">
-            Attend
-          </button>
-        </div>
+      <div className="border-t rounded-t-[25px] myShadow px-2 bottom-0 amin  bg-white   border-gray-200 shadow-md grid grid-cols-3 place-content-between place-items-center">
         <div>
           <button
+            onClick={handleAttendance}
+            className="text-xl font-exo2 font-bold"
+          >
+            ATTEND
+          </button>
+        </div>
+        <div className=" ">
+          <button
             onClick={() => router.push("/lead/newlead")}
-            className="flex items-center py-4 px-2"
+            className=" p-4  relative top-[-15px]  py-1 px-2 z-50 flex flex-col justify-center items-center"
           >
             <img
-              src="https://i.ibb.co/wS9LFwG/plus-7-64.png"
+              src="https://i.ibb.co/r6h3kWB/pluse.png"
               alt="Logo"
-              className="h-10 w-10 mr-2 "
+              className="h-10 w-10 mr-2 myShadow2  rounded-[50%] "
             />
-            {/* <span className="font-semibold text-gray-500 text-lg">Navigation</span> */}
+            {/* <span className=" text-[10px] font-bold  font-roboto ">New</span>
+            <span className=" text-[10px] font-bold  font-roboto ">Lead</span> */}
           </button>
         </div>
         <div>
           {" "}
           <button
             onClick={() => () => router.push("/dashboard")}
-            className="text-xl"
+            className="text-xl font-exo2 font-bold"
           >
             STATS
           </button>

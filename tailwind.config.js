@@ -8,6 +8,9 @@ module.exports = {
     extend: {
       fontFamily: {
         exo: ["Exo", "monospace"],
+        exo2: "Exo2",
+        roboto: ["Roboto", "sans-serif"],
+        monster: ["Monsterrat", "sans-serif"],
         poppins: ["Poppins", "monospace"],
       },
     },

@@ -1,9 +1,9 @@
-import React from "react";
 import SwiperCore, { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
-import SubmittedCard from "./SubmittedCard";
-const SubmittedSlide = () => {
+import ConvertedLeadCard from "./ConvertedLeadCard";
+
+const Converted_Lad_Slide = () => {
   const data = [
     {
       title: "In Process",
@@ -34,10 +34,11 @@ const SubmittedSlide = () => {
       body: "40",
     },
   ];
+
   return (
     <div className=" mx-2 p-2 py-2 bg-white rounded-lg border border-gray-200 shadow-md ">
       <h1 className=" text-md font-bold font-exo text-cyan-500 mb-1  ">
-        Submitted Files
+        Converted Lead
       </h1>
       <Swiper
         loop={true}
@@ -51,7 +52,7 @@ const SubmittedSlide = () => {
             <SwiperSlide key={key}>
               <Link href={"/"}>
                 <a>
-                  <SubmittedCard
+                  <ConvertedLeadCard
                     title={item.title}
                     body={item.body}
                     color={item.color}
@@ -63,13 +64,13 @@ const SubmittedSlide = () => {
         ))}
       </Swiper>
       {/* <Image
-    width="50px"
-    height="50px"
-    src={"https://i.ibb.co/Ht67F5q/arrow-37-64.png"}
-    alt="Arrow"
-  /> */}
+width="50px"
+height="50px"
+src={"https://i.ibb.co/Ht67F5q/arrow-37-64.png"}
+alt="Arrow"
+/> */}
     </div>
   );
 };
 
-export default SubmittedSlide;
+export default Converted_Lad_Slide;
