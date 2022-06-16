@@ -149,7 +149,7 @@ const NewLead = () => {
             required
             type="text"
             name="phone"
-            onInput={`javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)`}
+            onInput={`() if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)`}
             maxLength="11"
             // max={9999999999}
             // min={1000000000}
