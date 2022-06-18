@@ -11,25 +11,54 @@ const Card2 = ({ item }) => {
   return (
     <Link href={`/lead/${item.id}`} className="overflow-scroll font-poppins">
       <div className="rounded-md m-2 bg-white myShadow py-2">
+        <div className=" flex justify-between items-center mx-4">
+          <h1 className=" text-red-500 font-monster font-bold text-sm">
+            Rejected
+          </h1>
+          <div className=" flex justify-between items-center">
+            <div className="  p-[2px]  bg-gray-50 flex justify-start items-center mx-2">
+              <Image
+                src="https://i.ibb.co/fpLJdg2/sms.png"
+                alt=""
+                width="25px"
+                height="25px"
+              />
+            </div>
+
+            <div className=" p-[2px] bg-gray-50 flex justify-start items-center mx-2">
+              <Image
+                src="https://i.ibb.co/kxcGLfG/phone-call-2.png"
+                alt=""
+                width="25px"
+                height="25px"
+              />
+            </div>
+          </div>
+        </div>
         <div className="flex justify-between items-center w-full px-5 py-1">
           <div className="grid grid-cols-3 w-full ">
             <div className="bg-white col-span-2  text-slate-900  border-b-0 ">
-              <p className=" px-1 text-[15px] font-bold ">{item?.name}</p>
-              <p className="text-[12px] px-1 text-gray-700 pt-1 ">
-                {item?.company}
-              </p>
-              <p className="text-[12px] px-1 text-gray-700">
-                {item?.profession}
-              </p>
+              <p className=" text-[15px] font-bold ">{item?.name}</p>
+              <p className="text-sm text-black ">{item?.company}</p>
             </div>
             <div className="bg-white  text-slate-900  border-b-0 ">
-              <p className=" px-1 text-[15px] font-bold ">Follow Up</p>
-              <p className="text-[12px] px-1 text-gray-700 pt-1">
-                {item?.scheduleDate}
-              </p>
-              <p className="text-[12px] px-1  flex justify-start items-center text-gray-700 ">
-                {salary}
-              </p>
+              <div className=" flex flex-col justify-center  items-center">
+                {" "}
+                <div className="my-1">
+                  {/* <h1 className="text-md font-semibold text-slate-900 ">
+                    Salary
+                  </h1> */}
+                  <h1 className="text-sm text-black ">
+                    Bank:
+                    <span className="mx-2 "> 07,854</span>
+                  </h1>
+                  <h1 className="text-sm text-black ">
+                    Cash:
+                    <span className="mx-2"> 12,123</span>
+                  </h1>
+                </div>
+                {/* <p className="text-sm text-black ">{salary}</p> */}
+              </div>
             </div>
           </div>
 
@@ -42,9 +71,9 @@ const Card2 = ({ item }) => {
           />
         </div>
 
-        {/* <button className="w-full bg-sky-400 p-1 rounded-md text-white text-xl flex justify-center items-center my-2">
-          View
-        </button> */}
+        <h1 className="text-sm text-black mx-4  font-[500] ">
+          Customer Will Provide Documents
+        </h1>
       </div>
     </Link>
   );
