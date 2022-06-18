@@ -16,7 +16,7 @@ const Home_Footer = () => {
   };
 
   return (
-    <div className=" bg-[#dcdcdc] h-24 mt-2">
+    <div className="bg-[#dcdcdc] h-[70px] mt-[-5px]">
       <div className="absolute w-full mt-10 ">
         {/* <Footer_modal showModal={showModal} setShowModal={setShowModal} /> */}
         <div className="border-t rounded-t-[30px]  px-2 bottom-0 amin  bg-white border-gray-200 shadow-md grid grid-cols-3 place-content-between place-items-center">
@@ -43,7 +43,7 @@ const Home_Footer = () => {
                 <img
                   src="https://i.ibb.co/r6h3kWB/pluse.png"
                   alt="Logo"
-                  className=" relative h-12 w-12 mr-2 myShadow3  rounded-[50%] mx-auto right-1  top-[15px]"
+                  className=" relative h-10 w-10  myShadow3  rounded-[50%] mx-auto  top-[15px]"
                 />
               </div>
             </button>

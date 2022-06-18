@@ -63,12 +63,6 @@ const Converted_Lad_Slide = () => {
           </>
         ))}
       </Swiper>
-      {/* <Image
-width="50px"
-height="50px"
-src={"https://i.ibb.co/Ht67F5q/arrow-37-64.png"}
-alt="Arrow"
-/> */}
     </div>
   );
 };

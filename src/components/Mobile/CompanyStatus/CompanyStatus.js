@@ -1,10 +1,18 @@
 import BackMenu from "../../Shared/BackMenu";
-import React, { Component, useState } from "react";
+import React, { Component, useEffect, useState } from "react";
 import AsyncSelect from "react-select/async";
 
 const CompanyStatus = () => {
   const [state, setState] = useState([]);
   const [selected, setSelected] = useState();
+
+  // useEffect(() => {
+  //   fetch("/api/company/status")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setState(data);
+
+  //     }
 
   const data = [
     {

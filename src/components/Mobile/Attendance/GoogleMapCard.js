@@ -29,7 +29,7 @@ const GoogleMapCard = () => {
   };
   return (
     <div>
-      <LoadScript googleMapsApiKey="AIzaSyAKkmoH E5VSamY14T7_xF-ZPDdUtZnVmws">
+      <LoadScript googleMapsApiKey={process.env.GOOGLE_API_KEY}>
         <GoogleMap
           id="circle-example"
           mapContainerStyle={mapContainerStyle}

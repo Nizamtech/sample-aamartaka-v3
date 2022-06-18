@@ -4,9 +4,9 @@ import React from "react";
 const MobileNavbar = () => {
   return (
     <div>
-      <nav className="nav flex justify-between items-center h-20  ">
+      <nav className="nav flex justify-between items-center h-20 font-monster  ">
         <div>
-          <h1 className="text-2xl">
+          <h1 className="text-lg">
             Hi <span className="font-bold text-red-400">Jhon</span>{" "}
           </h1>
         </div>
@@ -17,8 +17,8 @@ const MobileNavbar = () => {
             width="50px"
             height="50px"
           /> */}
-          <h1 className="font-bold text-orange-500">Points</h1>
-          <h1 className=" bg-red-500 text-white border-2 border-white rounded-full p-1 ml-3 text-xs">
+          <h1 className="font-bold text-orange-500 text-lg ">Points</h1>
+          <h1 className=" bg-red-500 text-white border-2 border-white rounded-full p-1 ml-3 text-[10px]">
             20
           </h1>
           {/* <div className="p-2 h-8 w-8 my-1 border-2 border-white rounded-full bg-green-400 z-2">

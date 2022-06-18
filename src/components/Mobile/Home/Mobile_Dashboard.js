@@ -40,7 +40,7 @@ const Mobile_Dashboard = () => {
       </div>
 
       {/* Converted Lead Section  */}
-      <div>
+      <div className=" z-50">
         <Converted_Lad_Slide />
       </div>
       <Home_Footer />
