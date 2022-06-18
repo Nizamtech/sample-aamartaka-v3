@@ -43,7 +43,7 @@ const Home_Footer = () => {
                 <img
                   src="https://i.ibb.co/r6h3kWB/pluse.png"
                   alt="Logo"
-                  className=" relative h-12 w-12 mr-2 myShadow2  rounded-[50%] mx-auto right-1  top-[15px]"
+                  className=" relative h-12 w-12 mr-2 myShadow3  rounded-[50%] mx-auto right-1  top-[15px]"
                 />
               </div>
             </button>
@@ -52,7 +52,7 @@ const Home_Footer = () => {
             {" "}
             <button
               onClick={() => () => router.push("/dashboard")}
-              className="text-xl font-exo2 font-bold flex  flex-col justify-center items-center my-1"
+              className="text-xl font-exo2 font-bold flex  flex-col justify-center items-center mt-1"
             >
               <img
                 width="30px"
@@ -63,7 +63,6 @@ const Home_Footer = () => {
               <h1 className=" font-monster text-md text-slate-700">Stats</h1>
             </button>
           </div>
-          <div></div>
 
           <Modal showModal={showModal} setShowModal={setShowModal} />
         </div>
