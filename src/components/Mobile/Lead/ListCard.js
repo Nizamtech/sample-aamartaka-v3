@@ -10,27 +10,35 @@ const ListCard = ({ data }) => {
   const [showModal, setShowModal] = useState(false);
   const router = useRouter();
   return (
-    <div>
+    <div className=" font-monster">
       <BackMenu title={"Details"} />
       <div
         className={`w-screen border my-2 font-exo bg-[#C7EDF6] h-screen overflow-scroll`}
       >
         <div className=" my-4">
           {/* header  */}
-          <div className="ml-5 flex ">
-            <div className="ml-4 ">
+          <div className="mx-2 p-2 rounded-md flex justify-between items-center myShadow bg-white ">
+            <div>
               <h1 className="text-xl text-slate-800 font-bold">{data?.name}</h1>
               <h1 className="text-lg text-slate-600">{data?.profession}</h1>
             </div>
+            <div>
+              <Image
+                width="30px"
+                height="30px"
+                src="https://i.ibb.co/M7xG6k8/854270391582806953-128.png"
+                alt=""
+              />
+            </div>
           </div>
 
-          <hr className="my-2 border-1 border-white " />
+          <p className="my-2 border-1 border-white " />
 
           {/* main content  */}
 
-          <div className="flex justify-around items-center">
+          <div className="flex justify-around items-center p-2 rounded-md myShadow bg-white mx-2 ">
             {/* firt halh  */}
-            <div className="flex flex-col my-2 mx-3">
+            <div className="flex flex-col my-2 ">
               <div className="my-1">
                 <h1 className="text-sm font-semibold text-slate-900  ">
                   Company Name
@@ -93,8 +101,8 @@ const ListCard = ({ data }) => {
               </div>
             </div>
           </div>
-          <hr className="my-2 border-1 border-white " />
-          <div className="grid grid-cols-3 place-items-center my-8 gap-4 ">
+          <p className="my-2 border-1 border-white " />
+          <div className="grid grid-cols-3 place-items-center  gap-4 mt-2 py-4 p-2 rounded-md   myShadow bg-white mx-2">
             {/* call div  */}
             <Link href={`/lead/leadaction/call`}>
               <a className="flex flex-col  justify-center items-center">
@@ -191,7 +199,7 @@ const ListCard = ({ data }) => {
                   </div>
                 </div>
                 <small className=" mt-1 text-md text-black font-bold">
-                  Update
+                  Update Info
                 </small>
               </a>
             </Link>

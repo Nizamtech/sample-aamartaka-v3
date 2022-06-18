@@ -6,12 +6,15 @@ import Table2 from "./Table2";
 import data from "../../../../public/assets/data/data.json";
 import BackMenu from "../../Shared/BackMenu";
 import Pagination from "../../Shared/Pagination";
+import Lead_leadt_header from "./Lead_leadt_header/Lead_leadt_header";
 const MobileLead = () => {
   return (
     <div className="bg-gray-200  ">
       {/* <Table2 /> */}
       {/* <Mobile_LeadCard /> */}
       <BackMenu title={"lead List"} />
+      <Lead_leadt_header />
+
       {data ? (
         data &&
         data.map((item) => {

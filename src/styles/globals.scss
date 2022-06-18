@@ -76,6 +76,30 @@ a {
   background-size: cover;
 }
 
+.anim3 {
+  animation: slide-from-topOut 0.8s ease-out;
+}
+@keyframes slide-from-topOut {
+  0% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -80%;
+  }
+}
+
+.anim2 {
+  animation: slide-from-top 0.8s ease-in-out;
+}
+@keyframes slide-from-top {
+  0% {
+    margin-top: -80%;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
 .anim {
   animation: slide-from-bottom 0.8s ease-in-out;
   float: bottom;
