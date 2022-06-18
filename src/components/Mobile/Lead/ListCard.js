@@ -6,6 +6,7 @@ import waveBG from "../../../../public/assets/images/Background.svg";
 import { useState } from "react";
 import Modal from "../../Shared/Modal";
 import Link from "next/link";
+import GoogleMapCard from "../Attendance/GoogleMapCard";
 const ListCard = ({ data }) => {
   const [showModal, setShowModal] = useState(false);
   const router = useRouter();
@@ -13,22 +14,15 @@ const ListCard = ({ data }) => {
     <div className=" font-monster">
       <BackMenu title={"Details"} />
       <div
-        className={`w-screen border my-2 font-exo bg-[#C7EDF6] h-screen overflow-scroll`}
+        className={`w-screen border my-2 font-exo bg-[#E4FEFF] h-screen overflow-scroll`}
       >
         <div className=" my-4">
           {/* header  */}
-          <div className="mx-2 p-2 rounded-md flex justify-between items-center myShadow bg-white ">
+          <div className="mx-2 p-3 rounded-md  font-monster myShadow bg-white ">
             <div>
-              <h1 className="text-xl text-slate-800 font-bold">{data?.name}</h1>
-              <h1 className="text-lg text-slate-600">{data?.profession}</h1>
-            </div>
-            <div>
-              <Image
-                width="30px"
-                height="30px"
-                src="https://i.ibb.co/M7xG6k8/854270391582806953-128.png"
-                alt=""
-              />
+              <h1 className="text-md text-black font-bold">{data?.name}</h1>
+              <h1 className="text-sm text-slate-600">{data?.profession}</h1>
+              <h1 className="text-sm text-slate-600">{data?.company}</h1>
             </div>
           </div>
 
@@ -36,67 +30,139 @@ const ListCard = ({ data }) => {
 
           {/* main content  */}
 
-          <div className="flex justify-around items-center p-2 rounded-md myShadow bg-white mx-2 ">
-            {/* firt halh  */}
-            <div className="flex flex-col my-2 ">
-              <div className="my-1">
-                <h1 className="text-sm font-semibold text-slate-900  ">
+          <div className=" p-3 rounded-md myShadow bg-white mx-2 ">
+            <div className="grid grid-cols-2  ">
+              {/* firt halh  */}
+              <div className="flex flex-col my-2 ">
+                {/* <div className="my-1">
+                <h1 className="text-mg font-semibold text-slate-900  ">
                   Company Name
                 </h1>
-                <h1 className="text-lg text-slate-800 font-bold">
-                  {data?.company}
-                </h1>
+                <h1 className="text-sm text-black ">{data?.company}</h1>
+              </div> */}
+
+                <div className="my-1">
+                  <h1 className="text-md font-semibold text-slate-900 ">
+                    Salary
+                  </h1>
+                  <h1 className="text-sm text-black ">
+                    Bank:
+                    <span className="mx-2 "> 07,854</span>
+                  </h1>
+                  <h1 className="text-sm text-black ">
+                    Cash:
+                    <span className="mx-2"> 12,123</span>
+                  </h1>
+                </div>
+                <div className="my-1">
+                  <h1 className="text-md font-semibold text-slate-900 ">
+                    <p> Location</p>
+                  </h1>
+                  <h1 className="text-sm text-black  ">
+                    12 West, Mohakhali, Dhaka,Bangladesh
+                  </h1>
+                </div>
               </div>
-              {/* <div>
-            <h1 className="text-sm text-gray-500 ">Profession</h1>
-            <h1 className="text-sm text-slate-800 font-bold">
-              {data?.profession}
-            </h1>
-          </div> */}
-              <div className="my-1">
-                <h1 className="text-sm font-semibold text-slate-900 ">
-                  Salary
-                </h1>
-                <h1 className="text-lg text-slate-800 font-bold">
-                  {" "}
-                  {data?.salary}
-                </h1>
-              </div>
-              <div className="my-1">
-                <h1 className="text-sm font-semibold text-slate-900 ">
-                  Location
-                </h1>
-                <h1 className="text-lg text-slate-800 font-bold">
-                  {data?.location}
-                </h1>
+              {/* <div className="my-1">
+                  <h1 className="text-md font-semibold text-slate-900 ">
+                    Last Follow Up
+                  </h1>
+                  <h1 className="text-sm text-black  ">
+                    {data?.visitDate}
+                  </h1>
+                </div> */}
+              {/* second Half  */}
+
+              <div className="flex flex-col my-2 mx-3">
+                <div className="my-1">
+                  <h1 className="text-md font-semibold text-slate-900 ">
+                    Last Visit Date{" "}
+                  </h1>
+                  <h1 className="text-sm text-black ">{data?.visitDate}</h1>
+                </div>
+                <div className="my-1">
+                  <h1 className="text-md font-semibold text-slate-900 ">
+                    Next Schedule
+                  </h1>
+                  <h1 className="text-sm text-black ">
+                    <span className="mx-2"> {data?.scheduleDate}</span>{" "}
+                    <span> {data?.scheduleTime}</span>
+                  </h1>
+                </div>
+                <div className="text-sm font-semibold text-slate-900 mt-2 ">
+                  <button className="flex justify-center items-center border py-1 px-2 rounded-md bg-gray-50 text-black">
+                    <h1 className="mx-1">View On Map</h1>
+                    <img
+                      src="https://i.ibb.co/g60GgKz/map.png"
+                      width="20px"
+                      height="20px"
+                      alt=""
+                      className=" mx-auto"
+                    />
+                  </button>
+                </div>
               </div>
             </div>
 
-            {/* second Half  */}
-
-            <div className="flex flex-col my-2 mx-3">
-              <div className="my-1">
-                <h1 className="text-sm font-semibold text-slate-900 ">
-                  Visit Date{" "}
+            {/* break;  */}
+            <hr className=" border-dotted border-slate-500 mb-2" />
+            {/* Last Follow Up  */}
+            <div>
+              <div className=" flex  items-center">
+                <div className=" grid grid-cols-2">
+                  <div>
+                    <h1 className="text-md font-semibold text-slate-900 mb-1 ">
+                      Current Status
+                    </h1>
+                    <h1 className="text-sm text-black "> Call me Later</h1>
+                  </div>
+                  <div>
+                    <h1 className="text-md font-semibold text-slate-900 mb-1 ">
+                      Remarks
+                    </h1>
+                    <h1 className="text-sm text-black ">
+                      {" "}
+                      Customer Will Provide Documents
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* break;  */}
+            <hr className=" border-dotted border-slate-500 my-2" />
+            {/* interested Product  */}
+            <div>
+              <h1 className="text-sm font-semibold text-slate-900 ">
+                Interested Product
+              </h1>
+              <div className=" flex  items-center">
+                <h1 className=" rounded-md mx-1 my-1 bg-sky-500 text-white py-[2px] px-2">
+                  Car loan{" "}
                 </h1>
-                <h1 className="text-lg text-slate-800 font-bold">
-                  {data?.visitDate}
+                <h1 className=" rounded-md mx-1 my-1 bg-sky-500 text-white py-[2px] px-2">
+                  Home Load{" "}
+                </h1>
+                <h1 className=" rounded-md mx-1 my-1 bg-sky-500 text-white py-[2px] px-2">
+                  DPS{" "}
                 </h1>
               </div>
-              <div className="my-1">
-                <h1 className="text-sm font-semibold text-slate-900 ">
-                  Schedule Date{" "}
+            </div>
+            {/* break;  */}
+            <hr className=" border-dotted border-slate-500 my-2" />
+            {/* interested Product  */}
+            <div>
+              <h1 className="text-sm font-semibold text-slate-900 ">
+                Interested Bank
+              </h1>
+              <div className=" flex  flex-wrap items-center">
+                <h1 className=" rounded-md mx-1 my-1 bg-sky-500 text-white py-[2px] px-2">
+                  South Asian Bank
                 </h1>
-                <h1 className="text-lg text-slate-800 font-bold">
-                  {data?.scheduleDate}
+                <h1 className=" rounded-md mx-1 my-1 bg-sky-500 text-white py-[2px] px-2">
+                  Islami Bank
                 </h1>
-              </div>
-              <div className="my-1">
-                <h1 className="text-sm font-semibold text-slate-900 ">
-                  Schedule Time{" "}
-                </h1>
-                <h1 className="text-lg text-slate-800 font-bold">
-                  {data?.scheduleTime}
+                <h1 className=" rounded-md mx-1 my-1 bg-sky-500 text-white py-[2px] px-2">
+                  Agrani bank
                 </h1>
               </div>
             </div>
@@ -227,8 +293,7 @@ const ListCard = ({ data }) => {
           </div>
         </div>
       </div>
-
-      {/* <Modal setShowModal={setShowModal} showModal={showModal} /> */}
+      {/* <GoogleMapCard /> */}
     </div>
   );
 };
