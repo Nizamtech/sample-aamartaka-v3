@@ -77,7 +77,7 @@ a {
 }
 
 .anim {
-  animation: slide-from-bottom 0.8s ease-in;
+  animation: slide-from-bottom 0.8s ease-in-out;
   float: bottom;
 }
 @keyframes slide-from-bottom {
@@ -86,19 +86,6 @@ a {
   }
   100% {
     margin-bottom: 0;
-  }
-}
-
-.animOut {
-  animation: slide-from-bottom 0.7s ease-out;
-  float: top;
-}
-@keyframes slide-from-bottom {
-  0% {
-    margin-bottom: 0;
-  }
-  100% {
-    margin-bottom: -25;
   }
 }
 

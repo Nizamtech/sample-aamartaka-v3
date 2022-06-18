@@ -31,7 +31,7 @@ const Home_Footer = () => {
                 src="https://i.ibb.co/b3sShVs/icons8-attendance-80.png"
                 alt=""
               />
-              <h1 className=" font-monster text-md text-slate-700">Attend</h1>
+              <h1 className=" font-monster text-sm text-slate-700">Attend</h1>
             </button>
           </div>
           <div className="">
@@ -60,7 +60,7 @@ const Home_Footer = () => {
                 src="https://i.ibb.co/P6bKFwh/icons8-combo-chart-100.png "
                 alt=""
               />
-              <h1 className=" font-monster text-md text-slate-700">Stats</h1>
+              <h1 className=" font-monster text-sm text-slate-700">Stats</h1>
             </button>
           </div>
 
