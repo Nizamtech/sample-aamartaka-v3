@@ -5,9 +5,10 @@ import Mobile_LeadCard from "./Mobile_LeadCard";
 import Table2 from "./Table2";
 import data from "../../../../public/assets/data/data.json";
 import BackMenu from "../../Shared/BackMenu";
+import Pagination from "../../Shared/Pagination";
 const MobileLead = () => {
   return (
-    <div className="bg-gray-200 ">
+    <div className="bg-gray-200  ">
       {/* <Table2 /> */}
       {/* <Mobile_LeadCard /> */}
       <BackMenu title={"lead List"} />
@@ -25,6 +26,10 @@ const MobileLead = () => {
           Loading...
         </h1>
       )}
+      <div className=" flex justify-center items-center mx-auto">
+        {" "}
+        <Pagination />
+      </div>
     </div>
   );
 };

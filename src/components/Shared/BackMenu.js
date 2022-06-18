@@ -5,7 +5,7 @@ import BackIcon from "../../../public/assets/icons/swoosh-left.svg";
 const BackMenu = ({ title }) => {
   const router = useRouter();
   return (
-    <div className="flex items-center justify-start bg-white w-full py-3">
+    <div className="flex items-center justify-start bg-white w-full py-3 h-[57px]">
       <button
         onClick={() => {
           router.back();
@@ -20,10 +20,7 @@ const BackMenu = ({ title }) => {
           alt="back"
         />
       </button>
-      <h1
-        style={{ letterSpacing: "1px" }}
-        className="text-[16px] font-exo my-2 font-bold text-[#434343]  "
-      >
+      <h1 className="text-[16px] font-monster my-2  text-[#434343] capitalize  ">
         {title}
       </h1>
     </div>
