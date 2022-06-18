@@ -16,10 +16,10 @@ const Home_Footer = () => {
   };
 
   return (
-    <div className=" bg-[#dcdcdc] h-32 mt-2">
+    <div className=" bg-[#dcdcdc] h-24 mt-2">
       <div className="absolute w-full mt-10 ">
         {/* <Footer_modal showModal={showModal} setShowModal={setShowModal} /> */}
-        <div className="border-b rounded-b-[30px] myShadow px-2 bottom-0 amin  bg-white   border-gray-200 shadow-md grid grid-cols-3 place-content-between place-items-center">
+        <div className="border-t rounded-t-[30px]  px-2 bottom-0 amin  bg-white border-gray-200 shadow-md grid grid-cols-3 place-content-between place-items-center">
           <div>
             <button
               onClick={handleAttendance}
