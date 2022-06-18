@@ -2,6 +2,12 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 const Card2 = ({ item }) => {
+  function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
+  const salary = numberWithCommas(item.salary);
+
   return (
     <Link href={`/lead/${item.id}`} className="overflow-scroll font-poppins">
       <div className="rounded-md m-2 bg-white myShadow py-2">
@@ -22,7 +28,7 @@ const Card2 = ({ item }) => {
                 {item?.scheduleDate}
               </p>
               <p className="text-[12px] px-1  flex justify-start items-center text-gray-700 ">
-                {item?.salary}
+                {salary}
               </p>
             </div>
           </div>
