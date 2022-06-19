@@ -89,10 +89,6 @@ const NewLead = () => {
     const field = e.target.name;
     const value = e.target.value;
 
-    if (field === "phone") {
-      log;
-    }
-
     const newData = { ...selectedOption };
     newData[field] = value;
 

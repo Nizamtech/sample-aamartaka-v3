@@ -2,8 +2,8 @@ import React from "react";
 
 const SalesPlanCard = () => {
   return (
-    <div className="grid grid-cols-1  m-2">
-      <div className="myShadow text-sm  bg-white ">
+    <div className="grid grid-cols-1  m-2  font-monster">
+      <div className="myShadow4 text-sm rounded-lg bg-white ">
         <h1 className=" p-2 "> Amin Fashion</h1>
         <hr className=" border-dotted" />
 

@@ -16,7 +16,7 @@ const Home_Footer = () => {
   };
 
   return (
-    <div className="bg-[#dcdcdc] h-[70px] mt-[-5px]">
+    <div className=" bg-[#ece4e4] h-[70px] mt-[-5px]">
       <div className="absolute w-full mt-10 ">
         {/* <Footer_modal showModal={showModal} setShowModal={setShowModal} /> */}
         <div className="border-t rounded-t-[30px]  px-2 bottom-0 amin  bg-white border-gray-200 shadow-md grid grid-cols-3 place-content-between place-items-center">
