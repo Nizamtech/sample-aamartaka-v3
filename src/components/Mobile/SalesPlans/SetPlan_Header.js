@@ -16,7 +16,7 @@ const SetPlan_Header = () => {
   ];
   return (
     <div>
-      <label> Status</label>
+      <label> CompanY Name</label>
       <Select
         defaultValue={"in process"}
         required
@@ -26,7 +26,7 @@ const SetPlan_Header = () => {
         className="my-2"
       />
 
-      <label className="mt-2"> Product Type</label>
+      <label className="mt-2">Location</label>
       <Select
         defaultValue={"in process"}
         required
