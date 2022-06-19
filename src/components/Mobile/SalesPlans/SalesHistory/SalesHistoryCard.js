@@ -19,7 +19,7 @@ const SalesHistoryCard = () => {
       </h1>
 
       {/* compare Plan  */}
-      <div className="grid grid-cols-2 gap-4 myShadow2 p-2 rounded-lg mt-2">
+      <div className="grid grid-cols-2 gap-4 myShadow2 p-2 rounded-lg mt-2 mx-2">
         {/* Remaining Task  */}
         <div>
           <h1 className="text-md font-semibold text-slate-900 text-center">
@@ -54,9 +54,9 @@ const SalesHistoryCard = () => {
 
       {/* Visited Company List   */}
       <div className="p-2 mt-1">
-        <h1 className="text-sm font-semibold text-slate-900 my-1">
+        {/* <h1 className="text-sm font-semibold text-slate-900 my-1">
           Visited Company
-        </h1>
+        </h1> */}
         {/* <div className=" flex  flex-wrap items-center">
           {companyName &&
             companyName.map((item, index) => {
