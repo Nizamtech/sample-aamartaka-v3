@@ -4,9 +4,9 @@ import SalesHistoryCard from "./SalesHistoryCard";
 
 const SalesHistory = () => {
   return (
-    <div>
+    <div className="bg-gray-100">
       <BackMenu title="Sales History" />
-      <div className="mx-2">
+      <div className="mx-2 ">
         <SalesHistoryCard />
         <SalesHistoryCard />
       </div>
