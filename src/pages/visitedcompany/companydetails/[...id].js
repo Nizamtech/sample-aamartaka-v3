@@ -8,7 +8,7 @@ const Companydetails = ({ isMobile }) => {
   // console.log("companydetails", router.query.id);
   return (
     <div>
-      {isMobile ? <CompanyDetails id={id} /> : <CompanyDetails id={id} />}
+      {isMobile ? <CompanyDetails name={id} /> : <CompanyDetails name={id} />}
     </div>
   );
 };

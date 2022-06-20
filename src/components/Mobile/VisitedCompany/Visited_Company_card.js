@@ -1,8 +1,12 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import VisitedCompanyModal from "./VisitedCompanyModal";
 
 const Visited_Company_card = () => {
-  const companyName = [
+  const [showModal, setShowModal] = useState(false);
+  const [companyName, setCompanyName] = useState("");
+  console.log(showModal);
+  const companyNameData = [
     {
       name: "Amin Fashion",
       bank: "City Bank",
@@ -47,6 +51,11 @@ const Visited_Company_card = () => {
 
   return (
     <div className=" bg-white myShadow2  rounded-md pb-3 mb-4  ">
+      <VisitedCompanyModal
+        showModal={showModal}
+        setShowModal={setShowModal}
+        companyName={companyName}
+      />
       <div>
         <h1 className="p-2 bg-[#4DCBBF] text-center font-roboto font-bold text-white">
           {"12/6/2022"}
@@ -54,17 +63,18 @@ const Visited_Company_card = () => {
         <hr className=" border-dotted mb-2" />
       </div>
       <div className="text-center m-4">
-        {companyName &&
-          companyName.map((item, index) => {
+        {companyNameData &&
+          companyNameData.map((item, index) => {
             return (
               <>
-                <Link href={`visitedcompany/companydetails/${item.name}`}>
-                  <a>
-                    <div className=" my-2 myShadow2 text-md p-2 bg-white rounded-md">
-                      {item.name}
-                    </div>
-                  </a>
-                </Link>
+                <div
+                  onClick={() => {
+                    setShowModal(true), setCompanyName(item.name);
+                  }}
+                  className=" my-2 myShadow2 text-md p-2 bg-white rounded-md"
+                >
+                  {item.name}
+                </div>
               </>
             );
           })}
