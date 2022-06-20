@@ -139,7 +139,7 @@ const CompanyDetails = ({ name }) => {
                   width={50}
                   height={50}
                   className="rounded-lg"
-                  src={"https://i.ibb.co/3dfLwBv/icons8-plus-100.png"}
+                  src={"https://i.ibb.co/cX0kwXS/icons8-plus-100.png"}
                   alt={name}
                 />
 

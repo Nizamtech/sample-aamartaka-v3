@@ -60,7 +60,11 @@ export default function VisitedCompanyModal({
                     type="button"
                     className="flex font-monster  justify-center text-white font text-center bg-[#1da1f2] hover:bg-[#1da1f2]/90 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50  rounded-lg text-md px-5 py-2.5  items-center dark:focus:ring-[#1da1f2]/55 mt-5  "
                   >
-                    Cutomers Details
+                    <Link
+                      href={`/visitedcompany/customersdetails/${companyName}`}
+                    >
+                      Cutomers Details
+                    </Link>
                   </button>
                   <button
                     type="button"
