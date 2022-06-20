@@ -8,9 +8,9 @@ const VisitDetails = ({ name }) => {
       <BackMenu title={name} />
       <div className="  absolute bg-gray-200 w-full h-screen">
         <div className="myShadow bg-white mx-2 my-2 rounded-lg p-2">
-          <h1 className=" font-monster text-lg mb-2 font-bold">
+          {/* <h1 className=" font-monster text-lg mb-2 font-bold">
             Visit Details
-          </h1>
+          </h1> */}
           <div className=" grid grid-cols-12">
             <div className=" col-span-4 font-bold text-slate-500">
               <h1>Total Visit</h1>

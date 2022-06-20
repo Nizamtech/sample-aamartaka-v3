@@ -9,28 +9,28 @@ const SubmittedSlide = () => {
       title: "In Process",
       color: "#4DCCFF",
       icon: "https://i.ibb.co/QdPPdGN/icons8-statistic-64.png",
-      link: "/lead",
+      link: "/",
       body: "23",
     },
     {
       title: "Send Query",
       color: "#5F67EC",
       icon: "https://i.ibb.co/8j1pHjn/icons8-signal-64.png",
-      link: "/salesplans",
+      link: "/",
       body: "15",
     },
     {
       title: "Decline",
       color: "#EB5757",
       icon: "https://i.ibb.co/VB2X2xB/icons8-company-96.png",
-      link: "/companystatus",
+      link: "/",
       body: "30",
     },
     {
       title: "Approved",
       color: "#36B37E",
       icon: "https://i.ibb.co/zHwnrsw/icons8-visit-80.png",
-      link: "/visitedcompany",
+      link: "/submittedfiles/approved",
       body: "40",
     },
   ];
@@ -49,7 +49,7 @@ const SubmittedSlide = () => {
         {data.map((item, key) => (
           <>
             <SwiperSlide key={key}>
-              <Link href={"/"}>
+              <Link href={item.link}>
                 <a>
                   <SubmittedCard
                     title={item.title}
