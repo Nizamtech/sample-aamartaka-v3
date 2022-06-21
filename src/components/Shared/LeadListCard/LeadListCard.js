@@ -1,16 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-const Card2 = ({ item }) => {
-  function numberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  }
-
-  const salary = numberWithCommas(item.salary);
-
+const LeadListCard = ({ item }) => {
   return (
-    <Link href={`/lead/${item.id}`} className="overflow-scroll font-poppins">
-      <div className="rounded-md m-2 bg-white myShadow py-2">
+    <div>
+      <div>
         <div className=" flex justify-between items-center mx-4">
           <h1
             className={`${item?.status === "Rejected" && "text-red-500"} ${
@@ -21,6 +14,7 @@ const Card2 = ({ item }) => {
           >
             {item?.status}
           </h1>
+
           <div className=" flex justify-between items-center">
             <div className="  p-[2px]  bg-gray-50 flex justify-start items-center mx-2">
               <Image
@@ -81,8 +75,8 @@ const Card2 = ({ item }) => {
           Customer Will Provide Documents
         </h1>
       </div>
-    </Link>
+    </div>
   );
 };
 
-export default Card2;
+export default LeadListCard;

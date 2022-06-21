@@ -6,10 +6,10 @@ import SubmittedCard from "./SubmittedCard";
 const SubmittedSlide = () => {
   const data = [
     {
-      title: "In Process",
+      title: "In Progress",
       color: "#4DCCFF",
       icon: "https://i.ibb.co/QdPPdGN/icons8-statistic-64.png",
-      link: "/submittedfiles/inprocess",
+      link: "/submittedfiles/inprogress",
       body: "23",
     },
     {

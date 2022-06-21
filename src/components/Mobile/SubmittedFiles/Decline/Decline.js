@@ -59,7 +59,7 @@ const Decline = () => {
       <BackMenu title="Decline" />
       <div className="  absolute bg-gray-200 w-full h-screen">
         <div className="myShadow bg-white h-screen my-2 rounded-lg p-2">
-          <h1 className=" font-monster text-ms mb-2 font-bold">Decline</h1>
+          <h1 className=" font-monster text-ms mb-2 font-bold">Decline List</h1>
 
           <div>
             {approvedData &&
@@ -67,7 +67,7 @@ const Decline = () => {
                 return (
                   <>
                     <details>
-                      <summary className="myShadow2 py-2 px-3 bg-gray-50 my-1 font-monster">
+                      <summary className=" shadow py-2 px-3 bg-gray-50 my-1 font-monster rounded-sm">
                         {data.productType}
                       </summary>
                       <DeclineCard {...data} />

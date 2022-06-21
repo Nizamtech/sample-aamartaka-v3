@@ -1,16 +1,19 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-const Card2 = ({ item }) => {
-  function numberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-  }
-
-  const salary = numberWithCommas(item.salary);
-
+const SendQueryCard2 = ({ item }) => {
+  const { sendBack } = item;
+  console.log(sendBack);
   return (
-    <Link href={`/lead/${item.id}`} className="overflow-scroll font-poppins">
-      <div className="rounded-md m-2 bg-white myShadow py-2">
+    <div>
+      <div className="rounded-md m-2 bg-white myShadow py-2 ">
+        <div className="mx-4 flex justify-between items-center">
+          <h1 className="  text-sm font-monster bg-sky-500 px-2 text-white rounded-md py-[2px]">
+            {item.productType}
+          </h1>
+
+          {/* <h1 className="  text-sm font-monster ">2,000,000</h1> */}
+        </div>
+        <hr className=" border-dotted  my-2 border-gray-400" />
         <div className=" flex justify-between items-center mx-4">
           <h1
             className={`${item?.status === "Rejected" && "text-red-500"} ${
@@ -21,6 +24,7 @@ const Card2 = ({ item }) => {
           >
             {item?.status}
           </h1>
+
           <div className=" flex justify-between items-center">
             <div className="  p-[2px]  bg-gray-50 flex justify-start items-center mx-2">
               <Image
@@ -67,22 +71,37 @@ const Card2 = ({ item }) => {
               </div>
             </div>
           </div>
-
-          <Image
-            // className="animate-pulse"
-            src="https://i.ibb.co/r6n5MML/arrow-29-32.png"
-            alt=""
-            width="20px"
-            height="20px"
-          />
         </div>
 
         <h1 className="text-sm text-black mx-4  font-[500] ">
           Customer Will Provide Documents
         </h1>
+
+        <details className=" mx-3 my-2 font-monster ">
+          <summary className=" bg-slate-100 w-fu p-2 ">
+            Send Query Details
+          </summary>
+          <div className="mt-3">
+            {sendBack &&
+              sendBack?.map((item, index) => {
+                return (
+                  <>
+                    <div className=" font-roboto text-justify py-1 grid grid-cols-12 ">
+                      <h1 className=" col-span-1">
+                        <span className=" text-slate-400">{index + 1}.</span>{" "}
+                      </h1>
+                      <h1 className=" col-span-11">
+                        <span className="">{item}</span>
+                      </h1>
+                    </div>
+                  </>
+                );
+              })}
+          </div>
+        </details>
       </div>
-    </Link>
+    </div>
   );
 };
 
-export default Card2;
+export default SendQueryCard2;

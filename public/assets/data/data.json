@@ -8,7 +8,15 @@
     "location": "79702 Southridge Place",
     "visitDate": "3/1/2022",
     "scheduleDate": "6/9/2021",
-    "scheduleTime": "6:44 PM"
+    "scheduleTime": "6:44 PM",
+    "status": "Aproved",
+    " reason": "Applicants may month salary was 32k, which is less than required. Checklist @SD-3",
+    "sendBack": [
+      "Need Correct NID",
+      "Need e-TIN",
+      "Overdue on current month on a term loan of 2.85 Lacs, marked as NPI-1, need to clear the dues and provide statement. Another overdue on a Mortgage loan as a Guarantor, marked as NPI-2, need to clear the dues and clarification on th repayment"
+    ],
+    "productType": "Creadit Card"
   },
   {
     "id": 2,
@@ -19,7 +27,15 @@
     "location": "983 La Follette Park",
     "visitDate": "12/23/2021",
     "scheduleDate": "7/16/2021",
-    "scheduleTime": "1:33 AM"
+    "scheduleTime": "1:33 AM",
+    "status": "Rejected",
+    "reason": " Your application is not approved. Checklist @SD-3",
+    "sendBack": [
+      "Need Correct NID",
+      "Need e-TIN",
+      "Overdue on current month on a term loan of 2.85 Lacs, marked as NPI-1, need to clear the dues and provide statement. Another overdue on a Mortgage loan as a Guarantor, marked as NPI-2, need to clear the dues and clarification on th repayment"
+    ],
+    "productType": "Creadit Card"
   },
   {
     "id": 3,
@@ -30,7 +46,15 @@
     "location": "7 Laurel Park",
     "visitDate": "3/14/2022",
     "scheduleDate": "9/29/2021",
-    "scheduleTime": "11:08 AM"
+    "scheduleTime": "11:08 AM",
+    "status": "Declined",
+    "reason": " Your application is not approved. Checklist @SD-3",
+    "sendBack": [
+      "Need Correct NID",
+      "Need e-TIN",
+      "Overdue on current month on a term loan of 2.85 Lacs, marked as NPI-1, need to clear the dues and provide statement. Another overdue on a Mortgage loan as a Guarantor, marked as NPI-2, need to clear the dues and clarification on th repayment"
+    ],
+    "productType": "Creadit Card"
   },
   {
     "id": 4,
@@ -41,7 +65,15 @@
     "location": "522 Oneill Junction",
     "visitDate": "9/22/2021",
     "scheduleDate": "3/20/2022",
-    "scheduleTime": "7:28 PM"
+    "scheduleTime": "7:28 PM",
+    "status": "In Process",
+    "reason": " Your application is not approved. Checklist @SD-3",
+    "sendBack": [
+      "Need Correct NID",
+      "Need e-TIN",
+      "Overdue on current month on a term loan of 2.85 Lacs, marked as NPI-1, need to clear the dues and provide statement. Another overdue on a Mortgage loan as a Guarantor, marked as NPI-2, need to clear the dues and clarification on th repayment"
+    ],
+    "productType": "Creadit Card"
   },
   {
     "id": 5,
@@ -52,7 +84,15 @@
     "location": "9 Fuller Hill",
     "visitDate": "11/28/2021",
     "scheduleDate": "11/6/2021",
-    "scheduleTime": "7:16 PM"
+    "scheduleTime": "7:16 PM",
+    "status": "Aproved",
+    "reason": " Your application is not approved. Checklist @SD-3",
+    "sendBack": [
+      "Need Correct NID",
+      "Need e-TIN",
+      "Overdue on current month on a term loan of 2.85 Lacs, marked as NPI-1, need to clear the dues and provide statement. Another overdue on a Mortgage loan as a Guarantor, marked as NPI-2, need to clear the dues and clarification on th repayment"
+    ],
+    "productType": "Creadit Card"
   },
   {
     "id": 6,
@@ -63,7 +103,15 @@
     "location": "6 Dayton Crossing",
     "visitDate": "10/31/2021",
     "scheduleDate": "7/4/2021",
-    "scheduleTime": "5:35 AM"
+    "scheduleTime": "5:35 AM",
+    "status": "Rejected",
+    "reason": " Your application is not approved. Checklist @SD-3",
+    "sendBack": [
+      "Need Correct NID",
+      "Need e-TIN",
+      "Overdue on current month on a term loan of 2.85 Lacs, marked as NPI-1, need to clear the dues and provide statement. Another overdue on a Mortgage loan as a Guarantor, marked as NPI-2, need to clear the dues and clarification on th repayment"
+    ],
+    "productType": "Creadit Card"
   },
   {
     "id": 7,
@@ -74,7 +122,15 @@
     "location": "344 Truax Circle",
     "visitDate": "1/30/2022",
     "scheduleDate": "8/26/2021",
-    "scheduleTime": "10:37 PM"
+    "scheduleTime": "10:37 PM",
+    "status": "Declined",
+    "reason": " Your application is not approved. Checklist @SD-3",
+    "sendBack": [
+      "Need Correct NID",
+      "Need e-TIN",
+      "Overdue on current month on a term loan of 2.85 Lacs, marked as NPI-1, need to clear the dues and provide statement. Another overdue on a Mortgage loan as a Guarantor, marked as NPI-2, need to clear the dues and clarification on th repayment"
+    ],
+    "productType": "Creadit Card"
   },
   {
     "id": 8,
@@ -85,7 +141,15 @@
     "location": "6534 Banding Way",
     "visitDate": "3/5/2022",
     "scheduleDate": "9/11/2021",
-    "scheduleTime": "4:57 PM"
+    "scheduleTime": "4:57 PM",
+    "status": "In Process",
+    "reason": " Your application is not approved. Checklist @SD-3",
+    "sendBack": [
+      "Need Correct NID",
+      "Need e-TIN",
+      "Overdue on current month on a term loan of 2.85 Lacs, marked as NPI-1, need to clear the dues and provide statement. Another overdue on a Mortgage loan as a Guarantor, marked as NPI-2, need to clear the dues and clarification on th repayment"
+    ],
+    "productType": "Creadit Card"
   },
   {
     "id": 9,
@@ -96,7 +160,15 @@
     "location": "048 Golf Course Junction",
     "visitDate": "3/12/2022",
     "scheduleDate": "4/21/2022",
-    "scheduleTime": "10:09 AM"
+    "scheduleTime": "10:09 AM",
+    "status": "Rejected",
+    "reason": " Your application is not approved. Checklist @SD-3",
+    "sendBack": [
+      "Need Correct NID",
+      "Need e-TIN",
+      "Overdue on current month on a term loan of 2.85 Lacs, marked as NPI-1, need to clear the dues and provide statement. Another overdue on a Mortgage loan as a Guarantor, marked as NPI-2, need to clear the dues and clarification on th repayment"
+    ],
+    "productType": "Creadit Card"
   },
   {
     "id": 10,
@@ -107,7 +179,15 @@
     "location": "38047 Holmberg Alley",
     "visitDate": "8/11/2021",
     "scheduleDate": "10/7/2021",
-    "scheduleTime": "4:53 AM"
+    "scheduleTime": "4:53 AM",
+    "status": "In Process",
+    "reason": " Your application is not approved. Checklist @SD-3",
+    "sendBack": [
+      "Need Correct NID",
+      "Need e-TIN",
+      "Overdue on current month on a term loan of 2.85 Lacs, marked as NPI-1, need to clear the dues and provide statement. Another overdue on a Mortgage loan as a Guarantor, marked as NPI-2, need to clear the dues and clarification on th repayment"
+    ],
+    "productType": "Creadit Card"
   },
   {
     "id": 11,
@@ -118,7 +198,15 @@
     "location": "24 Arrowood Point",
     "visitDate": "5/26/2022",
     "scheduleDate": "8/1/2021",
-    "scheduleTime": "2:01 PM"
+    "scheduleTime": "2:01 PM",
+    "status": "Declined",
+    "reason": " Your application is not approved. Checklist @SD-3",
+    "sendBack": [
+      "Need Correct NID",
+      "Need e-TIN",
+      "Overdue on current month on a term loan of 2.85 Lacs, marked as NPI-1, need to clear the dues and provide statement. Another overdue on a Mortgage loan as a Guarantor, marked as NPI-2, need to clear the dues and clarification on th repayment"
+    ],
+    "productType": "Creadit Card"
   },
   {
     "id": 12,
@@ -129,7 +217,15 @@
     "location": "13602 Fieldstone Parkway",
     "visitDate": "12/17/2021",
     "scheduleDate": "1/6/2022",
-    "scheduleTime": "3:18 PM"
+    "scheduleTime": "3:18 PM",
+    "status": "Rejected",
+    "reason": " Your application is not approved. Checklist @SD-3",
+    "sendBack": [
+      "Need Correct NID",
+      "Need e-TIN",
+      "Overdue on current month on a term loan of 2.85 Lacs, marked as NPI-1, need to clear the dues and provide statement. Another overdue on a Mortgage loan as a Guarantor, marked as NPI-2, need to clear the dues and clarification on th repayment"
+    ],
+    "productType": "Creadit Card"
   },
   {
     "id": 13,
@@ -140,7 +236,15 @@
     "location": "32674 Hazelcrest Center",
     "visitDate": "6/14/2021",
     "scheduleDate": "9/15/2021",
-    "scheduleTime": "1:41 AM"
+    "scheduleTime": "1:41 AM",
+    "status": "Declined",
+    "reason": " Your application is not approved. Checklist @SD-3",
+    "sendBack": [
+      "Need Correct NID",
+      "Need e-TIN",
+      "Overdue on current month on a term loan of 2.85 Lacs, marked as NPI-1, need to clear the dues and provide statement. Another overdue on a Mortgage loan as a Guarantor, marked as NPI-2, need to clear the dues and clarification on th repayment"
+    ],
+    "productType": "Creadit Card"
   },
   {
     "id": 14,
@@ -151,7 +255,15 @@
     "location": "7 Grasskamp Lane",
     "visitDate": "5/29/2022",
     "scheduleDate": "10/17/2021",
-    "scheduleTime": "5:19 AM"
+    "scheduleTime": "5:19 AM",
+    "status": "Rejected",
+    "reason": " Your application is not approved. Checklist @SD-3",
+    "sendBack": [
+      "Need Correct NID",
+      "Need e-TIN",
+      "Overdue on current month on a term loan of 2.85 Lacs, marked as NPI-1, need to clear the dues and provide statement. Another overdue on a Mortgage loan as a Guarantor, marked as NPI-2, need to clear the dues and clarification on th repayment"
+    ],
+    "productType": "Creadit Card"
   },
   {
     "id": 15,
@@ -162,7 +274,15 @@
     "location": "833 Lakewood Way",
     "visitDate": "11/27/2021",
     "scheduleDate": "10/11/2021",
-    "scheduleTime": "6:36 AM"
+    "scheduleTime": "6:36 AM",
+    "status": "Rejected",
+    "reason": " Your application is not approved. Checklist @SD-3",
+    "sendBack": [
+      "Need Correct NID",
+      "Need e-TIN",
+      "Overdue on current month on a term loan of 2.85 Lacs, marked as NPI-1, need to clear the dues and provide statement. Another overdue on a Mortgage loan as a Guarantor, marked as NPI-2, need to clear the dues and clarification on th repayment"
+    ],
+    "productType": "Creadit Card"
   },
   {
     "id": 16,
@@ -173,7 +293,15 @@
     "location": "486 Thackeray Pass",
     "visitDate": "12/27/2021",
     "scheduleDate": "9/16/2021",
-    "scheduleTime": "1:28 PM"
+    "scheduleTime": "1:28 PM",
+    "status": "Aproved",
+    "reason": " Your application is not approved. Checklist @SD-3",
+    "sendBack": [
+      "Need Correct NID",
+      "Need e-TIN",
+      "Overdue on current month on a term loan of 2.85 Lacs, marked as NPI-1, need to clear the dues and provide statement. Another overdue on a Mortgage loan as a Guarantor, marked as NPI-2, need to clear the dues and clarification on th repayment"
+    ],
+    "productType": "Creadit Card"
   },
   {
     "id": 17,
@@ -184,7 +312,15 @@
     "location": "639 Hudson Street",
     "visitDate": "11/28/2021",
     "scheduleDate": "3/17/2022",
-    "scheduleTime": "6:08 AM"
+    "scheduleTime": "6:08 AM",
+    "status": "Aproved",
+    "reason": " Your application is not approved. Checklist @SD-3",
+    "sendBack": [
+      "Need Correct NID",
+      "Need e-TIN",
+      "Overdue on current month on a term loan of 2.85 Lacs, marked as NPI-1, need to clear the dues and provide statement. Another overdue on a Mortgage loan as a Guarantor, marked as NPI-2, need to clear the dues and clarification on th repayment"
+    ],
+    "productType": "Creadit Card"
   },
   {
     "id": 18,
@@ -195,7 +331,15 @@
     "location": "2813 Texas Junction",
     "visitDate": "5/2/2022",
     "scheduleDate": "8/14/2021",
-    "scheduleTime": "11:21 AM"
+    "scheduleTime": "11:21 AM",
+    "status": "Declined",
+    "reason": " Your application is not approved. Checklist @SD-3",
+    "sendBack": [
+      "Need Correct NID",
+      "Need e-TIN",
+      "Overdue on current month on a term loan of 2.85 Lacs, marked as NPI-1, need to clear the dues and provide statement. Another overdue on a Mortgage loan as a Guarantor, marked as NPI-2, need to clear the dues and clarification on th repayment"
+    ],
+    "productType": "Creadit Card"
   },
   {
     "id": 19,
@@ -206,7 +350,15 @@
     "location": "2918 Welch Alley",
     "visitDate": "9/6/2021",
     "scheduleDate": "10/18/2021",
-    "scheduleTime": "3:54 PM"
+    "scheduleTime": "3:54 PM",
+    "status": "Rejected",
+    "reason": " Your application is not approved. Checklist @SD-3",
+    "sendBack": [
+      "Need Correct NID",
+      "Need e-TIN",
+      "Overdue on current month on a term loan of 2.85 Lacs, marked as NPI-1, need to clear the dues and provide statement. Another overdue on a Mortgage loan as a Guarantor, marked as NPI-2, need to clear the dues and clarification on th repayment"
+    ],
+    "productType": "Creadit Card"
   },
   {
     "id": 20,
@@ -217,6 +369,14 @@
     "location": "1 Independence Plaza",
     "visitDate": "9/5/2021",
     "scheduleDate": "8/26/2021",
-    "scheduleTime": "2:47 PM"
+    "scheduleTime": "2:47 PM",
+    "status": "Aproved",
+    "reason": " Your application is not approved. Checklist @SD-3",
+    "sendBack": [
+      "Need Correct NID",
+      "Need e-TIN",
+      "Overdue on current month on a term loan of 2.85 Lacs, marked as NPI-1, need to clear the dues and provide statement. Another overdue on a Mortgage loan as a Guarantor, marked as NPI-2, need to clear the dues and clarification on th repayment"
+    ],
+    "productType": "Creadit Card"
   }
 ]

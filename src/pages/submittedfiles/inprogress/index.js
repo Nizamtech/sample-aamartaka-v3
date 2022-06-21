@@ -1,9 +1,9 @@
 import React from "react";
 import Approved from "../../../components/Mobile/SubmittedFiles/Approved/Approved";
-import InProcess from "../../../components/Mobile/SubmittedFiles/InProcess/InProcess";
+import InProgress from "../../../components/Mobile/SubmittedFiles/InProgress/InProgress";
 
 const index = ({ isMobile }) => {
-  return <div>{isMobile ? <InProcess /> : <InProcess />}</div>;
+  return <div>{isMobile ? <InProgress /> : <InProgress />}</div>;
 };
 
 export default index;
