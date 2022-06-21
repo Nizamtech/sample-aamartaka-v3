@@ -4,7 +4,7 @@ const ApproedCard = (data) => {
   console.log(data);
   const { companyName, name, trackID, date, limit, productType } = data;
   return (
-    <div className="   my-2 ">
+    <div className="my-2 ">
       {/* <h1 className=" font-monster font-bold bg-sky-500 text-white p-2 text-center rounded-t-lg">
         {companyName}
       </h1> */}

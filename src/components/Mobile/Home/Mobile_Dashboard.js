@@ -23,15 +23,19 @@ const Mobile_Dashboard = () => {
       <HomeSlide />
 
       {/* file collection section  */}
-      <div className="mx-2 bg-red-500 text-white font-bold  px-4 py-2 rounded-md flex justify-between mt-2">
-        <h1>3 File Collection Pending</h1>
-        <Image
-          className="animate-pulse"
-          src="https://i.ibb.co/kSHHB22/arrow-31-256.png"
-          alt=""
-          width="20px"
-          height="5px"
-        />
+      <div className="mx-2 bg-red-500 text-white font-bold  px-4 py-2 rounded-md  mt-2">
+        <Link href={"/file_collection"}>
+          <a className="flex justify-between">
+            <h1>3 File Collection Pending</h1>
+            <Image
+              className="animate-pulse"
+              src="https://i.ibb.co/kSHHB22/arrow-31-256.png"
+              alt=""
+              width="20px"
+              height="5px"
+            />
+          </a>
+        </Link>
       </div>
 
       {/* Submitted Files  */}
