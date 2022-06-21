@@ -32,6 +32,18 @@ const HomeSlide = () => {
       icon: "https://i.ibb.co/zHwnrsw/icons8-visit-80.png",
       link: "/visitedcompany",
     },
+    {
+      title: "Learnig Section",
+      color: "#4DCCFF",
+      icon: "https://i.ibb.co/bHvMPpL/icons8-digital-learning-66.png",
+      link: "/",
+    },
+    {
+      title: "New Policy",
+      color: "#4DCCFF",
+      icon: "https://i.ibb.co/WDRTzYw/icons8-privacy-policy-64.png",
+      link: "/",
+    },
   ];
 
   return (
