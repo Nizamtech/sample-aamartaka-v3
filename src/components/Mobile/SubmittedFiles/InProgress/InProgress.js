@@ -14,6 +14,14 @@ const InProgress = () => {
               return (
                 <>
                   <div className="rounded-md m-2 bg-white myShadow py-2">
+                    <div className="mx-4 flex justify-between items-center">
+                      <h1 className="  text-sm font-monster bg-sky-500 px-2 text-white rounded-md py-[2px]">
+                        {item.productType}
+                      </h1>
+
+                      {/* <h1 className="  text-sm font-monster ">2,000,000</h1> */}
+                    </div>
+                    <hr className=" border-dotted  my-1 border-gray-400" />
                     <LeadListCard item={item} />
                   </div>
                 </>

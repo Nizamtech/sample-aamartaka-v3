@@ -1,10 +1,11 @@
 import React from "react";
 import BackMenu from "../../../Shared/BackMenu";
+import LeadListCard from "../../../Shared/LeadListCard/LeadListCard";
 import VisitingDetailsCard from "../../VisitedCompany/VisitDetails/VisitingDetailsCard";
 import ApproedCard from "./ApproedCard";
 import ApprovedAccordion from "./ApprovedAccordion";
 import ApprovedCard2 from "./ApprovedCard2";
-
+import data from "../../../../../public/assets/data/data.json";
 const Approved = () => {
   const approvedData = [
     {
@@ -50,24 +51,31 @@ const Approved = () => {
   ];
   return (
     <div>
-      <BackMenu title="Approved" />
+      <BackMenu title="In Progress" />
       <div className="  absolute bg-gray-200 w-full h-screen">
         <div className="myShadow bg-white h-screen my-2 rounded-lg p-2">
-          <h1 className=" font-monster text-ms mb-2 font-bold mx-2">
-            Approved List
-          </h1>
-
-          {approvedData &&
-            approvedData.map((data) => {
+          {data &&
+            data.map((item) => {
               return (
                 <>
-                  <div className=" text-white rounded-lg ring-1 font-monster ring-slate-300 grid grid-cols-2 place-content-between place-items-center bg-green-400 my-2  ">
-                    <h1 className=" py-2 px-3 my-1 font-monster">
-                      {data.productType}
-                    </h1>
-                    <h1 className=" py-2 px-3 my-1 font-monster">
-                      {data.limit}
-                    </h1>
+                  <div className="rounded-md m-2 bg-white myShadow py-2">
+                    <div className="mx-4 flex justify-between items-center">
+                      <h1 className="  text-sm font-monster bg-sky-500 px-2 text-white rounded-md py-[2px]">
+                        {item.productType}
+                      </h1>
+
+                      <h1 className="  text-sm font-monster flex justify-between items-center ">
+                        <span className="mx-2  rounded text-slate-400 font-bold">
+                          Limit
+                        </span>{" "}
+                        <span className="  text-sm font-monster font-bold text-slate-900">
+                          {" "}
+                          2,000,000
+                        </span>
+                      </h1>
+                    </div>
+                    <hr className=" border-dotted  my-1 border-gray-400" />
+                    <LeadListCard item={item} />
                   </div>
                 </>
               );
