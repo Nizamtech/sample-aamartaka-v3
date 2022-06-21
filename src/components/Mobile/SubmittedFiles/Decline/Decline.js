@@ -1,11 +1,9 @@
 import React from "react";
 import BackMenu from "../../../Shared/BackMenu";
-import VisitingDetailsCard from "../../VisitedCompany/VisitDetails/VisitingDetailsCard";
-import ApproedCard from "./ApproedCard";
-import ApprovedAccordion from "./ApprovedAccordion";
-import ApprovedCard2 from "./ApprovedCard2";
+import ApproedCard from "../Approved/ApproedCard";
+import DeclineCard from "./DeclineCard";
 
-const Approved = () => {
+const Decline = () => {
   const approvedData = [
     {
       name: "Jamal Uddin",
@@ -14,6 +12,8 @@ const Approved = () => {
       date: "12/06/2022",
       limit: "3,000,000",
       productType: "Car Loan",
+      reason:
+        "Applicants may month salary was 32k, which is less than required. Checklist @SD-3",
     },
     {
       name: "Kamal Uddin",
@@ -22,6 +22,7 @@ const Approved = () => {
       date: "   15/07/2022",
       limit: "5,000,000",
       productType: "Home Loan",
+      reason: " Your application is not approved. Checklist @SD-3",
     },
     {
       name: "Mohi Uddin",
@@ -30,6 +31,7 @@ const Approved = () => {
       date: "17/06/2022",
       limit: "7,000,000",
       productType: "Creadit Card",
+      reason: " You are not eligible for this product. Checklist @SD-3",
     },
     {
       name: "Joshim Uddin",
@@ -38,6 +40,8 @@ const Approved = () => {
       date: "13/06/2022",
       limit: "1,000,000",
       productType: "Car Loan",
+      reason:
+        " Your application does not meet the requirements. Checklist @SD-3",
     },
     {
       name: "Kashmira Shah",
@@ -46,36 +50,36 @@ const Approved = () => {
       date: "18/06/2022",
       limit: "7,000,000",
       productType: "Car Loan",
+      reason:
+        " Your application does not meet the requirements. Checklist @SD-3",
     },
   ];
   return (
     <div>
-      <BackMenu title="Approved" />
+      <BackMenu title="Decline" />
       <div className="  absolute bg-gray-200 w-full h-screen">
         <div className="myShadow bg-white h-screen my-2 rounded-lg p-2">
-          <h1 className=" font-monster text-ms mb-2 font-bold mx-2">
-            Approved List
-          </h1>
+          <h1 className=" font-monster text-ms mb-2 font-bold">Decline</h1>
 
-          {approvedData &&
-            approvedData.map((data) => {
-              return (
-                <>
-                  <div className=" text-white rounded-lg ring-1 font-monster ring-slate-300 grid grid-cols-2 place-content-between place-items-center bg-green-400 my-2  ">
-                    <h1 className=" py-2 px-3 my-1 font-monster">
-                      {data.productType}
-                    </h1>
-                    <h1 className=" py-2 px-3 my-1 font-monster">
-                      {data.limit}
-                    </h1>
-                  </div>
-                </>
-              );
-            })}
+          <div>
+            {approvedData &&
+              approvedData.map((data) => {
+                return (
+                  <>
+                    <details>
+                      <summary className="myShadow2 py-2 px-3 bg-gray-50 my-1 font-monster">
+                        {data.productType}
+                      </summary>
+                      <DeclineCard {...data} />
+                    </details>
+                  </>
+                );
+              })}
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Approved;
+export default Decline;
