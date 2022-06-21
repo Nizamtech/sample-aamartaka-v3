@@ -75,7 +75,7 @@ const Approved = () => {
                       </h1>
                     </div>
                     <hr className=" border-dotted  my-1 border-gray-400" />
-                    <LeadListCard item={item} />
+                    <LeadListCard item={item} isStatus={true} />
                   </div>
                 </>
               );

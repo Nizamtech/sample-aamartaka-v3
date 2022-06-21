@@ -7,9 +7,11 @@ import Select from "react-select";
 const FileCollection = () => {
   const [fileCollection, setFileCollection] = useState(null);
   const fileCollectionData = [
-    { value: "Full Collection", label: "Full Collection" },
-    { value: "Partial ", label: "Partial Collection" },
-    { value: "Document Collection", label: "Document Collection" },
+    { value: "Full Collected", label: "Full Collected" },
+    { value: "Partial Collected", label: "Partial Collected" },
+    { value: "Phone Not Received", label: "Phone Not Received" },
+    { value: "Rejected", label: "Rejected" },
+    { value: "Re-Schedule", label: "Re-Schedule" },
   ];
   console.log(fileCollection);
   return (
@@ -31,12 +33,16 @@ const FileCollection = () => {
                         {/* <h1 className="  text-sm font-monster ">2,000,000</h1> */}
                       </div>
                       <hr className=" border-dotted  my-1 border-gray-400" />
-                      <LeadListCard item={item} />
+                      <LeadListCard item={item} isStatus={false} />
                       <div className=" mx-4 my-2">
-                        <h1 className="text-[15px] font-bold ">Address</h1>
+                        <h1 className="text-[15px] font-bold ">Address:</h1>
                         <h1>
                           {item?.location}Mohakhali, banani, Dhaka,Bangladesh
                         </h1>
+                      </div>
+                      <div className=" mx-4 my-2 flex  items-center">
+                        <h1 className="text-[15px] font-bold ">Time:</h1>
+                        <h1 className="mx-4">{"10:00 AM - 12:00 PM"}</h1>
                       </div>
                       <div className="mx-2">
                         {/* <label> Select One</label> */}

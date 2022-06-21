@@ -1,19 +1,25 @@
 import React from "react";
 import Image from "next/image";
-const LeadListCard = ({ item }) => {
+const LeadListCard = ({ item, isStatus }) => {
   return (
     <div>
       <div>
-        <div className=" flex justify-between items-center mx-4">
-          <h1
-            className={`${item?.status === "Rejected" && "text-red-500"} ${
-              item?.status === "Aproved" && "text-green-500"
-            } ${item?.status === "Declined" && " text-orange-600"}  ${
-              item?.status === "In Process" && " text-yellow-500"
-            }   font-monster font-bold text-sm`}
-          >
-            {item?.status}
-          </h1>
+        <div
+          className={`flex ${
+            isStatus ? "justify-between" : "justify-end"
+          }  items-center mx-4`}
+        >
+          {isStatus && (
+            <h1
+              className={`${item?.status === "Rejected" && "text-red-500"} ${
+                item?.status === "Aproved" && "text-green-500"
+              } ${item?.status === "Declined" && " text-orange-600"}  ${
+                item?.status === "In Process" && " text-yellow-500"
+              }   font-monster font-bold text-sm`}
+            >
+              {item?.status}
+            </h1>
+          )}
 
           <div className=" flex justify-between items-center">
             <div className="  p-[2px]  bg-gray-50 flex justify-start items-center mx-2">
@@ -61,14 +67,14 @@ const LeadListCard = ({ item }) => {
               </div>
             </div>
           </div>
-
+          {/* 
           <Image
             // className="animate-pulse"
             src="https://i.ibb.co/r6n5MML/arrow-29-32.png"
             alt=""
             width="20px"
             height="20px"
-          />
+          /> */}
         </div>
 
         <h1 className="text-sm text-black mx-4  font-[500] ">
