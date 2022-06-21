@@ -51,9 +51,9 @@ const Approved = () => {
   ];
   return (
     <div>
-      <BackMenu title="In Progress" />
-      <div className="  absolute bg-gray-200 w-full h-screen">
-        <div className="myShadow bg-white h-screen my-2 rounded-lg p-2">
+      <BackMenu title="Approved" />
+      <div className="  absolute bg-gray-200 w-full">
+        <div className="myShadow bg-white  my-2 rounded-lg p-2">
           {data &&
             data.map((item) => {
               return (
@@ -66,7 +66,7 @@ const Approved = () => {
 
                       <h1 className="  text-sm font-monster flex justify-between items-center ">
                         <span className="mx-2  rounded text-slate-400 font-bold">
-                          Limit
+                          Limit :
                         </span>{" "}
                         <span className="  text-sm font-monster font-bold text-slate-900">
                           {" "}

@@ -10,7 +10,7 @@ const Home_Header = () => {
               Total Balance
             </h1>
             <button className="widraw text-[10px] font-monster text-[#3A2424]">
-              Widraw
+              Withdraw
             </button>
           </div>
           <h1 className="text-sm  text-white font-bold">BDT 10,000</h1>

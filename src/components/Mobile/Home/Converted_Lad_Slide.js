@@ -38,7 +38,7 @@ const Converted_Lad_Slide = () => {
   return (
     <div className=" mx-2 p-2 py-2 bg-white rounded-lg border border-gray-200 shadow-md ">
       <h1 className=" text-md font-bold font-exo text-cyan-500 mb-1  ">
-        Converted Lead
+        Others Bank
       </h1>
       <Swiper
         loop={true}

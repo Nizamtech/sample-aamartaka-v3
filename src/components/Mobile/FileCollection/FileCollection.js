@@ -44,6 +44,10 @@ const FileCollection = () => {
                         <h1 className="text-[15px] font-bold ">Time:</h1>
                         <h1 className="mx-4">{"10:00 AM - 12:00 PM"}</h1>
                       </div>
+                      <div className=" mx-4 my-2 flex  items-center">
+                        <h1 className="text-[15px] font-bold ">Note:</h1>
+                      </div>
+
                       <div className="mx-2">
                         {/* <label> Select One</label> */}
                         <Select
@@ -53,6 +57,17 @@ const FileCollection = () => {
                           options={fileCollectionData}
                           className="my-2"
                         />
+                        <label> Remarks</label> <br />
+                        <textarea
+                          className="w-full border p-2"
+                          type="text"
+                          name=""
+                          id=""
+                          placeholder="Write here"
+                        />
+                        <button className=" w-full bg-green-500 p-2 text-white text-lg font-monster">
+                          SAVE
+                        </button>
                       </div>
                     </div>
                   </>
