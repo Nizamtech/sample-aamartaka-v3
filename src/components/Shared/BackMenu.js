@@ -5,7 +5,7 @@ import BackIcon from "../../../public/assets/icons/swoosh-left.svg";
 const BackMenu = ({ title, img }) => {
   const router = useRouter();
   return (
-    <div className=" flex justify-between items-center mx-2 ">
+    <div className=" flex justify-between items-center border-b mb-1 shadow ">
       <div className="flex items-center justify-start bg-white w-full py-3 h-[57px]">
         <button
           onClick={() => {

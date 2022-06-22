@@ -2,20 +2,24 @@ import React, { useState } from "react";
 
 const Calendar = () => {
   const [state, setState] = useState([]);
+  const [type, setType] = useState("text");
+  const [type2, setType2] = useState("text");
   return (
-    <div className=" bg-[#EFF2F7] m-1 p-2 grid grid-cols-2 gap-3 ">
+    <div className=" bg-[#EFF2F7] mt-1  p-2 grid grid-cols-2 gap-3 ">
       <input
-        placeholder="TO"
-        className=" border-gray-300 rounded-md p-2 focus:outline-none text-xs "
-        // value={new Date().toISOString().split("T")[0]}
-        type="date"
+        className=" border-gray-300 rounded-md p-3 focus:outline-none text-sm font-monster  "
+        type={type}
+        placeholder="From"
+        onFocus={() => setType("date")}
+        onBlur={() => setType("text")}
         onChange={(e) => console.log(e.target.value)}
       />
       <input
-        placeholder="From"
-        className="datepicker-input border-gray-300 rounded-md p-2 focus:outline-none text-xs "
-        type="date"
-        // value={new Date().toISOString().split("T")[0]}
+        className=" border-gray-300 rounded-md p-3 focus:outline-none text-sm font-monster"
+        type={type2}
+        placeholder="To"
+        onFocus={() => setType2("date")}
+        onBlur={() => setType2("text")}
         onChange={(e) => console.log(e.target.value)}
       />
     </div>

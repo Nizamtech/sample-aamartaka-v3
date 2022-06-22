@@ -7,7 +7,7 @@ const Attendence_Details = () => {
   return (
     <div>
       <BackMenu title="Attendence Details" />
-      <div className=" bg-zinc-400 h-screen overflow-scroll w-full">
+      <div className=" bg-zinc-100 h-screen overflow-scroll w-full">
         <div className="m-3">
           <Attendence_Details_Card />
           <div className="w-full h-20">{/* <GoogleMapCard /> */}</div>
