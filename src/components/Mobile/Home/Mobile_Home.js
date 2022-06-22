@@ -12,7 +12,8 @@ import Home_Footer from "./Home_Footer";
 import SubmittedCard from "./SubmittedCard";
 import SubmittedSlide from "./SubmittedSlide";
 import Converted_Lad_Slide from "./Converted_Lad_Slide";
-const Mobile_Dashboard = () => {
+import Mobile_Footer from "../../Shared/Mobile_Footer/Mobile_Footer";
+const Mobile_Home = () => {
   const router = useRouter();
   return (
     <div>
@@ -44,12 +45,12 @@ const Mobile_Dashboard = () => {
       </div>
 
       {/* Converted Lead Section  */}
-      <div className=" z-50">
-        <Converted_Lad_Slide />
-      </div>
+
+      <Converted_Lad_Slide />
+
       <Home_Footer />
     </div>
   );
 };
 
-export default Mobile_Dashboard;
+export default Mobile_Home;
