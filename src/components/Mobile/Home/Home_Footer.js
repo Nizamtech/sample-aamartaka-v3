@@ -16,9 +16,9 @@ const Home_Footer = () => {
   };
 
   return (
-    <div className=" z-50 sticky bottom-0 mt-5">
+    <div className="z-50 sticky bottom-0 mt-5    ">
       {/* <Footer_modal showModal={showModal} setShowModal={setShowModal} /> */}
-      <div className="border-t  rounded-t-[30px]  px-2  amin  bg-white border-gray-200 shadow-md grid grid-cols-3 place-content-between place-items-center">
+      <div className="border-t  rounded-t-[30px]  px-2 bg-white  amin  border-gray-200 shadow-md grid grid-cols-3 place-content-between place-items-center">
         <div>
           <button
             onClick={handleAttendance}
@@ -38,11 +38,11 @@ const Home_Footer = () => {
             onClick={() => router.push("/lead/newlead")}
             className=" p-4  relative top-[-40px]  py-1 px-2  flex flex-col justify-center items-center"
           >
-            <div className=" ">
+            <div className=" absolute h-8  w-16 top-[15px] rounded-b-full ">
               <img
                 src="https://i.ibb.co/r6h3kWB/pluse.png"
                 alt="Logo"
-                className=" relative h-10 w-10  myShadow3  rounded-[50%] mx-auto  top-[15px]"
+                className=" relative h-10 w-10  myShadow3  rounded-[50%] mx-auto  top-[-15px]  "
               />
             </div>
           </button>

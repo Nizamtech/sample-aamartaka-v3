@@ -1,11 +1,8 @@
 import React from "react";
-import styles from "../../../styles/Mobile_Footer.module.scss";
+import Home_Footer from "../../Mobile/Home/Home_Footer";
+
 const Mobile_Footer = () => {
-  return (
-    <div className={styles.main}>
-      <div className={styles.nav}></div>
-    </div>
-  );
+  return <div className="thing "></div>;
 };
 
 export default Mobile_Footer;
