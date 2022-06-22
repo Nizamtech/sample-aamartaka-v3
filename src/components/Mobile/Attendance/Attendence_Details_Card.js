@@ -10,7 +10,7 @@ const Attendence_Details_Card = () => {
   };
 
   return (
-    <div className="myShadow bg-white p-2 rounded-lg">
+    <div className="myShadow bg-white p-2 rounded-lg font-monster">
       <h1 className="text-center font-exo font-bold text-sm ">
         {" "}
         {new Date().toLocaleDateString()}{" "}
@@ -30,15 +30,15 @@ const Attendence_Details_Card = () => {
               <h1 className="font-bold text-[10px]">Start Time:</h1>
               <h1 className="text-[10px]">02:00 PM</h1>
             </div>
-            <div className="grid grid-cols-7 place-content-between text-xs font-exo">
-              <h1 className="col-span-2 font-bold text-[10px]">Location:</h1>
-              <h1 className=" col-span-5 text-[10px] text-justify">
+            <div className="text-xs font-exo">
+              <h1 className="font-bold text-[10px]">Location:</h1>
+              <h1 className=" text-[10px] text-justify">
                 Gulshan ,Banani, Dhaka
               </h1>
             </div>
           </div>
           <button
-            className=" font-exo text-sm text-cyan-500 flex justify-center items-center mx-auto"
+            className=" rounded-full px-4 mx-auto bg-sky-500 py-1  font-exo text-sm text-white  flex justify-center items-center "
             onClick={handleAttendance}
           >
             View Map
@@ -59,16 +59,16 @@ const Attendence_Details_Card = () => {
                 <h1 className=" font-bold text-[10px]">Start Time:</h1>
                 <h1 className="text-[10px]">02:00 PM</h1>
               </div>
-              <div className="grid grid-cols-7 place-content-between text-xs font-exo">
-                <h1 className="col-span-2 font-bold text-[10px] ">Location:</h1>
-                <h1 className=" col-span-5 text-[10px] text-justify">
-                  Gulshan , Banani, Dhaka
+              <div className="text-xs font-exo">
+                <h1 className="font-bold text-[10px]">Location:</h1>
+                <h1 className=" text-[10px] text-justify">
+                  Gulshan ,Banani, Dhaka
                 </h1>
               </div>
             </div>
           </div>
           <button
-            className=" font-exo text-sm text-cyan-500 flex justify-center items-center mx-auto"
+            className=" rounded-full px-4 mx-auto bg-sky-500 py-1  font-exo text-sm text-white  flex justify-center items-center "
             onClick={handleAttendance}
           >
             View Map
