@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const Footer = () => {
     return (
-        <div className={`${footerStyle.footerContainer}`}>
+        <footer className={`${footerStyle.footerContainer}`}>
             <div className="container mx-auto">
                 <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:py-20 py-10">
                     <div className="lg:text-left md:text-left text-center">
@@ -147,7 +147,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </footer>
     );
 };
 
