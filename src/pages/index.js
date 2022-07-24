@@ -23,7 +23,7 @@ export default function Home() {
           <Mobile_Home />
         </MobileView>
         <BrowserView>
-          <Mobile_Home />
+          <Dashboard />
         </BrowserView>
       </main>
     </div>

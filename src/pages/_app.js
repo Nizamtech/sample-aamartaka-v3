@@ -39,12 +39,12 @@ function MyApp({ Component, pageProps }) {
             {" "}
             <Component {...pageProps} isMobile={isMobile} />
           </MobileLayout>
-        ) : null
-        // (
-        //   <DesktopLayout>
-        //     <Component {...pageProps} isMobile={isMobile} />
-        //   </DesktopLayout>
-        // )
+        ) :
+          (
+            <DesktopLayout>
+              <Component {...pageProps} isMobile={isMobile} />
+            </DesktopLayout>
+          )
       }
     </>
   );
