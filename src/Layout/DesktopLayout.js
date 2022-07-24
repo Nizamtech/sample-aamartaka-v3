@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Shared/Footer/Footer";
 import Navbar from "../components/Shared/Navbar/Navbar";
 
 const DesktopLayout = ({ children }) => {
@@ -6,7 +7,7 @@ const DesktopLayout = ({ children }) => {
     <div>
       <Navbar />
       {children}
-      <h1>Footer</h1>
+      <Footer />
     </div>
   );
 };
