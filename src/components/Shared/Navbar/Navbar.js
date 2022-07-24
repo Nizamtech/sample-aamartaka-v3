@@ -7,7 +7,6 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   const [mobileMenu, setMobileMenu] = React.useState("hidden");
-  console.log(mobileMenu);
 
   return (
     <div>
@@ -15,55 +14,51 @@ const Navbar = () => {
         <div className="container mx-auto px-2 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-16">
             <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+
               <button onClick={() =>
                 setMobileMenu(mobileMenu === "block" ? "hidden" : "block")
               }>
                 <FontAwesomeIcon icon={faBars} className="w-6 h-6 mx-4 text-white hover:text-orange-500" />
               </button>
+
             </div>
             <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex-shrink-0 flex items-center">
                 <Link href="/home">
-                  <a className="font-bold text-xl text-orange-500">Main Logo</a>
+                  <a className="font-bold text-xl text-orange-500">M<span className="text-white">ain</span> L<span className="text-white">ogo</span></a>
                 </Link>
               </div>
               <div className="hidden sm:block sm:ml-6 text-white" >
                 <div className="flex space-x-4">
                   <Link
-                    className="text-gray-200 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-md font-medium"
                     href="/">
-                    <a className="text-white hover:text-orange-600 hover:border-orange-600 border duration-300 block px-3 py-1 rounded-md text-md font-medium">Home</a>
+                    <a className="text-white hover:text-orange-600 hover:border-white border border-transparent hover:bg-white duration-300 block px-2 py-1 rounded-md text-md font-medium">Home</a>
                   </Link>
                   <Link
-                    className="text-gray-200 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-md font-medium"
                     href="/">
-                    <a className="text-white hover:text-orange-600 hover:border-orange-600 border duration-300 block px-3 py-1 rounded-md text-md font-medium">Blog</a>
+                    <a className="text-white hover:text-orange-600 hover:border-white border border-transparent hover:bg-white duration-300 block px-2 py-1 rounded-md text-md font-medium">Blog</a>
                   </Link>
                   <Link
-                    className="text-gray-200 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-md font-medium"
                     href="/">
-                    <a className="text-white hover:text-orange-600 hover:border-orange-600 border duration-300 block px-3 py-1 rounded-md text-md font-medium">
+                    <a className="text-white hover:text-orange-600 hover:border-white border border-transparent hover:bg-white duration-300 block px-2 py-1 rounded-md text-md font-medium">
                       Top Place
                     </a>
                   </Link>
                   <Link
-                    className="text-gray-200 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-md font-medium"
                     href="/">
-                    <a className="text-white hover:text-orange-600 hover:border-orange-600 border duration-300 block px-3 py-1 rounded-md text-md font-medium">
+                    <a className="text-white hover:text-orange-600 hover:border-white border border-transparent hover:bg-white duration-300 block px-2 py-1 rounded-md text-md font-medium">
                       Service
                     </a>
                   </Link>
                   <Link
-                    className="text-gray-200 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-md font-medium"
                     href="/">
-                    <a className="text-white hover:text-orange-600 hover:border-orange-600 border duration-300 block px-3 py-1 rounded-md text-md font-medium">
+                    <a className="text-white hover:text-orange-600 hover:border-white border border-transparent hover:bg-white duration-300 block px-2 py-1 rounded-md text-md font-medium">
                       About
                     </a>
                   </Link>
                   <Link
-                    className="text-gray-200 hover:bg-gray-600 hover:text-white px-3 py-2 rounded-md text-md font-medium"
                     href="/">
-                    <a className="text-white hover:text-orange-600 hover:border-orange-600 border duration-300 block px-3 py-1 rounded-md text-md font-medium">
+                    <a className="text-white hover:text-orange-600 hover:border-white border border-transparent hover:bg-white duration-300 block px-2 py-1 rounded-md text-md font-medium">
                       Contact
                     </a>
                   </Link>
@@ -119,7 +114,7 @@ const Navbar = () => {
             <Link
               href="/">
               <a
-                className="text-white  block px-3 py-2 rounded-md text-md font-medium">Main Logo Here</a>
+                className="text-orange-600 block px-3 py-2 rounded-md text-md font-medium">M<span className="text-white">ain</span> L<span className="text-white">ogo</span></a>
             </Link>
           </div>
         </div>
