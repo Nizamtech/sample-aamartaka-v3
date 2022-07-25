@@ -36,13 +36,7 @@ const Navbar = () => {
                   </Link>
                   <Link
                     href="/">
-                    <a className="text-white hover:text-orange-600 hover:border-white border border-transparent hover:bg-white duration-300 block px-2 py-1 rounded-md text-md font-medium">Blog</a>
-                  </Link>
-                  <Link
-                    href="/">
-                    <a className="text-white hover:text-orange-600 hover:border-white border border-transparent hover:bg-white duration-300 block px-2 py-1 rounded-md text-md font-medium">
-                      Top Place
-                    </a>
+                    <a className="text-white hover:text-orange-600 hover:border-white border border-transparent hover:bg-white duration-300 block px-2 py-1 rounded-md text-md font-medium">About</a>
                   </Link>
                   <Link
                     href="/">
@@ -53,7 +47,13 @@ const Navbar = () => {
                   <Link
                     href="/">
                     <a className="text-white hover:text-orange-600 hover:border-white border border-transparent hover:bg-white duration-300 block px-2 py-1 rounded-md text-md font-medium">
-                      About
+                      Personal Loan
+                    </a>
+                  </Link>
+                  <Link
+                    href="/">
+                    <a className="text-white hover:text-orange-600 hover:border-white border border-transparent hover:bg-white duration-300 block px-2 py-1 rounded-md text-md font-medium">
+                      Blog
                     </a>
                   </Link>
                   <Link
@@ -97,19 +97,25 @@ const Navbar = () => {
               href="/">
               <a
                 onClick={() => setMobileMenu("hidden")}
+                className="text-white hover:text-orange-600 duration-300 block px-3 py-1 rounded-md text-md font-medium">Service</a>
+            </Link>
+            <Link
+              href="/">
+              <a
+                onClick={() => setMobileMenu("hidden")}
+                className="text-white hover:text-orange-600 duration-300 block px-3 py-1 rounded-md text-md font-medium">Personal Loan</a>
+            </Link>
+            <Link
+              href="/">
+              <a
+                onClick={() => setMobileMenu("hidden")}
                 className="text-white hover:text-orange-600 duration-300 block px-3 py-1 rounded-md text-md font-medium">Blog</a>
             </Link>
             <Link
               href="/">
               <a
                 onClick={() => setMobileMenu("hidden")}
-                className="text-white hover:text-orange-600 duration-300 block px-3 py-1 rounded-md text-md font-medium">Top Place</a>
-            </Link>
-            <Link
-              href="/">
-              <a
-                onClick={() => setMobileMenu("hidden")}
-                className="text-white hover:text-orange-600 duration-300 block px-3 py-1 rounded-md text-md font-medium">Service</a>
+                className="text-white hover:text-orange-600 duration-300 block px-3 py-1 rounded-md text-md font-medium">Contact</a>
             </Link>
             <Link
               href="/">
