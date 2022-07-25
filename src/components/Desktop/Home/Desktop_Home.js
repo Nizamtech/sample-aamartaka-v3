@@ -9,12 +9,12 @@ import User from '../User/User';
 const Desktop_Home = () => {
     return (
         <>
-            <Dashboard />
+            {/* <Dashboard /> */}
             <Company_Status />
-            <About />
+            {/* <About />
             <Pictiure />
             <States />
-            <User />
+            <User /> */}
         </>
     );
 };
