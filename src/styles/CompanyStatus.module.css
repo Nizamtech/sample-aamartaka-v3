@@ -1,0 +1,8 @@
+.statusBackground {
+  background-image: url("../images/Section-Bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/*# sourceMappingURL=CompanyStatus.module.css.map */
