@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACT,gBAAgB,EAAE,6DAA6D,EAAE,0BAA0B;EAC3G,eAAe,EAAE,KAAK;EACtB,mBAAmB,EAAE,MAAM;EAC3B,iBAAiB,EAAE,SAAS;EAC5B,MAAM,EAAE,IAAI;CACf",
+    "sources": [
+        "Bannar.module.scss"
+    ],
+    "names": [],
+    "file": "Bannar.module.css"
+}
