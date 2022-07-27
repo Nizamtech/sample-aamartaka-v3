@@ -1,0 +1,24 @@
+// hr Style Start Here
+
+.skills {
+    max-width: 40%;
+    text-align: center;
+    margin-top: 5px;
+
+    .hrText {
+        border: 0;
+        height: 1.5em;
+
+        &:after {
+            content: '';
+            background: linear-gradient(to right, transparent, #0b0b6a, transparent);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 210px;
+            height: 2.5px;
+        }
+    }
+}
+
+// hr Style End Here
