@@ -19,11 +19,11 @@ const Submitted_Files = () => {
                         <p className="text-xl font-semibold mt-1">In Progress</p>
                     </div>
                 </div>
-                <div className={`border border-[#0b0b6a] rounded-md hover:rounded-sm flex items-center text-center relative ${submitStyle.progressDiv}`}>
-                    <div className={`h-full py-6 w-1/2 relative bg-[#0b0b6a] ${submitStyle.iconBg}`}>
+                <div className={`border border-[#015FDF] rounded-md hover:rounded-sm flex items-center text-center relative ${submitStyle.progressDiv}`}>
+                    <div className={`h-full py-6 w-1/2 relative bg-[#015FDF] ${submitStyle.iconBg}`}>
                         <FontAwesomeIcon icon={faPaperPlane} className={`w-16 h-16 mx-auto text-white ${submitStyle.icon}`} />
                     </div>
-                    <div className={`py-6 text-[#0b0b6a] w-1/2 ${submitStyle.textDiv}`}>
+                    <div className={`py-6 text-[#015FDF] w-1/2 ${submitStyle.textDiv}`}>
                         <h2 className="text-5xl font-semibold">15</h2>
                         <p className="text-xl font-semibold mt-1">Send Query</p>
                     </div>
