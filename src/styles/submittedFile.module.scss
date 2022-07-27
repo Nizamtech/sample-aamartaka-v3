@@ -1,0 +1,17 @@
+.progressDiv:hover {
+    .iconBg {
+        background-color: #fff;
+        transition: 0.5s ease;
+    }
+
+    .icon {
+        color: #0b0b6a;
+        transition: 0.5s ease;
+    }
+
+    .textDiv {
+        background-color: #0b0b6a;
+        color: #fff;
+        transition: 0.5s ease;
+    }
+}

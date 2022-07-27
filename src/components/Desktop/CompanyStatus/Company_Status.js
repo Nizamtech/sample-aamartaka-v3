@@ -43,11 +43,11 @@ const Company_Status = () => {
         },
     ]
     return (
-        <div className={`${statusStyle?.statusBackground} lg:py-20 py-10`}>
+        <div className={`${statusStyle?.statusBackground} py-10`}>
             <div className="grid lg:grid-cols-3 md:grid-cols-3 grid-cols-2 gap-5 container mx-auto">
                 {data.map((item, index) =>
                     <>
-                        <div key={index} className="bg-[#0b0b6a] hover:bg-[#0b0b80] duration-300 p-5 rounded-lg">
+                        <div key={index} className="bg-[#0b0b6a] hover:bg-[#0c0c8c] duration-300 p-5 rounded-lg">
                             <div className="flex items-center">
                                 <img src={item?.image} alt="LeadImage" className="w-20" />
                                 <h5 className="text-3xl font-semibold text-white ml-5">{item?.head}</h5>

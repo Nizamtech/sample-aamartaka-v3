@@ -33,16 +33,19 @@ a {
 * {
   box-sizing: border-box;
 }
+
 .nav {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 5px;
   font-size: 20px;
   padding: 0 20px;
 }
+
 .nav a {
   margin: 10px;
   padding: 5px;
 }
+
 .profile {
   flex-grow: 1;
 }
@@ -56,6 +59,7 @@ a {
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 .myShadow {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -63,12 +67,15 @@ a {
 .myShadow2 {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .myShadow3 {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
 .myShadow4 {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
+
 .details {
   background-image: url("/assets/images/Background2.svg");
   background-position: center;
@@ -79,10 +86,12 @@ a {
 .anim3 {
   animation: slide-from-topOut 0.8s ease-out;
 }
+
 @keyframes slide-from-topOut {
   0% {
     margin-top: 0;
   }
+
   100% {
     margin-top: -80%;
   }
@@ -91,10 +100,12 @@ a {
 .anim2 {
   animation: slide-from-top 0.8s ease-in-out;
 }
+
 @keyframes slide-from-top {
   0% {
     margin-top: -80%;
   }
+
   100% {
     margin-top: 0;
   }
@@ -104,10 +115,12 @@ a {
   animation: slide-from-bottom 0.8s ease-in-out;
   float: bottom;
 }
+
 @keyframes slide-from-bottom {
   0% {
     margin-bottom: -50%;
   }
+
   100% {
     margin-bottom: 0;
   }
@@ -116,19 +129,23 @@ a {
 .overlay {
   transition: 0.5s ease;
 }
+
 .text,
 .icon {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
 .product-link:hover .overlay {
   height: 100%;
   background-color: transparent;
 }
+
 .product-link:hover .text {
   display: none;
 }
+
 .product-link:hover .icon {
   display: block !important;
   color: #f77426 !important;
@@ -149,6 +166,7 @@ a {
   background-size: cover;
   background-size: cover;
 }
+
 .widraw {
   box-sizing: border-box;
   position: absolute;
@@ -170,6 +188,7 @@ a {
   background: #ffffff;
   box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
 }
+
 .circle {
   position: absolute;
   background-color: transparent;

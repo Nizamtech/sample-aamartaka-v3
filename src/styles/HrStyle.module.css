@@ -1,0 +1,22 @@
+.skills {
+  max-width: 40%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.skills .hrText {
+  border: 0;
+  height: 1.5em;
+}
+
+.skills .hrText:after {
+  content: '';
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#0b0b6a), to(transparent));
+  background: linear-gradient(to right, transparent, #0b0b6a, transparent);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 210px;
+  height: 2.5px;
+}
+/*# sourceMappingURL=HrStyle.module.css.map */

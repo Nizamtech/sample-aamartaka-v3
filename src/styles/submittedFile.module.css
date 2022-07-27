@@ -1,0 +1,19 @@
+.progressDiv:hover .iconBg {
+  background-color: #fff;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.progressDiv:hover .icon {
+  color: #0b0b6a;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.progressDiv:hover .textDiv {
+  background-color: #0b0b6a;
+  color: #fff;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+/*# sourceMappingURL=submittedFile.module.css.map */
