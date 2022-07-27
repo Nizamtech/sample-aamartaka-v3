@@ -15,7 +15,7 @@ const Others_Bank = () => {
 
     return (
         <div className="container mx-auto pb-10 ">
-            <h2 className="text-3xl text-left text-orange-600 font-semibold">Others bank</h2>
+            <h2 className="text-3xl text-left text-[#0B0B6A] font-semibold">Others bank</h2>
             <Hr_style />
             <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mt-5">
                 {data.map(item =>

@@ -7,7 +7,7 @@ import submitStyle from "../../../styles/submittedFile.module.css"
 const Submitted_Files = () => {
     return (
         <div className="container mx-auto pb-10 ">
-            <h2 className="text-3xl text-left text-orange-600 font-semibold">Submitted Files</h2>
+            <h2 className="text-3xl text-left text-[#0B0B6A] font-semibold">Submitted Files</h2>
             <Hr_style />
             <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mt-5">
                 <div className={`border border-[#57CEFE] rounded-md hover:rounded-sm flex items-center text-center relative ${submitStyle.progressDiv}`}>
