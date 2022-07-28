@@ -232,3 +232,38 @@ a {
   top: -264px;
   background-color: transparent;
 }
+
+// Home Button Hover Style Here
+
+.btn::after {
+  content: "";
+  background: #ecf0f1;
+  position: absolute;
+  z-index: -1;
+  padding: 0.85em 0.75em;
+  display: block;
+}
+
+.btn[class^="grow"]::after {
+  transition: all 0.3s ease;
+}
+
+.btn[class^="grow"]:hover::after {
+  transition: all 0.3s ease-out;
+}
+
+.btn.grow_box:hover::after {
+  transform: scale(1, 1);
+}
+
+.btn.grow_skew_forward::after {
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(-45deg) scale(0, 1);
+}
+
+.btn.grow_skew_forward:hover::after {
+  transform: skewX(-45deg) scale(1, 1);
+}
