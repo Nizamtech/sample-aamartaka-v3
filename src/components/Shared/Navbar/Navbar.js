@@ -36,7 +36,7 @@ const Navbar = () => {
                   </Link>
                   <Link
                     href="/">
-                    <a className="text-white hover:text-orange-600 hover:border-white border border-transparent hover:bg-white duration-300 block px-2 py-1 rounded-md text-md font-medium">About</a>
+                    <a className=" text-white hover:text-orange-600 hover:border-white border border-transparent hover:bg-white duration-300 block px-2 py-1 rounded-md text-md font-medium">About</a>
                   </Link>
                   <Link
                     href="/">
