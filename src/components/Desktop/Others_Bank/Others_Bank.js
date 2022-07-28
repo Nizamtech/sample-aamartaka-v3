@@ -1,7 +1,6 @@
 import React from 'react';
 import Hr_style from '../../Shared/HrStyle/Hr_style';
 import bankStyle from "../../../styles/submittedFile.module.css";
-import FontAwesome from 'react-fontawesome';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faPaperPlane, faSpinner, faXmark } from '@fortawesome/free-solid-svg-icons';
 
@@ -26,6 +25,7 @@ const Others_Bank = () => {
                             </div>
                             <div className="border rounded-md w-full pt-28 shadow-2xl">
                                 <div className={`${bankStyle.cardHead} py-5 text-center bg-[#015FDF] text-white rounded-b-md text-xl font-semibold border border-[#015FDF] items-center`}>
+                                    {/* Rendering Icon Conditionally */}
                                     {item?.icon === "progress" && <FontAwesomeIcon icon={faSpinner} className={`w-12 h-12 mx-auto text-white mb-2`} />}
                                     {item?.icon === "query" && <FontAwesomeIcon icon={faPaperPlane} className={`w-12 h-12 mx-auto text-white mb-2`} />}
                                     {item?.icon === "decline" && <FontAwesomeIcon icon={faXmark} className={`w-12 h-12 mx-auto text-white mb-2`} />}
