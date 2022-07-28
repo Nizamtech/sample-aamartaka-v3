@@ -6,13 +6,13 @@ const Home_Header = () => {
       <div className="homeBackground font-exo px-4 pb-12 pt-7">
         <div className="flex justify-between items-center py-5">
           <div>
-            <h1 className="text-sm text-white font-bold">
+            <h1 className="text-md text-white font-bold">
               My Commission
             </h1>
             <h1 className="text-sm font-bold text-orange-500">BDT 12,000</h1>
           </div>
           <div>
-            <h1 className="text-sm text-white font-bold">
+            <h1 className="text-md text-white font-bold">
               Referral Commission
             </h1>
             <h1 className="text-sm font-bold text-orange-500">BDT 10,000</h1>
@@ -20,7 +20,7 @@ const Home_Header = () => {
         </div>
         <div className="flex justify-between items-center">
           <div>
-            <h4 className="text-sm text-white font-bold">
+            <h4 className="text-md text-white font-bold">
               Total Balance
             </h4>
             <h4 className="text-sm text-orange-500 font-bold">BDT 10,000</h4>
