@@ -1,9 +1,9 @@
 import React from 'react';
 import Hr_style from '../../Shared/HrStyle/Hr_style';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import bankStyle from "../../../styles/submittedFile.module.css";
-import { faSpinner, faXmark, faCheck } from '@fortawesome/free-solid-svg-icons';
-import { faPaperPlane } from '@fortawesome/free-regular-svg-icons';
+import FontAwesome from 'react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck, faPaperPlane, faSpinner, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const Others_Bank = () => {
     const data = [
@@ -18,19 +18,20 @@ const Others_Bank = () => {
             <h2 className="text-3xl text-left text-[#0B0B6A] font-semibold">Others bank</h2>
             <Hr_style />
             <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mt-5">
-                {data.map(item =>
+                {data?.map(item =>
                     <>
-                        <div className={`border border-[#57CEFE] rounded-md hover:rounded-sm flex items-center text-center relative ${bankStyle.progressDiv}`}>
-                            {/* Rendering Icon Conditionally */}
-                            <div className={`h-full py-6 w-1/2 relative bg-[#57CEFE] ${bankStyle.iconBg}`}>
-                                {item.icon === "progress" && <FontAwesomeIcon icon={faSpinner} className={`w-16 h-16 mx-auto text-white ${bankStyle.icon}`} />}
-                                {item.icon === "query" && <FontAwesomeIcon icon={faPaperPlane} className={`w-16 h-16 mx-auto text-white ${bankStyle.icon}`} />}
-                                {item.icon === "decline" && <FontAwesomeIcon icon={faXmark} className={`w-16 h-16 mx-auto text-white ${bankStyle.icon}`} />}
-                                {item.icon === "approved" && <FontAwesomeIcon icon={faCheck} className={`w-16 h-16 mx-auto text-white ${bankStyle.icon}`} />}
+                        <div className={`${bankStyle.singleCard} cursor-pointer`}>
+                            <div className={`${bankStyle.bigCircle} -mb-24 border shadow-2xl text-center flex items-center justify-center w-44 h-44 mx-auto rounded-full`}>
+                                <h2 className={`bg-[#015FDF] text-white text-center h-32 w-32 rounded-full flex items-center justify-center text-5xl font-semibold border border-[#015FDF]`}>{item?.count}</h2>
                             </div>
-                            <div className={`py-6 text-[#57CEFE] w-1/2 ${bankStyle.textDiv}`}>
-                                <h2 className="text-5xl font-semibold">{item?.count}</h2>
-                                <p className="text-xl font-semibold mt-1">{item?.name}</p>
+                            <div className="border rounded-md w-full pt-28 shadow-2xl">
+                                <div className={`${bankStyle.cardHead} py-5 text-center bg-[#015FDF] text-white rounded-b-md text-xl font-semibold border border-[#015FDF] items-center`}>
+                                    {item?.icon === "progress" && <FontAwesomeIcon icon={faSpinner} className={`w-12 h-12 mx-auto text-white mb-2`} />}
+                                    {item?.icon === "query" && <FontAwesomeIcon icon={faPaperPlane} className={`w-12 h-12 mx-auto text-white mb-2`} />}
+                                    {item?.icon === "decline" && <FontAwesomeIcon icon={faXmark} className={`w-12 h-12 mx-auto text-white mb-2`} />}
+                                    {item?.icon === "approved" && <FontAwesomeIcon icon={faCheck} className={`w-12 h-12 mx-auto text-white mb-2`} />}
+                                    <h2 className={`${bankStyle.cardHead} text-xl font-semibold border border-[#015FDF]`}>{item?.name}</h2>
+                                </div>
                             </div>
                         </div>
                     </>
