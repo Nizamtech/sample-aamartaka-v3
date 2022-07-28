@@ -16,4 +16,21 @@
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
+
+.singleCard:hover h2 {
+  color: #015FDF;
+  background: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.singleCard:hover .bigCircle {
+  border-color: #015FDF;
+  background: #015FDF;
+}
+
+.singleCard:hover .cardHead {
+  background: #015FDF !important;
+  color: #fff !important;
+}
 /*# sourceMappingURL=submittedFile.module.css.map */

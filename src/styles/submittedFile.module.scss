@@ -15,3 +15,23 @@
         transition: 0.5s ease;
     }
 }
+
+// Others Bank Component Style Here
+
+.singleCard:hover {
+    h2 {
+        color: #015FDF;
+        background: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .bigCircle {
+        border-color: #015FDF;
+        background: #015FDF;
+    }
+
+    .cardHead {
+        background: #015FDF !important;
+        color: #fff !important;
+    }
+}
