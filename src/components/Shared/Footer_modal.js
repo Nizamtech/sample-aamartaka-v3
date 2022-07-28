@@ -5,7 +5,7 @@ const Footer_modal = ({ showModal, setShowModal }) => {
     <>
       {showModal && (
         <div className="h-96 ">
-          <h1>Attende</h1>
+          <h1>Attend</h1>
         </div>
       )}
     </>

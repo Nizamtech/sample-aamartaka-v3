@@ -3,27 +3,18 @@ import React from "react";
 
 const MobileNavbar = () => {
   return (
-    <div className=" bg-white">
-      <nav className="nav flex justify-between items-center h-20 font-monster  ">
+    <div className="gradientBG mx-2 border-b border-b-gray-100">
+      <nav className="nav flex justify-between items-center h-16 font-monster">
         <div>
-          <h1 className="text-lg">
-            Hi <span className="font-bold text-red-400">Jhon</span>{" "}
+          <h1 className="text-lg text-white font-semibold">
+            Hi <span className="font-bold text-red-400 text-lg">Jhon</span>
           </h1>
         </div>
         <div className="flex justify-between items-center ">
-          {/* <img
-            src="https://i.ibb.co/FWrwLGM/icons8-points-64.png"
-            alt=""
-            width="50px"
-            height="50px"
-          /> */}
-          <h1 className="font-bold text-orange-500 text-lg ">Points</h1>
-          <h1 className=" bg-red-500 text-white border-2 border-white rounded-full p-1 ml-3 text-[10px]">
+          <h1 className="font-bold text-white text-lg ">Points</h1>
+          <h1 className="h-9 w-9 bg-orange-600 text-white border-2 border-white rounded-full p-1 ml-3 flex felx-col items-center justify-center text-[17px] font-semibold">
             20
           </h1>
-          {/* <div className="p-2 h-8 w-8 my-1 border-2 border-white rounded-full bg-green-400 z-2">
-            20
-          </div> */}
         </div>
       </nav>
     </div>
