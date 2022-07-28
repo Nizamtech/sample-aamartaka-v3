@@ -2,9 +2,36 @@ import React from "react";
 
 const Home_Header = () => {
   return (
-    <div className="m-2 ">
-      <div className="gradientBG font-exo rounded-lg border-b-0 rounded-b-none border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 p-3 ">
-        <div>
+    <div className="mx-2">
+      <div className="gradientBG font-exo px-4 pb-12 pt-7">
+        <div className="flex justify-between items-center py-5">
+          <div>
+            <h1 className="text-sm text-white font-bold">
+              My Commission
+            </h1>
+            <h1 className="text-sm text-white font-bold">BDT 12,000</h1>
+          </div>
+          <div>
+            <h1 className="text-sm text-white font-bold">
+              Referral Commission
+            </h1>
+            <h1 className="text-sm text-white font-bold">BDT 10,000</h1>
+          </div>
+        </div>
+        <div className="flex justify-between items-center">
+          <div>
+            <h4 className="text-sm text-white font-bold">
+              Total Balance
+            </h4>
+            <h4 className="text-sm text-white font-bold">BDT 10,000</h4>
+          </div>
+          <button className="text-sm font-bold bg-orange-500 text-white py-2 px-4 rounded-md">
+            Withdraw
+          </button>
+        </div>
+
+
+        {/*  <div>
           <div>
             <h1 className="text-xs  text-white font-monster font-[16px]   ">
               Total Balance
@@ -29,7 +56,7 @@ const Home_Header = () => {
             </h1>
             <h1 className="text-sm text-white font-bold  ">BDT 10,000</h1>
           </div>
-        </div>
+        </div> */}
 
         {/* <hr className=" border-dashed border-1 my-1" /> */}
       </div>
