@@ -3,19 +3,19 @@ import React from "react";
 const Home_Header = () => {
   return (
     <div className="mx-2">
-      <div className="gradientBG font-exo px-4 pb-12 pt-7">
+      <div className="homeBackground font-exo px-4 pb-12 pt-7">
         <div className="flex justify-between items-center py-5">
           <div>
             <h1 className="text-sm text-white font-bold">
               My Commission
             </h1>
-            <h1 className="text-sm text-white font-bold">BDT 12,000</h1>
+            <h1 className="text-sm font-bold text-orange-500">BDT 12,000</h1>
           </div>
           <div>
             <h1 className="text-sm text-white font-bold">
               Referral Commission
             </h1>
-            <h1 className="text-sm text-white font-bold">BDT 10,000</h1>
+            <h1 className="text-sm font-bold text-orange-500">BDT 10,000</h1>
           </div>
         </div>
         <div className="flex justify-between items-center">
@@ -23,42 +23,12 @@ const Home_Header = () => {
             <h4 className="text-sm text-white font-bold">
               Total Balance
             </h4>
-            <h4 className="text-sm text-white font-bold">BDT 10,000</h4>
+            <h4 className="text-sm text-orange-500 font-bold">BDT 10,000</h4>
           </div>
-          <button className="text-sm font-bold bg-orange-500 text-white py-2 px-4 rounded-md">
+          <button className="text-sm font-bold bg-orange-600 text-white py-2 px-4 rounded-md mr-10">
             Withdraw
           </button>
         </div>
-
-
-        {/*  <div>
-          <div>
-            <h1 className="text-xs  text-white font-monster font-[16px]   ">
-              Total Balance
-            </h1>
-            <button className="widraw text-[10px] font-monster text-[#3A2424]">
-              Withdraw
-            </button>
-          </div>
-          <h1 className="text-sm  text-white font-bold">BDT 10,000</h1>
-        </div>
-
-        <div className="grid grid-cols-2 font-monster mt-4">
-          <div>
-            <h1 className="text-xs text-white  tracking-wide  ">
-              My Commission
-            </h1>
-            <h1 className="text-sm  text-white font-bold  ">BDT 12,000</h1>
-          </div>
-          <div>
-            <h1 className="text-white text-xs  tracking-wide ">
-              Referral Commission
-            </h1>
-            <h1 className="text-sm text-white font-bold  ">BDT 10,000</h1>
-          </div>
-        </div> */}
-
-        {/* <hr className=" border-dashed border-1 my-1" /> */}
       </div>
 
       <div className="  pt-3 pb-2 grid border-t-0  rounded-b-md grid-cols-2 place-content-between place-items-center shadow-md border-b  bg-gray-50 w-full">

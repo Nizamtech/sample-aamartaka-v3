@@ -3,7 +3,7 @@ import React from "react";
 
 const MobileNavbar = () => {
   return (
-    <div className="gradientBG mx-2 border-b border-b-white">
+    <div className="gradientBG mx-2 border-b border-b-gray-100">
       <nav className="nav flex justify-between items-center h-16 font-monster">
         <div>
           <h1 className="text-lg text-white font-semibold">

@@ -27,7 +27,7 @@ const Home_Footer = () => {
             onClick={handleAttendance}
             className="text-xl font-exo2 font-bold flex flex-col justify-center items-center my-1"
           >
-            <FontAwesomeIcon icon={faBook} className="h-6 w-6 mx-auto text-[#015FDF]" />
+            <FontAwesomeIcon icon={faBook} className="h-6 w-6 mx-auto text-[#32BEA6]" />
             <h1 className=" font-monster text-sm text-slate-700">Attendence</h1>
           </button>
         </div>
@@ -44,8 +44,8 @@ const Home_Footer = () => {
           <button
             onClick={() => () => router.push("/dashboard")}
             className="text-xl font-exo2 font-bold flex flex-col justify-center items-center mt-1">
-            <FontAwesomeIcon icon={faChartLine} className="h-6 w-6 mx-auto text-[#015FDF]" />
-            <h1 className=" font-monster text-sm text-slate-700">Stats</h1>
+            <FontAwesomeIcon icon={faChartLine} className="h-6 w-6 mx-auto text-[#32BEA6]" />
+            <h1 className="font-monster text-sm text-slate-700">Stats</h1>
           </button>
         </div>
         <Modal showModal={showModal} setShowModal={setShowModal} />
