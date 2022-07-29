@@ -2,7 +2,7 @@ import React from "react";
 
 const Home_Header = () => {
   return (
-    <div className="mx-2">
+    <>
       <div className="homeBackground font-exo px-4 pb-12 pt-7">
         <div className="flex justify-between items-center py-5">
           <div>
@@ -25,7 +25,7 @@ const Home_Header = () => {
             </h4>
             <h4 className="text-sm text-orange-500 font-bold">BDT 10,000</h4>
           </div>
-          <button className="text-sm font-bold bg-orange-600 text-white py-2 px-4 rounded-md mr-10">
+          <button className="text-sm font-bold bg-orange-600 text-white py-2 px-4 rounded-md mr-14">
             Withdraw
           </button>
         </div>
@@ -47,7 +47,7 @@ const Home_Header = () => {
           </h1>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
