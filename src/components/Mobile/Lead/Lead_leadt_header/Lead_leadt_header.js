@@ -18,32 +18,23 @@ const Lead_leadt_header = () => {
   };
 
   return (
-    <div className=" myShadow mx-2 mt-2 rounded-lg bg-white p-2">
-      <div className=" flex justify-between items-center ">
-        <form onSubmit={handleSubmit}>
+    <div className="border border-gray-300 mx-2 mt-2 rounded-lg bg-white p-2">
+      <div className="flex justify-between items-center w-full">
+        <form onSubmit={handleSubmit} className="w-4/5">
           <input
             required
             type="text"
             name="companyName"
             onChange={handleChange}
             placeholder="Company Name Search"
-            className="my-2  focus:outline-[#2684FF] focus:duration-400 font-exo w-72 h-8 border py-4 px-3 rounded-[3px] border-[#CCCCCC] "
+            className="my-2 focus:outline-[#2684FF] focus:duration-400 font-exo  border py-2 px-3 border-[#CCCCCC] rounded-md w-full"
           />
         </form>
-        <button onClick={() => setShowModal(true)}>
-          {/*  <img
-            src="https://i.ibb.co/qxdsSmG/adjust.png"
-            alt=""
-            width="30px"
-            height="30px"
-          /> */}
+        <button onClick={() => setShowModal(true)} className="w-1/5">
           <FontAwesomeIcon icon={faSliders} className="text-2xl text-[#2684FF] mr-2" />
         </button>
       </div>
       <Lead_Modal showModal={showModal} setShowModal={setShowModal} />
-      {/* <div className=" myShadow2 p-1 rounded-md my-3 mx-2">2</div>
-
-      <div className=" myShadow2 p-1 rounded-md my-3 mx-2">3</div> */}
     </div>
   );
 };
