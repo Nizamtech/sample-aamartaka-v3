@@ -5,6 +5,8 @@ import SetPlan_Header from "./SetPlan_Header";
 import SetPlan_Input_Card from "./SetPlan_Input_Card/SetPlan_Input_Card";
 import { useState } from "react";
 import { useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export default function SetPlan_Modal({ showModal, setShowModal }) {
   const [status, setStatus] = useState(null);
@@ -22,20 +24,15 @@ export default function SetPlan_Modal({ showModal, setShowModal }) {
               {/*content*/}
               <div className="border-0 rounded-lg shadow-lg  flex flex-col w-full bg-white outline-none focus:outline-none">
                 {/*header*/}
-                <div className="flex items-start justify-between p-2 border-b border-solid border-slate-200 rounded-t">
-                  <p> Set Plan </p>
+                <div className="flex items-center justify-between py-2 px-4 border-b border-solid border-slate-200 rounded-t">
+                  <p className="font-semibold text-lg"> Set Plan </p>
                   {/* <img src="https://i.ibb.co/MpCJTpV/expand-arrow.png" alt="" /> */}
 
                   <button
                     className="p-1 ml-auto duration-700 border-0 text-black  float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                     onClick={() => setShowModal(false)}
                   >
-                    <img
-                      src="https://i.ibb.co/5hr0vN0/x-mark-32.png"
-                      width="20px"
-                      height="20px"
-                      alt=""
-                    />
+                    <FontAwesomeIcon icon={faXmark} className="text-2xl text-red-500" />
                   </button>
                 </div>
                 {/*body*/}

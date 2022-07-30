@@ -23,7 +23,7 @@ const SetPlan_Header = ({ status, setStatus, visit, setVisit }) => {
   console.log("visit", visit);
   return (
     <div>
-      <label>Tomorrow submit plan</label>
+      <label className="font-semibold">Tomorrow Submit Plan</label>
       <Select
         defaultValue={"in process"}
         required
@@ -33,7 +33,7 @@ const SetPlan_Header = ({ status, setStatus, visit, setVisit }) => {
         className="my-2"
       />
 
-      <label className="mt-2">Tomorrow company visit plan</label>
+      <label className="mt-2 font-semibold">Tomorrow Company Visit Plan</label>
       <Select
         defaultValue={"in process"}
         required
