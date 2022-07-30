@@ -12,7 +12,7 @@ const Card2 = ({ item }) => {
 
   return (
     <Link href={`/lead/${item.id}`} className="overflow-scroll font-poppins">
-      <div className="rounded-md m-2 bg-white py-2 border border-gray-300 shadow">
+      <div className="rounded-md m-2 bg-white py-2 border border-gray-300 myShadow">
         <div className="flex justify-between items-center mx-4">
           <h1
             className={`${item?.status === "Rejected" && "text-red-500"} ${item?.status === "Aproved" && "text-green-700"
