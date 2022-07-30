@@ -12,9 +12,9 @@ const SalesHistoryCard = () => {
     // { name: "Partex Group" },
   ];
   return (
-    <div className="myShadow rounded-lg my-4 p-2 font-roboto">
+    <div className="shadow rounded-lg my-4 p-2 font-roboto">
       {/* date  */}
-      <h1 className="text-center myShadow3 bg-[#4DCBBF] py-2 font-bold text-white font-exo ">
+      <h1 className="text-center shadow bg-[#2684FF] py-1.5 font-bold text-white font-exo rounded-md mb-3 mt-1">
         {date}{" "}
       </h1>
 
@@ -22,31 +22,31 @@ const SalesHistoryCard = () => {
       <div className="grid grid-cols-2 gap-4 myShadow2 p-2 rounded-lg mt-2 mx-2">
         {/* Remaining Task  */}
         <div>
-          <h1 className="text-md font-semibold text-slate-900 text-center">
+          <h1 className="text-md font-bold text-black text-center">
             Plan
           </h1>
-          <hr className=" border-dotted border-slate-500 my-1" />
-          <div className=" grid grid-cols-2 gap-1">
-            <h1 className=" text-sm text-gray-600 font-monster ">Visit </h1>
+          <hr className="border-dotted border-slate-500 my-1" />
+          <div className="grid grid-cols-2 gap-1 text-center">
+            <h1 className="text-sm text-gray-600 font-monster">Visit </h1>
             <h1>02</h1>
           </div>
-          <div className=" grid grid-cols-2 gap-1">
-            <h1 className=" text-sm text-gray-600 font-monster ">Submit</h1>
+          <div className="grid grid-cols-2 gap-1 text-center">
+            <h1 className="text-sm text-gray-600 font-monster">Submit</h1>
             <h1>02</h1>
           </div>
         </div>
         {/* Completed Task  */}
         <div>
-          <h1 className="text-md font-semibold text-slate-900 text-center">
+          <h1 className="text-md font-bold text-black text-center">
             Actual
           </h1>{" "}
           <hr className=" border-dotted border-slate-500 my-1" />
-          <div className=" grid grid-cols-2 gap-1">
-            <h1 className=" text-sm text-gray-600 font-monster ">Visited </h1>
+          <div className=" grid grid-cols-2 gap-1 text-center">
+            <h1 className=" text-sm text-gray-600 font-monster">Visited </h1>
             <h1>03</h1>
           </div>
-          <div className=" grid grid-cols-2 gap-1">
-            <h1 className=" text-sm text-gray-600 font-monster ">Submitted</h1>
+          <div className="grid grid-cols-2 gap-1 text-center">
+            <h1 className="text-sm text-gray-600 font-monster">Submitted</h1>
             <h1>04</h1>
           </div>
         </div>
@@ -82,13 +82,13 @@ const SalesHistoryCard = () => {
               companyName.map((item, index) => {
                 return (
                   <>
-                    <h1 className=" rounded-md mx-1 my-1  text-slate-900  py-[2px] px-2">
-                      {item.name}
-                      <div className=" font-monster text-gray-500 ">
-                        <h1 className=" flex  font-monster text-[10px] ">
+                    <h1 className="rounded-md mx-1 my-1 text-black py-[2px] px-2 font-semibold">
+                      <span className="mb-1 block">{item.name}</span>
+                      <div className="font-monster text-gray-500">
+                        <h1 className="flex font-monster font-normal text-xs">
                           Mohakhali,Banani,Dhaka{" "}
                         </h1>
-                        <small className="  flex  font-monster text-[10px]  ">
+                        <small className="flex font-monster text-xs font-normal">
                           10:00 AM
                         </small>
                       </div>
@@ -99,7 +99,7 @@ const SalesHistoryCard = () => {
           </div>
           {/* Completed Task  */}
           <div>
-            <h1 className="text-md font-semibold text-slate-900 text-center ">
+            <h1 className="text-md font-semibold text-slate-900 text-center">
               Actual
             </h1>{" "}
             <hr className=" border-dotted border-slate-500 my-2" />
@@ -107,13 +107,13 @@ const SalesHistoryCard = () => {
               companyName.map((item, index) => {
                 return (
                   <>
-                    <h1 className=" rounded-md mx-1 my-1  text-slate-900  py-[2px] px-2">
-                      {item.name}
-                      <div className=" font-monster text-gray-500">
-                        <h1 className=" flex  font-monster text-[10px] ">
+                    <h1 className="rounded-md mx-1 my-1 text-black py-[2px] px-2 font-semibold">
+                      <span className="mb-1 block">{item.name}</span>
+                      <div className="font-monster text-gray-500">
+                        <h1 className="flex font-monster font-normal text-xs">
                           Mohakhali,Banani,Dhaka{" "}
                         </h1>
-                        <small className="  flex  font-monster text-[10px]  ">
+                        <small className="flex font-monster text-xs font-normal">
                           10:00 AM
                         </small>
                       </div>
