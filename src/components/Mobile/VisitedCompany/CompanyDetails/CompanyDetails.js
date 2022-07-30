@@ -79,7 +79,7 @@ const CompanyDetails = ({ name }) => {
     <div>
       <BackMenu title={name} />
 
-      <div className="  absolute bg-gray-200 w-full h-screen">
+      <div className="absolute bg-gray-200 w-full h-screen">
         <div className="myShadow rounded-lg mx-2 my-2 bg-white grid grid-cols-12 gap-2 p-2">
           {/* <h1 className="bg-[#4DCBBF] py-2 text-lg text-center ">{id}</h1>
           <h1>{id}</h1>
