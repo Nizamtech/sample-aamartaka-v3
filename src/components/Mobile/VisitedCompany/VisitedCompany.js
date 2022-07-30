@@ -7,10 +7,8 @@ const VisitedCompany = () => {
   return (
     <div>
       <BackMenu title="Visited Company" />
-
       <Calendar />
-
-      <div className="bg-[#EFF2F7] h-screen w-full p-3  overflow-scroll ">
+      <div className="bg-white h-screen w-full p-3  overflow-scroll ">
         <Visited_Company_card />
         <Visited_Company_card />
       </div>

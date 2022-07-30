@@ -1,15 +1,29 @@
+import { faBarsProgress, faCheck, faPhone, faSpinner, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import React, { useState } from "react";
 
 const CustomerDetailsCard = ({ item }) => {
   return (
-    <div className="rounded-md m-2 bg-white myShadow py-2">
-      <div className=" flex justify-between items-center mx-4">
-        <h1 className={`${item.color} font-monster font-bold text-sm`}>
-          {item.status}
+    <div className="rounded-md mx-2 bg-white shadow py-2 border border-gray-300 my-3">
+      <div className="flex justify-between items-center mx-4">
+        <h1 className={`${item.color} font-monster font-bold text-sm flex items-center`}>
+          {item?.status === "Approved" &&
+            <FontAwesomeIcon icon={faCheck} className={`${item.color} mr-2 text-lg font-bold`} />
+          }
+          {item?.status === "Rejected" &&
+            <FontAwesomeIcon icon={faXmark} className={`${item.color} mr-2 text-lg font-bold`} />
+          }
+          {item?.status === "In Progress" &&
+            <FontAwesomeIcon icon={faBarsProgress} className={`${item.color} mr-2 text-lg font-bold`} />
+          }
+          {item?.status === "Pending" &&
+            <FontAwesomeIcon icon={faSpinner} className={`${item.color} mr-2 text-lg font-bold`} />
+          }
+          {item?.status}
         </h1>
-        <div className=" flex justify-between items-center">
-          <div className="  p-[2px]  bg-gray-50 flex justify-start items-center mx-2">
+        <div className="flex justify-between items-center mx-4">
+          <div className="flex justify-start items-center mx-2">
             <Image
               src="https://i.ibb.co/fpLJdg2/sms.png"
               alt=""
@@ -17,45 +31,28 @@ const CustomerDetailsCard = ({ item }) => {
               height="25px"
             />
           </div>
-
-          <div className=" p-[2px] bg-gray-50 flex justify-start items-center mx-2">
-            <Image
-              src="https://i.ibb.co/kxcGLfG/phone-call-2.png"
-              alt=""
-              width="25px"
-              height="25px"
-            />
+          <div className="mx-2">
+            <FontAwesomeIcon icon={faPhone} className="text-xl text-[#2684FF]" />
           </div>
         </div>
       </div>
-      <div className="flex justify-between items-center w-full px-5 py-1">
-        <div className="grid grid-cols-3 w-full ">
-          <div className="bg-white col-span-2  text-slate-900  border-b-0 ">
-            <p className=" text-[15px] font-bold ">{item?.name}</p>
-            <p className="text-sm text-black ">{item?.company}</p>
-          </div>
-          <div className="bg-white  text-slate-900  border-b-0 ">
-            <div className=" flex flex-col justify-center  items-center">
-              {" "}
-              <div className="my-1">
-                {/* <h1 className="text-md font-semibold text-slate-900 ">
-                    Salary
-                  </h1> */}
-                <h1 className="text-sm text-black ">
-                  Bank:
-                  <span className="mx-2">07,854</span>
-                </h1>
-                <h1 className="text-sm text-black ">
-                  Cash:
-                  <span className="mx-2">12,123</span>
-                </h1>
-              </div>
-              {/* <p className="text-sm text-black ">{salary}</p> */}
-            </div>
-          </div>
+      <div className="flex justify-between items-center my-2 mx-4">
+        <div className="text-black font-semibold">
+          <p>{item?.name}</p>
+          <p>{item?.company}</p>
+        </div>
+        <div className="text-md text-black font-semibold">
+          <h5>
+            Bank:
+            <span className="font-bold ml-1">07,854</span>
+          </h5>
+          <h5>
+            Cash:
+            <span className="font-bold ml-1">12,123</span>
+          </h5>
         </div>
       </div>
-      <h1 className="text-sm text-black mx-4  font-[500] ">
+      <h1 className="text-sm text-gray-600 mx-4 font-[500] ">
         Customer Will Provide Documents
       </h1>
     </div>

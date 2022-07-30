@@ -57,7 +57,7 @@ const Visited_Company_card = () => {
         companyName={companyName}
       />
       <div>
-        <h1 className="p-2 bg-[#4DCBBF] text-center font-roboto font-bold text-white">
+        <h1 className="p-2 bg-[#2684FF] text-center font-roboto font-bold text-white rounded-md">
           {"12/6/2022"}
         </h1>
         <hr className=" border-dotted mb-2" />
@@ -71,7 +71,7 @@ const Visited_Company_card = () => {
                   onClick={() => {
                     setShowModal(true), setCompanyName(item.name);
                   }}
-                  className=" my-2 myShadow2 text-md p-2 bg-white rounded-md"
+                  className="my-2 myShadow2 text-md p-2 bg-white rounded-md"
                 >
                   {item.name}
                 </div>

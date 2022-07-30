@@ -73,13 +73,13 @@ const CustomersDetails = ({ name }) => {
   return (
     <div>
       <BackMenu title={name} />
-      <div className="  absolute bg-gray-200 w-full h-screen">
+      <div className="absolute bg-gray-200 w-full h-screen">
         <div className="myShadow bg-white mx-2 my-2 rounded-lg p-2">
-          <div className=" grid grid-cols-12 my-2 mx-2">
-            <h1 className=" col-span-8 font-bold">Total Customer </h1>
-            <h1 className=" col-span-4 font-bold">05 </h1>
+          <div className="flex justify-between items-center my-2 px-5">
+            <h1 className=" col-span-8 font-bold">Total Customer</h1>
+            <h1 className=" col-span-4 font-bold">05</h1>
           </div>
-          <hr className=" border-dotted border-slate-500 my-2" />
+          <hr className="border-dotted border-slate-500 mt-2 mb-4 mx-4" />
           {data &&
             data.map((item) => {
               return (
