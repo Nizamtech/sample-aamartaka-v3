@@ -11,12 +11,12 @@ const VisitDetails = ({ name }) => {
           {/* <h1 className=" font-monster text-lg mb-2 font-bold">
             Visit Details
           </h1> */}
-          <div className=" grid grid-cols-12">
-            <div className=" col-span-4 font-bold text-slate-500">
-              <h1>Total Visit</h1>
-              <h1>Location</h1>
+          <div className="grid grid-cols-12 px-2">
+            <div className="col-span-4 font-semibold">
+              <h1>Total Visit-</h1>
+              <h1>Location-</h1>
             </div>
-            <div className=" col-span-8 font-bold">
+            <div className="col-span-8 font-semibold">
               <h1>03</h1>
               <h1>30 East Mohakhali, Banani, Dhaka, Bangldesh</h1>
             </div>
