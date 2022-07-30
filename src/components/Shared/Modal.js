@@ -14,7 +14,7 @@ export default function Modal({ showModal, setShowModal }) {
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 {/*header*/}
                 <div className="flex items-start justify-between p-2 border-b border-solid border-slate-200 rounded-t">
-                  <p> ATTENDANCE </p>
+                  <p className="font-bold">ATTENDANCE </p>
                   {/* <img src="https://i.ibb.co/MpCJTpV/expand-arrow.png" alt="" /> */}
 
                   <button
@@ -29,7 +29,7 @@ export default function Modal({ showModal, setShowModal }) {
                 </div>
                 {/*body*/}
                 <div className=" p-6 flex flex-col">
-                  <div className="myShadow flex items-center  text-black font-bold py-4 px-4 rounded-lg my-2 ">
+                  <div className="myShadow flex items-center text-black font-semibold py-4 px-4 rounded-lg my-2 ">
                     <Image
                       src="https://i.ibb.co/hsHy4m0/immigration.png"
                       alt="attendence"
@@ -46,7 +46,7 @@ export default function Modal({ showModal, setShowModal }) {
                     </Link>
                   </div>
 
-                  <div className="myShadow flex items-center  text-black font-bold py-4 px-4 rounded-lg my-2 ">
+                  <div className="myShadow flex items-center text-black font-semibold py-4 px-4 rounded-lg my-2 ">
                     <Image
                       src="https://i.ibb.co/hsHy4m0/immigration.png"
                       alt="attendence"
@@ -61,7 +61,7 @@ export default function Modal({ showModal, setShowModal }) {
                       <a className="ml-5"> Attend End</a>
                     </Link>
                   </div>
-                  <div className="myShadow flex items-center  text-black font-bold py-4 px-4 rounded-lg my-2 ">
+                  <div className="myShadow flex items-center text-black font-semibold py-4 px-4 rounded-lg my-2 ">
                     <Image
                       src="https://i.ibb.co/hsHy4m0/immigration.png"
                       alt="attendence"

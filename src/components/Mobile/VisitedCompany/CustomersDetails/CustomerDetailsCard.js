@@ -43,11 +43,11 @@ const CustomerDetailsCard = ({ item }) => {
                   </h1> */}
                 <h1 className="text-sm text-black ">
                   Bank:
-                  <span className="mx-2 "> 07,854</span>
+                  <span className="mx-2">07,854</span>
                 </h1>
                 <h1 className="text-sm text-black ">
                   Cash:
-                  <span className="mx-2"> 12,123</span>
+                  <span className="mx-2">12,123</span>
                 </h1>
               </div>
               {/* <p className="text-sm text-black ">{salary}</p> */}
@@ -55,7 +55,6 @@ const CustomerDetailsCard = ({ item }) => {
           </div>
         </div>
       </div>
-
       <h1 className="text-sm text-black mx-4  font-[500] ">
         Customer Will Provide Documents
       </h1>

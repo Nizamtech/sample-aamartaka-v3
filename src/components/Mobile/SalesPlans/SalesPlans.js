@@ -48,7 +48,7 @@ const SalesPlans = () => {
 
           {/* first Half  */}
           <div className="myShadow rounded-lg my-2 p-2 bg-gray-50 ">
-            <h1 className="my-2 text-lg text-sky-400 mx-4 font-monster">
+            <h1 className="my-2 text-lg text-[#5058F2] mx-4 font-monster font-semibold tracking-wide">
               First Half
             </h1>
 
@@ -56,7 +56,7 @@ const SalesPlans = () => {
             <SalesPlanCard />
           </div>
           <div className="myShadow rounded-lg my-6 p-2 bg-gray-50 ">
-            <h1 className="my-2 text-lg text-sky-400 mx-4 font-monster">
+            <h1 className="my-2 text-lg text-[#5058F2] mx-4 font-monster font-semibold tracking-wide">
               Second Half
             </h1>
             {/* <hr className=" border-dotted border-slate-700" /> */}

@@ -112,7 +112,7 @@ const CompanyStatus = () => {
         {selected && (
           <div className="m-2 myShadow p-2 rounded-md font-exo">
             <h1 cl>City Bank</h1>
-            <hr className=" border-dotted my-1 " />
+            <hr className=" border-dotted my-1" />
 
             {/* <h1 className="grid grid-cols-3 text-xs mt-1">
               <span className=" text-slate-400 text-sm">Comapy Name</span>

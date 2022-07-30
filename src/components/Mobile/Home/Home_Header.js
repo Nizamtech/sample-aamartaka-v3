@@ -31,9 +31,9 @@ const Home_Header = () => {
         </div>
       </div>
 
-      <div className="  pt-3 pb-2 grid border-t-0  rounded-b-md grid-cols-2 place-content-between place-items-center shadow-md border-b  bg-gray-50 w-full">
+      <div className="pt-3 pb-2 grid border-t-0 rounded-b-md grid-cols-2 place-content-between place-items-center shadow-md border-b bg-gray-50 w-full">
         <div className="flex flex-col justify-between items-center w-full border-r  ">
-          <h1 className=" font-bold text-slate-500 font-monster ">
+          <h1 className=" font-bold text-slate-500 font-monster">
             Target Points
           </h1>
           <h1 className=" text-lg  text-black font-bold tracking-[2px]">15</h1>

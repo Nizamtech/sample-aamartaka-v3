@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Lead_Modal from "./Lead_Modal";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSliders } from "@fortawesome/free-solid-svg-icons";
 
 const Lead_leadt_header = () => {
   const [showModal, setShowModal] = useState(false);
@@ -29,12 +31,13 @@ const Lead_leadt_header = () => {
           />
         </form>
         <button onClick={() => setShowModal(true)}>
-          <img
+          {/*  <img
             src="https://i.ibb.co/qxdsSmG/adjust.png"
             alt=""
             width="30px"
             height="30px"
-          />
+          /> */}
+          <FontAwesomeIcon icon={faSliders} className="text-2xl text-[#2684FF] mr-2" />
         </button>
       </div>
       <Lead_Modal showModal={showModal} setShowModal={setShowModal} />

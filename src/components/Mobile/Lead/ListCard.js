@@ -16,9 +16,9 @@ const ListCard = ({ data }) => {
       <div
         className={`w-screen border my-2 font-exo bg-[#E4FEFF] h-screen overflow-scroll`}
       >
-        <div className=" my-4">
+        <div className="my-4">
           {/* header  */}
-          <div className="mx-2 p-3 rounded-md  font-monster myShadow bg-white ">
+          <div className="mx-2 p-3 rounded-md font-monster myShadow bg-white ">
             <div>
               <h1 className="text-md text-black font-bold">{data?.name}</h1>
               <h1 className="text-sm text-slate-600">{data?.profession}</h1>

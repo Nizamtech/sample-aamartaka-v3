@@ -21,7 +21,7 @@ const BackMenu = ({ title, img }) => {
             alt="back"
           />
         </button>
-        <h1 className="text-[16px] font-monster my-2  text-[#434343] capitalize  ">
+        <h1 className="text-[16px] font-monster my-2  text-[#434343] capitalize">
           {title}
         </h1>
       </div>

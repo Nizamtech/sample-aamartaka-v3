@@ -130,17 +130,17 @@ const NewLead = () => {
 
       <div className="mx-2">
         <form onSubmit={handleSubmit}>
-          <label> Name</label>
+          <label className="font-semibold">Name</label>
           <input
             required
             type="text"
             name="name"
             onChange={handleChange}
             placeholder="Name"
-            className="my-2 focus:outline-[#2684FF] focus:duration-400 font-exo w-full h-8 border py-4 px-3 rounded-[3px] border-[#CCCCCC] "
+            className="my-2 focus:outline-[#2684FF] focus:outline-1 focus:duration-400 font-exo w-full h-8 border py-4 px-3 rounded-[3px] border-[#CCCCCC] "
           />
 
-          <label> Phone</label>
+          <label className="font-semibold">Phone</label>
           <input
             required
             type="text"
@@ -153,7 +153,7 @@ const NewLead = () => {
             placeholder="Phone Number"
             className="my-2 focus:outline-[#2684FF] focus:duration-400 font-exo w-full h-8 border py-4 px-3 rounded-[3px] border-[#CCCCCC] "
           />
-          <label> Profession</label>
+          <label className="font-semibold">Profession</label>
           <Select
             required
             name="profession"
@@ -164,31 +164,31 @@ const NewLead = () => {
           />
           {(profession?.value === "salaried" ||
             profession?.value === "professional") && (
-            <div>
-              <label> Salary Type</label>
-              <Select
-                required
-                name="profession"
-                onChange={setSalaryType}
-                options={salaryTypeData}
-                placeholder="Salary Type"
-                className="my-2"
-              />
-              <label> Company Name</label>
-              <Select
-                required
-                name="companyName"
-                onChange={setcompanyName}
-                options={companyNameData}
-                placeholder="Company Name"
-                className="my-2"
-              />
-            </div>
-          )}
+              <div>
+                <label className="font-semibold">Salary Type</label>
+                <Select
+                  required
+                  name="profession"
+                  onChange={setSalaryType}
+                  options={salaryTypeData}
+                  placeholder="Salary Type"
+                  className="my-2"
+                />
+                <label className="font-semibold">Company Name</label>
+                <Select
+                  required
+                  name="companyName"
+                  onChange={setcompanyName}
+                  options={companyNameData}
+                  placeholder="Company Name"
+                  className="my-2"
+                />
+              </div>
+            )}
 
           {profession?.value === "business" && (
             <div>
-              <label>Yearly Transaction</label>
+              <label className="font-semibold">Yearly Transaction</label>
               <input
                 required
                 type="number"
@@ -199,7 +199,7 @@ const NewLead = () => {
                 placeholder="ex: 45000"
                 className="my-2 focus:outline-[#2684FF] focus:duration-400 font-exo w-full h-8 border py-4 px-3 rounded-[3px] border-[#CCCCCC] "
               />
-              <label> Company Name</label>
+              <label className="font-semibold">Company Name</label>
               <Select
                 required
                 name="companyName"
@@ -212,7 +212,7 @@ const NewLead = () => {
           )}
           {profession?.value === "landloard" && (
             <div>
-              <label>Rental Income</label>
+              <label className="font-semibold">Rental Income</label>
               <input
                 required
                 type="number"
@@ -226,7 +226,7 @@ const NewLead = () => {
             </div>
           )}
 
-          <label> Status</label>
+          <label className="font-semibold">Status</label>
           <Select
             defaultValue={"in process"}
             required
@@ -236,7 +236,7 @@ const NewLead = () => {
             className="my-2"
           />
 
-          <label> Interested Bank</label>
+          <label className="font-semibold">Interested Bank</label>
           <Select
             requred
             defaultValue={interestBank}
@@ -250,7 +250,7 @@ const NewLead = () => {
             classNamePrefix="select "
           />
 
-          <label> Interested Products</label>
+          <label className="font-semibold">Interested Products</label>
           <Select
             required
             defaultValue={interestProducts}
@@ -264,7 +264,7 @@ const NewLead = () => {
             classNamePrefix="select"
           />
 
-          <label> Schedule Date</label>
+          <label className="font-semibold">Schedule Date</label>
           <Select
             required
             name="scheduleDate"
@@ -276,7 +276,7 @@ const NewLead = () => {
 
           {scheduleDate && (
             <div>
-              <label> Schedule Time</label>
+              <label className="font-semibold">Schedule Time</label>
               <Select
                 required
                 name="scheduleDTte"
@@ -289,7 +289,7 @@ const NewLead = () => {
           )}
 
           <button
-            className="my-4 mx-auto text-white bg-[#3ac47d] border-[#3ac47d]  text-xs px-5 py-2 rounded-md font-exo"
+            className="my-2 mx-auto text-white bg-[#2684FF] border-[#2684FF] text-sm tracking-wider px-5 py-2 rounded-md font-exo w-full"
             type="submit"
           >
             Submit

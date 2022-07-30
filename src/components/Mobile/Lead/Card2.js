@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 const Card2 = ({ item }) => {
   function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -13,16 +15,14 @@ const Card2 = ({ item }) => {
       <div className="rounded-md m-2 bg-white myShadow py-2">
         <div className=" flex justify-between items-center mx-4">
           <h1
-            className={`${item?.status === "Rejected" && "text-red-500"} ${
-              item?.status === "Aproved" && "text-green-500"
-            } ${item?.status === "Declined" && " text-orange-600"}  ${
-              item?.status === "In Process" && " text-yellow-500"
-            }   font-monster font-bold text-sm`}
+            className={`${item?.status === "Rejected" && "text-red-500"} ${item?.status === "Aproved" && "text-green-700"
+              } ${item?.status === "Declined" && " text-yellow-600"}  ${item?.status === "In Process" && " text-cyan-500"
+              }   font-monster font-bold text-sm`}
           >
             {item?.status}
           </h1>
-          <div className=" flex justify-between items-center">
-            <div className="  p-[2px]  bg-gray-50 flex justify-start items-center mx-2">
+          <div className="flex justify-between items-center">
+            <div className="p-[2px] bg-gray-50 flex justify-start items-center mx-1">
               <Image
                 src="https://i.ibb.co/fpLJdg2/sms.png"
                 alt=""
@@ -31,13 +31,8 @@ const Card2 = ({ item }) => {
               />
             </div>
 
-            <div className=" p-[2px] bg-gray-50 flex justify-start items-center mx-2">
-              <Image
-                src="https://i.ibb.co/kxcGLfG/phone-call-2.png"
-                alt=""
-                width="25px"
-                height="25px"
-              />
+            <div className=" p-[2px] bg-gray-50 flex justify-start items-center mx-1">
+              <FontAwesomeIcon icon={faPhone} className="text-xl" />
             </div>
           </div>
         </div>
