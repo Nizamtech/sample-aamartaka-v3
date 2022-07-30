@@ -5,9 +5,9 @@ const Calendar = () => {
   const [type, setType] = useState("text");
   const [type2, setType2] = useState("text");
   return (
-    <div className=" bg-[#EFF2F7] mt-1  p-2 grid grid-cols-2 gap-3 ">
+    <div className="bg-white mt-1 py-2 px-3 grid grid-cols-2 gap-3">
       <input
-        className=" border-gray-300 rounded-md p-3 focus:outline-none text-sm font-monster  "
+        className="border border-gray-300 rounded-md p-3 focus:outline-none text-sm font-monster shadow focus:border-[#2684FF]"
         type={type}
         placeholder="From"
         onFocus={() => setType("date")}
@@ -15,7 +15,7 @@ const Calendar = () => {
         onChange={(e) => console.log(e.target.value)}
       />
       <input
-        className=" border-gray-300 rounded-md p-3 focus:outline-none text-sm font-monster"
+        className="border border-gray-300 rounded-md p-3 focus:outline-none text-sm font-monster shadow focus:border-[#2684FF]"
         type={type2}
         placeholder="To"
         onFocus={() => setType2("date")}
