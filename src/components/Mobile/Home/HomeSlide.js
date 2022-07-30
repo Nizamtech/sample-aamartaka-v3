@@ -47,7 +47,7 @@ const HomeSlide = () => {
   ];
 
   return (
-    <div className="flex items-center mx-2 p-4 bg-white rounded-lg border border-gray-200 shadow-md ">
+    <div className="flex items-center mx-2 p-4 bg-white rounded-lg border border-gray-200 shadow-md mt-2">
       <Swiper
         loop={true}
         grabCursor={true}

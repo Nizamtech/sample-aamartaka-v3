@@ -27,7 +27,7 @@ const Home_Footer = () => {
             onClick={handleAttendance}
             className="text-xl font-exo2 font-bold flex flex-col justify-center items-center my-1"
           >
-            <FontAwesomeIcon icon={faBook} className="h-6 w-6 mx-auto text-[#015FDF]" />
+            <FontAwesomeIcon icon={faBook} className="h-6 w-6 mx-auto text-[#2684FF]" />
             <h1 className=" font-monster text-sm text-slate-700">Attendence</h1>
           </button>
         </div>
@@ -36,7 +36,7 @@ const Home_Footer = () => {
             onClick={() => router.push("/lead/newlead")}
             className="p-4 relative top-[-40px] py-1 px-2 flex flex-col justify-center items-center">
             <div className=" absolute h-8 w-16 top-[15px] rounded-b-full ">
-              <FontAwesomeIcon icon={faCirclePlus} className="h-10 w-10 rounded-full mx-auto mt-2 text-[#015FDF]" />
+              <FontAwesomeIcon icon={faCirclePlus} className="h-10 w-10 rounded-full mx-auto mt-2 text-[#2684FF]" />
             </div>
           </button>
         </div>
@@ -44,7 +44,7 @@ const Home_Footer = () => {
           <button
             onClick={() => () => router.push("/dashboard")}
             className="text-xl font-exo2 font-bold flex flex-col justify-center items-center mt-1">
-            <FontAwesomeIcon icon={faChartLine} className="h-6 w-6 mx-auto text-[#015FDF]" />
+            <FontAwesomeIcon icon={faChartLine} className="h-6 w-6 mx-auto text-[#2684FF]" />
             <h1 className="font-monster text-sm text-slate-700">Stats</h1>
           </button>
         </div>

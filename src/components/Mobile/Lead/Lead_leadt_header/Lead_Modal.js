@@ -41,7 +41,7 @@ export default function Lead_Modal({ showModal, setShowModal }) {
                 </div>
                 {/*body*/}
                 <div className=" p-6 flex flex-col  ">
-                  <label> Status</label>
+                  <label className="font-semibold"> Status</label>
                   <Select
                     defaultValue={"in process"}
                     required
@@ -51,7 +51,7 @@ export default function Lead_Modal({ showModal, setShowModal }) {
                     className="my-2"
                   />
 
-                  <label className="mt-2"> Product Type</label>
+                  <label className="mt-2 font-semibold"> Product Type</label>
                   <Select
                     defaultValue={"in process"}
                     required
@@ -60,11 +60,9 @@ export default function Lead_Modal({ showModal, setShowModal }) {
                     options={statusData}
                     className="my-2"
                   />
-
                   <button
                     type="button"
-                    className="flex justify-center text-white font text-center bg-[#1da1f2] hover:bg-[#1da1f2]/90 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg text-sm px-5 py-2.5  items-center dark:focus:ring-[#1da1f2]/55 mt-5  mb-2"
-                  >
+                    className="flex justify-center text-white font text-center bg-[#2684FF] hover:bg-[#2684FF] focus:ring-0 focus:outline-none focus:bg-[#1879f8] font-medium rounded-lg text-sm px-5 py-2.5 items-center mt-5 mb-2">
                     Apply
                   </button>
                 </div>
