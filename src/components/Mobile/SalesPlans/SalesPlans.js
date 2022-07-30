@@ -16,27 +16,27 @@ const SalesPlans = () => {
           <button
             onClick={() => router.push("/salesplans/saleshistory")}
             type="button"
-            className="w-full mx-2 text-white bg-[#3ac47d] border-[#3ac47d]  text-xs px-5 py-2 rounded-md font-exo"
+            className="w-full mx-2 text-white bg-cyan-400 border-cyan-400 text-xs px-5 py-2 rounded-md font-exo"
           >
             History
           </button>
           <button
             onClick={() => setShowModal(true)}
             type="button"
-            className="w-full mx-2 text-white bg-[#3ac47d] border-[#3ac47d]  text-xs px-5 py-2 rounded-md font-exo"
+            className="w-full mx-2 text-white bg-[#2684FF] border-[#2684FF] text-xs px-5 py-2 rounded-md font-exo"
           >
             Set Plan
           </button>
         </div>
         <div className=" bg-white mt-4 rounded-md h-screen overflow-scroll">
           <div className="grid grid-cols-2 font-exo  ">
-            <div className="p-2">
+            <div className="p-2 border-r">
               <h1 className="text-sm text-center text-cyan-500 font-bold ">
                 Tomorrow Submit Plan
               </h1>
-              <h1 className="text-lg text-center font-bold ">02 </h1>
+              <h1 className="text-lg text-center font-bold ">02</h1>
             </div>
-            <div className="p-2">
+            <div className="p-2 border-l">
               <h1 className="text-sm  text-center text-cyan-500 font-bold">
                 Tomorrow visit Plan
               </h1>
@@ -47,8 +47,8 @@ const SalesPlans = () => {
           {/* main content  */}
 
           {/* first Half  */}
-          <div className="myShadow rounded-lg my-2 p-2 bg-gray-50 ">
-            <h1 className="my-2 text-lg text-[#5058F2] mx-4 font-monster font-semibold tracking-wide">
+          <div className="shadow rounded-lg my-2 p-2 bg-gray-50">
+            <h1 className="my-2 text-lg text-black mx-4 font-monster font-semibold tracking-wide">
               First Half
             </h1>
 
@@ -56,7 +56,7 @@ const SalesPlans = () => {
             <SalesPlanCard />
           </div>
           <div className="myShadow rounded-lg my-6 p-2 bg-gray-50 ">
-            <h1 className="my-2 text-lg text-[#5058F2] mx-4 font-monster font-semibold tracking-wide">
+            <h1 className="my-2 text-lg text-black mx-4 font-monster font-semibold tracking-wide">
               Second Half
             </h1>
             {/* <hr className=" border-dotted border-slate-700" /> */}
