@@ -37,7 +37,7 @@ export default function VisitedCompanyModal({
                     className="p-1 ml-auto duration-700 border-0 text-black  float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                     onClick={() => setShowModal(false)}
                   >
-                    <FontAwesomeIcon icon={faXmark} className="text-2xl text-red-500" />
+                    <FontAwesomeIcon icon={faXmark} className="h-6 w-6 text-red-500" />
                   </button>
                 </div>
                 {/*body*/}

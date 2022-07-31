@@ -9,16 +9,16 @@ const CustomerDetailsCard = ({ item }) => {
       <div className="flex justify-between items-center mx-4">
         <h1 className={`${item.color} font-monster font-bold text-sm flex items-center`}>
           {item?.status === "Approved" &&
-            <FontAwesomeIcon icon={faCheck} className={`${item.color} mr-2 text-lg font-bold`} />
+            <FontAwesomeIcon icon={faCheck} className={`${item.color} mr-2 w-5 h-5 font-bold`} />
           }
           {item?.status === "Rejected" &&
-            <FontAwesomeIcon icon={faXmark} className={`${item.color} mr-2 text-lg font-bold`} />
+            <FontAwesomeIcon icon={faXmark} className={`${item.color} mr-2 h-5 w-5 font-bold`} />
           }
           {item?.status === "In Progress" &&
-            <FontAwesomeIcon icon={faBarsProgress} className={`${item.color} mr-2 text-lg font-bold`} />
+            <FontAwesomeIcon icon={faBarsProgress} className={`${item.color} mr-2 h-5 w-5 font-bold`} />
           }
           {item?.status === "Pending" &&
-            <FontAwesomeIcon icon={faSpinner} className={`${item.color} mr-2 text-lg font-bold`} />
+            <FontAwesomeIcon icon={faSpinner} className={`${item.color} mr-2 w-5 h-5 font-bold`} />
           }
           {item?.status}
         </h1>
@@ -32,7 +32,7 @@ const CustomerDetailsCard = ({ item }) => {
             />
           </div>
           <div className="mx-2">
-            <FontAwesomeIcon icon={faPhone} className="text-xl text-[#2684FF]" />
+            <FontAwesomeIcon icon={faPhone} className="h-5 w-5 text-[#2684FF]" />
           </div>
         </div>
       </div>

@@ -43,7 +43,7 @@ const FileCollection = () => {
                           </div>
 
                           <div className="mx-2">
-                            <FontAwesomeIcon icon={faPhone} className="text-xl animate-bounce text-sky-600" />
+                            <FontAwesomeIcon icon={faPhone} className="h-6 w-6 animate-bounce text-sky-600" />
                           </div>
                         </div>
                         {/* <h1 className="  text-sm font-monster ">2,000,000</h1> */}
