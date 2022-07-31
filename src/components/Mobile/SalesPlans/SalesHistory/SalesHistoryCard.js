@@ -14,7 +14,7 @@ const SalesHistoryCard = () => {
   return (
     <div className="shadow rounded-lg my-4 p-2 font-roboto">
       {/* date  */}
-      <h1 className="text-center shadow bg-[#2684FF] py-1.5 font-bold text-white font-exo rounded-md mb-3 mt-1">
+      <h1 className="text-center shadow bg-sky-500 py-1.5 font-bold text-white font-exo rounded-md mb-3 mt-1">
         {date}{" "}
       </h1>
 
@@ -26,13 +26,15 @@ const SalesHistoryCard = () => {
             Plan
           </h1>
           <hr className="border-dotted border-slate-500 my-1" />
-          <div className="grid grid-cols-2 gap-1 text-center">
-            <h1 className="text-sm text-gray-600 font-monster">Visit </h1>
-            <h1>02</h1>
+          <div className="grid grid-cols-12 gap-1 text-center">
+            <h4 className="text-sm text-gray-600 font-monster col-span-5">Visit</h4>
+            <p className="col-span-2">--</p>
+            <h4 className="col-span-5">02</h4>
           </div>
-          <div className="grid grid-cols-2 gap-1 text-center">
-            <h1 className="text-sm text-gray-600 font-monster">Submit</h1>
-            <h1>02</h1>
+          <div className="grid grid-cols-12 gap-1 text-center">
+            <h4 className="text-sm text-gray-600 font-monster col-span-5">Submit</h4>
+            <p className="col-span-2">--</p>
+            <h4 className="col-span-5">02</h4>
           </div>
         </div>
         {/* Completed Task  */}
@@ -40,14 +42,16 @@ const SalesHistoryCard = () => {
           <h1 className="text-md font-bold text-black text-center">
             Actual
           </h1>{" "}
-          <hr className=" border-dotted border-slate-500 my-1" />
-          <div className=" grid grid-cols-2 gap-1 text-center">
-            <h1 className=" text-sm text-gray-600 font-monster">Visited </h1>
-            <h1>03</h1>
+          <hr className="border-dotted border-slate-500 my-1" />
+          <div className="grid grid-cols-12 gap-1 text-center">
+            <h1 className=" text-sm text-gray-600 font-monster col-span-5">Visited </h1>
+            <p className="col-span-2">--</p>
+            <h1 className="col-span-5">03</h1>
           </div>
-          <div className="grid grid-cols-2 gap-1 text-center">
-            <h1 className="text-sm text-gray-600 font-monster">Submitted</h1>
-            <h1>04</h1>
+          <div className="grid grid-cols-12 gap-1 text-center">
+            <h1 className="text-sm text-gray-600 font-monster col-span-5">Submitted</h1>
+            <p className="col-span-2">--</p>
+            <h1 className="col-span-5">04</h1>
           </div>
         </div>
       </div>

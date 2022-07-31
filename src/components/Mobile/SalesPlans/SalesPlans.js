@@ -16,7 +16,7 @@ const SalesPlans = () => {
           <button
             onClick={() => router.push("/salesplans/saleshistory")}
             type="button"
-            className="w-full mx-2 text-white bg-[#2684FF] border-[#2684FF] text-xs px-5 py-2 rounded-md font-exo"
+            className="w-full mx-2 text-white bg-sky-500 border-sky-500 text-xs px-5 py-2 rounded-md font-exo"
           >
             History
           </button>
@@ -31,13 +31,13 @@ const SalesPlans = () => {
         <div className=" bg-white mt-4 rounded-md h-screen overflow-scroll">
           <div className="grid grid-cols-2 font-exo  ">
             <div className="p-2 border-r">
-              <h1 className="text-sm text-center text-[#2684FF] font-bold ">
+              <h1 className="text-sm text-center text-[#E68E8D] font-bold ">
                 Tomorrow Submit Plan
               </h1>
               <h1 className="text-lg text-center font-bold ">02</h1>
             </div>
             <div className="p-2 border-l">
-              <h1 className="text-sm  text-center text-[#2684FF] font-bold">
+              <h1 className="text-sm  text-center text-[#E68E8D] font-bold">
                 Tomorrow visit Plan
               </h1>
               <h1 className="text-lg text-center font-bold ">02 </h1>
