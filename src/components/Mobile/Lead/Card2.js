@@ -37,7 +37,7 @@ const Card2 = ({ item }) => {
               />
             </div>
             <div className="mx-2">
-              <FontAwesomeIcon icon={faPhone} className="h-5 w-5 text-[#2684FF]" />
+              <FontAwesomeIcon icon={faPhone} className="h-5 w-5 text-[#0EA5E9]" />
             </div>
           </div>
         </div>

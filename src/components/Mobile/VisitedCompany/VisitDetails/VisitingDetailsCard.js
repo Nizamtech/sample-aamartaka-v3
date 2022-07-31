@@ -3,7 +3,7 @@ import React from "react";
 const VisitingDetailsCard = ({ purpose, name, time, date, phone }) => {
   return (
     <div className="rounded-lg my-4 pb-2 border shadow">
-      <h1 className="font-monster font-bold bg-[#2684FF] text-white px-2 py-1.5 text-center rounded-t-md">
+      <h1 className="font-monster font-bold bg-[#0EA5E9] text-white px-2 py-1.5 text-center rounded-t-md">
         {date}
       </h1>
       <div className="grid grid-cols-12 gap-2 p-2 font-roboto">

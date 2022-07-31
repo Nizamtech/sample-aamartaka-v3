@@ -3,6 +3,8 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import Select from "react-select";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 export default function Lead_Modal({ showModal, setShowModal }) {
   const [status, setStatus] = useState(null);
 
@@ -23,20 +25,15 @@ export default function Lead_Modal({ showModal, setShowModal }) {
               {/*content*/}
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 {/*header*/}
-                <div className="flex items-start justify-between p-2 border-b border-solid border-slate-200 rounded-t">
-                  <p className=" mx-2">Filter Lead List</p>
+                <div className="flex items-center justify-between p-2 border-b border-solid border-slate-200 rounded-t">
+                  <p className="mx-2 font-bold">Filter Lead List</p>
                   {/* <img src="https://i.ibb.co/MpCJTpV/expand-arrow.png" alt="" /> */}
 
                   <button
                     className="p-1 ml-auto duration-700 border-0 text-black  float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                     onClick={() => setShowModal(false)}
                   >
-                    <img
-                      src="https://i.ibb.co/5hr0vN0/x-mark-32.png"
-                      width="20px"
-                      height="20px"
-                      alt=""
-                    />
+                    <FontAwesomeIcon icon={faXmark} className="text-red-500 w-6 h-6" />
                   </button>
                 </div>
                 {/*body*/}
