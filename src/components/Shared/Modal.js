@@ -14,7 +14,7 @@ export default function Modal({ showModal, setShowModal }) {
               <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
                 {/*header*/}
                 <div className="flex items-start justify-between p-2 border-b border-solid border-slate-200 rounded-t">
-                  <p className="font-bold">ATTENDANCE </p>
+                  <p className="font-bold ml-2">ATTENDANCE </p>
                   {/* <img src="https://i.ibb.co/MpCJTpV/expand-arrow.png" alt="" /> */}
 
                   <button
@@ -23,7 +23,7 @@ export default function Modal({ showModal, setShowModal }) {
                   >
                     <img
                       src="https://i.ibb.co/MpCJTpV/expand-arrow.png"
-                      alt=""
+                      alt="Attend Icon"
                     />
                   </button>
                 </div>

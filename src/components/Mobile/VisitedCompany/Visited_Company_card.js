@@ -57,7 +57,7 @@ const Visited_Company_card = () => {
         companyName={companyName}
       />
       <div>
-        <h1 className="p-2 bg-[#2684FF] text-center font-roboto font-bold text-white rounded-md">
+        <h1 className="p-2 bg-[#0EA5E9] text-center font-roboto font-bold text-white rounded-md">
           {"12/6/2022"}
         </h1>
         <hr className=" border-dotted mb-2" />

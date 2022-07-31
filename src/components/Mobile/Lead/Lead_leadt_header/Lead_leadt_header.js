@@ -31,7 +31,7 @@ const Lead_leadt_header = () => {
           />
         </form>
         <button onClick={() => setShowModal(true)} className="w-1/5">
-          <FontAwesomeIcon icon={faSliders} className="text-[#2684FF] h-7 w-7 mx-auto" />
+          <FontAwesomeIcon icon={faSliders} className="text-[#0EA5E9] h-7 w-7 mx-auto" />
         </button>
       </div>
       <Lead_Modal showModal={showModal} setShowModal={setShowModal} />

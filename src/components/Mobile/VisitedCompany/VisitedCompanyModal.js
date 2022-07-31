@@ -44,7 +44,7 @@ export default function VisitedCompanyModal({
                 <div className=" p-6 flex flex-col  ">
                   <button
                     type="button"
-                    className="flex font-monster justify-center text-white font text-center bg-[#2684FF] hover:bg-[#2684FF] rounded-lg text-md px-5 py-2.5 items-center mt-5"
+                    className="flex font-monster justify-center text-white font text-center bg-[#0EA5E9] hover:bg-[#0EA5E9] rounded-lg text-md px-5 py-2.5 items-center mt-5"
                   >
                     <Link
                       href={`/visitedcompany/companydetails/${companyName}`}
@@ -55,7 +55,7 @@ export default function VisitedCompanyModal({
 
                   <button
                     type="button"
-                    className="flex font-monster justify-center text-white font text-center bg-[#2684FF] hover:bg-[#2684FF] rounded-lg text-md px-5 py-2.5 items-center mt-5"
+                    className="flex font-monster justify-center text-white font text-center bg-[#0EA5E9] hover:bg-[#0EA5E9] rounded-lg text-md px-5 py-2.5 items-center mt-5"
                   >
                     <Link
                       href={`/visitedcompany/customersdetails/${companyName}`}
@@ -65,7 +65,7 @@ export default function VisitedCompanyModal({
                   </button>
                   <button
                     type="button"
-                    className="flex font-monster justify-center text-white font text-center bg-[#2684FF] hover:bg-[#2684FF] rounded-lg text-md px-5 py-2.5 items-center mt-5"
+                    className="flex font-monster justify-center text-white font text-center bg-[#0EA5E9] hover:bg-[#0EA5E9] rounded-lg text-md px-5 py-2.5 items-center mt-5"
                   >
                     <Link href={`/visitedcompany/visitdetails/${companyName}`}>
                       Visit Details
