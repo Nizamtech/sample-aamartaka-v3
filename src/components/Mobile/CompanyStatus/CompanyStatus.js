@@ -97,7 +97,7 @@ const CompanyStatus = () => {
       <BackMenu title="Company Status" />
       {/* <h1>{state && state}</h1> */}
 
-      <div className="mx-1  my-">
+      <div className="m-2">
         <AsyncSelect
           placeholder="Search Company"
           cacheOptions
@@ -112,7 +112,7 @@ const CompanyStatus = () => {
         {selected && (
           <div className="m-2 myShadow p-2 rounded-md font-exo">
             <h1 cl>City Bank</h1>
-            <hr className=" border-dotted my-1" />
+            <hr className="border-dotted my-1" />
 
             {/* <h1 className="grid grid-cols-3 text-xs mt-1">
               <span className=" text-slate-400 text-sm">Comapy Name</span>
@@ -120,15 +120,15 @@ const CompanyStatus = () => {
             </h1> */}
             <h1 className="grid grid-cols-3 text-xs mt-2">
               <span className=" text-slate-400">Category Type</span>
-              <span className=" col-span-2"> Listed Company (Categorize)</span>
+              <span className="col-span-2"> Listed Company (Categorize)</span>
             </h1>
             <h1 className="grid grid-cols-3 text-xs mt-1">
-              <span className=" text-slate-400">Category Name</span>{" "}
-              <span className=" col-span-2">B</span>
+              <span className="text-slate-400">Category Name</span>{" "}
+              <span className="col-span-2">B</span>
             </h1>
             <h1 className="grid grid-cols-3 text-xs mt-1">
-              <span className=" text-slate-400">Company Type</span>{" "}
-              <span className=" col-span-2">Other</span>
+              <span className="text-slate-400">Company Type</span>{" "}
+              <span className="col-span-2">Other</span>
             </h1>
           </div>
         )}

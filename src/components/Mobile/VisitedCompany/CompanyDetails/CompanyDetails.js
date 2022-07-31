@@ -78,29 +78,29 @@ const CompanyDetails = ({ name }) => {
   return (
     <div>
       <BackMenu title={name} />
-
       <div className="absolute bg-gray-200 w-full h-screen">
         <div className="myShadow rounded-lg mx-2 my-2 bg-white grid grid-cols-12 gap-2 p-2">
           {/* <h1 className="bg-[#4DCBBF] py-2 text-lg text-center ">{id}</h1>
           <h1>{id}</h1>
           <h1>{id}</h1> */}
-          <div className=" col-span-4 ">
+          <div className="col-span-5 text-black">
             <h1>Name</h1>
             <h1>Type</h1>
             <h1>Category</h1>
             <h1>Establishment</h1>
           </div>
-          <div className=" col-span-8 ">
+          <p className="col-span-2">--</p>
+          <div className="col-span-5">
             <h1>{name}</h1>
-            <h1>financial </h1>
+            <h1>Financial </h1>
             <h1>A</h1>
-            <h1>23 years</h1>
+            <h1>23 Years</h1>
           </div>
         </div>
 
         {/* Salaried Bank  */}
         <div className="myShadow rounded-lg mx-2 my-2 bg-white p-2">
-          <label> Salaried Bank</label>
+          <label className="font-semibold text-lg">Salaried Bank</label>
           <Select
             requred
             defaultValue={salariedBank}
@@ -117,9 +117,9 @@ const CompanyDetails = ({ name }) => {
 
         {/*Company Imgage uploaded files  */}
         <div className="myShadow rounded-lg mx-2 my-2 bg-white p-2">
-          <h1 className=" text-lg font-monster mt-1 mb-2 ">Company Images</h1>
+          <h1 className="text-lg mb-2 font-semibold">Company Images</h1>
 
-          <div className=" grid grid-cols-3 gap-3 place-content-center place-items-center">
+          <div className="grid grid-cols-3 gap-3 place-content-center place-items-center">
             {companyImage.map((img, index) => {
               return (
                 <>
@@ -155,7 +155,7 @@ const CompanyDetails = ({ name }) => {
 
         {/* Employee Range */}
         <div className="myShadow rounded-lg mx-2 my-2 bg-white p-2">
-          <label> Employee </label>
+          <label className="font-semibold text-lg">Employee</label>
           <Select
             required
             name="Employee Number"
@@ -166,9 +166,9 @@ const CompanyDetails = ({ name }) => {
         </div>
         {/* Salary Range */}
         <div className="myShadow rounded-lg mx-2 my-2 bg-white p-2 font-monster">
-          <h1 className=" font-monster font-bold mb-3">Salary Range </h1>
+          <h1 className="font-semibold text-lg mb-3">Salary Range </h1>
 
-          <label>Bellow 20,000 </label>
+          <label className="font-semibold text-md">Bellow 20,000 </label>
           <Select
             required
             name="Salary Range"
@@ -177,7 +177,7 @@ const CompanyDetails = ({ name }) => {
             className="my-2"
           />
 
-          <label>Between 20,000 to 35,000 </label>
+          <label className="font-semibold text-md">Between 20,000 to 35,000 </label>
           <Select
             required
             name="Salary Range"
@@ -185,7 +185,7 @@ const CompanyDetails = ({ name }) => {
             options={salaryRangeData}
             className="my-2"
           />
-          <label>Above 35,000 </label>
+          <label className="font-semibold text-md">Above 35,000 </label>
           <Select
             required
             name="Salary Range"
@@ -196,80 +196,77 @@ const CompanyDetails = ({ name }) => {
         </div>
 
         {/* HR  */}
+        <div className="myShadow rounded-lg mx-2 my-2 bg-white p-2">
+          <h1 className=" font-monster font-bold mb-3">HR Details</h1>
+          <div>
+            <form onSubmit={handleSunmit}>
+              {/* <label> Name</label> */}
+              <input
+                required
+                type="text"
+                name="name"
+                onChange={handleChange}
+                placeholder="Name"
+                className="my-2 focus:outline-[#2684FF] focus:duration-400 font-exo w-full h-8 border py-4 px-3 rounded-[3px] border-[#CCCCCC] "
+              />
 
-        <div>
-          <div className="myShadow rounded-lg mx-2 my-2 bg-white p-2">
-            <h1 className=" font-monster font-bold mb-3">HR Details</h1>
-            <div>
-              <form onSubmit={handleSunmit}>
-                {/* <label> Name</label> */}
-                <input
-                  required
-                  type="text"
-                  name="name"
-                  onChange={handleChange}
-                  placeholder="Name"
-                  className="my-2 focus:outline-[#2684FF] focus:duration-400 font-exo w-full h-8 border py-4 px-3 rounded-[3px] border-[#CCCCCC] "
-                />
+              {/* <label> Phone</label> */}
+              <input
+                required
+                type="text"
+                name="phone"
+                onInput={`() if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)`}
+                maxLength="11"
+                // max={9999999999}
+                // min={1000000000}
+                onChange={handleChange}
+                placeholder="Phone Number"
+                className="my-2 focus:outline-[#2684FF] focus:duration-400 font-exo w-full h-8 border py-4 px-3 rounded-[3px] border-[#CCCCCC] "
+              />
 
-                {/* <label> Phone</label> */}
-                <input
-                  required
-                  type="text"
-                  name="phone"
-                  onInput={`() if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)`}
-                  maxLength="11"
-                  // max={9999999999}
-                  // min={1000000000}
-                  onChange={handleChange}
-                  placeholder="Phone Number"
-                  className="my-2 focus:outline-[#2684FF] focus:duration-400 font-exo w-full h-8 border py-4 px-3 rounded-[3px] border-[#CCCCCC] "
-                />
+              <input
+                required
+                type="text"
+                name="email"
+                onChange={handleChange}
+                placeholder="Email"
+                className="my-2 focus:outline-[#2684FF] focus:duration-400 font-exo w-full h-8 border py-4 px-3 rounded-[3px] border-[#CCCCCC] "
+              />
 
-                <input
-                  required
-                  type="text"
-                  name="email"
-                  onChange={handleChange}
-                  placeholder="Email"
-                  className="my-2 focus:outline-[#2684FF] focus:duration-400 font-exo w-full h-8 border py-4 px-3 rounded-[3px] border-[#CCCCCC] "
-                />
-
-                <div className="flex w-full items-center justify-cente">
-                  <label className=" w-full flex flex-col items-center px-4 py-2 bg-white text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue hover:text-white">
-                    {img ? (
-                      <img
-                        width="300px"
-                        height="200px"
-                        src={img}
-                        alt=""
-                        className="my-3 rounded-lg"
-                      />
-                    ) : (
-                      <svg
-                        className="w-8 h-8"
-                        fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z" />
-                      </svg>
-                    )}
-
-                    {!img ? (
-                      <span className="mt-2 text-base leading-normal">
-                        Select a Visiting Card
-                      </span>
-                    ) : null}
-                    <input
-                      onChange={handeImage}
-                      type="file"
-                      className="hidden"
+              <div className="flex w-full items-center justify-cente">
+                <label className=" w-full flex flex-col items-center px-4 py-2 bg-white text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue hover:text-white">
+                  {img ? (
+                    <img
+                      width="300px"
+                      height="200px"
+                      src={img}
+                      alt=""
+                      className="my-3 rounded-lg"
                     />
-                  </label>
-                </div>
-              </form>
-            </div>
+                  ) : (
+                    <svg
+                      className="w-8 h-8"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M16.88 9.1A4 4 0 0 1 16 17H5a5 5 0 0 1-1-9.9V7a3 3 0 0 1 4.52-2.59A4.98 4.98 0 0 1 17 8c0 .38-.04.74-.12 1.1zM11 11h3l-4-4-4 4h3v3h2v-3z" />
+                    </svg>
+                  )}
+
+                  {!img ? (
+                    <span className="mt-2 text-base leading-normal">
+                      Select a Visiting Card
+                    </span>
+                  ) : null}
+                  <input
+                    onChange={handeImage}
+                    type="file"
+                    className="hidden"
+                  />
+                </label>
+              </div>
+            </form>
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ const SalesPlanCard = () => {
   return (
     <div className="grid grid-cols-1 m-2 font-monster">
       <div className="shadow rounded-lg bg-white my-1">
-        <h1 className="p-2 font-bold">Amin Fashion</h1>
+        <h1 className="p-2 font-bold text-sky-500">Amin Fashion</h1>
         <hr className="border-dotted" />
 
         <div className="p-2">
