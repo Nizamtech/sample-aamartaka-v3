@@ -8,6 +8,7 @@ import { useRouter } from "next/router";
 import plus from "../../../images/plus.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlus, faBook, faChartLine, faBars } from '@fortawesome/free-solid-svg-icons';
+import Attendence_Details_Card from "../Attendance/Attendence_Details_Card";
 
 const Home_Footer = () => {
   const router = useRouter();
@@ -39,45 +40,41 @@ const Home_Footer = () => {
   addClass(document.querySelectorAll(".link"));
 
   return (
-    <div className="z-50 sticky bottom-0 mt-5">
-      <nav className="tabbar w-full h-12 bg-[#4ec0ea] rounded-t-[30px] myShadow">
-        <div className="flex h-full relative">
-          <input id="menu-1" type="radio" name="menu" className="hidden" />
-          <label htmlFor="menu-1">
-            <svg>
-              <use href="#messageIcon" />
-            </svg>
-            <span>Attendance</span>
-          </label>
-          <input id="menu-2" type="radio" name="menu" className="hidden" checked />
-          <label htmlFor="menu-2">
-            <svg>
-              <use href="#imageIcon" />
-            </svg>
-            <span>Lead</span>
-          </label>
-          <input id="menu-3" type="radio" name="menu" className="hidden" />
-          <label htmlFor="menu-3">
-            <svg>
-              <use href="#settingsIcon" />
-            </svg>
-            <span>States</span>
-          </label>
-          <span></span>
-          <div style={{ display: "none" }}>
-            <button onClick={handleAttendance}>
+    <>
+      <div className="z-50 sticky bottom-0 mt-5">
+        <nav className="tabbar w-full h-[50px] footerGradient rounded-t-[30px] myShadow">
+          <div className="flex h-full relative">
+            <input id="menu-1" type="radio" name="menu" className="hidden" onClick={() => handleAttendance()} />
+            <label htmlFor="menu-1">
+              <svg>
+                <use href="#messageIcon" />
+              </svg>
+              <span>Attendance</span>
+            </label>
+            <input id="menu-2" type="radio" name="menu" className="hidden" checked onClick={() => router.push("/lead/newlead")} />
+            <label htmlFor="menu-2">
+              <svg>
+                <use href="#imageIcon" />
+              </svg>
+              <span>Lead</span>
+            </label>
+            <input id="menu-3" type="radio" name="menu" className="hidden" onClick={() => () => router.push("/dashboard")} />
+            <label htmlFor="menu-3">
+              <svg>
+                <use href="#settingsIcon" />
+              </svg>
+              <span>States</span>
+            </label>
+            <span></span>
+            <div style={{ display: "none" }}>
               <FontAwesomeIcon icon={faBook} className="w-7 h-7" id="messageIcon" />
-            </button>
-            <button onClick={() => router.push("/lead/newlead")}>
               <FontAwesomeIcon icon={faCirclePlus} className=" w-6 h-6" id="imageIcon" />
-            </button>
-            <button onClick={() => () => router.push("/dashboard")}>
               <FontAwesomeIcon icon={faChartLine} className="w-7 h-7" id="settingsIcon" />
-            </button>
+            </div>
           </div>
-        </div>
-      </nav>
-    </div>
+        </nav>
+      </div>
+    </>
   );
 };
 
