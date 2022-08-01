@@ -24,7 +24,7 @@ const Home_Header = () => {
             <h4 className="text-md font-bold text-black font-exo">BDT 10,000</h4>
           </div>
         </div>
-        <div className="w-28 mx-auto mt-4">
+        <div className="w-20 mx-auto mt-4">
           <button className="text-sm font-bold bg-sky-300 text-black py-2 px-3 rounded-md">
             Withdraw
           </button>
