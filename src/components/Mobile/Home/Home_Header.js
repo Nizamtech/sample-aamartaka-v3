@@ -58,16 +58,16 @@ const Home_Header = () => {
       </div>
       <div className="absolute top-40 pt-3 pb-2 grid rounded-md grid-cols-2 place-content-between place-items-center shadow-md bg-gray-50 w-2/3 left-[18%] border border-sky-200">
         <div className="flex flex-col justify-between items-center w-full border-r border-r-sky-800">
-          <h1 className=" font-bold text-black font-monster">
+          <h1 className="font-bold text-black font-monster">
             Target Points
           </h1>
-          <h1 className="text-md font-exo text-black font-bold tracking-widest border-4 border-sky-500 rounded-full p-1 h-9 w-9 text-center mx-auto">15</h1>
+          <h1 className="text-md font-exo text-black font-bold tracking-widest border-4 border-sky-500 rounded-full p-1 h-9 w-9 text-center mx-auto flex flex-col justify-center items-center">15</h1>
         </div>
         <div className="flex flex-col justify-between items-center ">
           <h1 className="font-bold text-black font-monster">
             Achive Points
           </h1>
-          <h1 className="text-md font-exo text-black font-bold tracking-widest border-4 border-sky-500 rounded-full p-1 h-9 w-9 text-center mx-auto">
+          <h1 className="text-md font-exo text-black font-bold tracking-widest border-4 border-sky-500 rounded-full p-1 h-9 w-9 text-center mx-auto flex flex-col justify-center items-center">
             10
           </h1>
         </div>
