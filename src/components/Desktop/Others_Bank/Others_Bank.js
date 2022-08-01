@@ -16,7 +16,7 @@ const Others_Bank = () => {
         <div className="container mx-auto pb-10 ">
             <h2 className="text-3xl text-left text-[#0B0B6A] font-semibold">Others bank</h2>
             <Hr_style />
-            <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 mt-5">
+            <div className="grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-5 mt-5">
                 {data?.map(item =>
                     <>
                         <div className={`${bankStyle.singleCard} cursor-pointer`}>

@@ -1,8 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 const HomeCard = ({ title, body, color, icon, anm }) => {
   return (
     <div>
