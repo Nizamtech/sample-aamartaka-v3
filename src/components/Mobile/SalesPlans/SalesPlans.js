@@ -16,7 +16,7 @@ const SalesPlans = () => {
           <button
             onClick={() => router.push("/salesplans/saleshistory")}
             type="button"
-            className="w-full mx-2 text-white bg-sky-500 border-sky-500 text-xs px-5 py-2 rounded-md font-exo"
+            className="w-full mx-2 text-white bg-[#4EC1EE] border-sky-400 text-xs px-5 py-2 rounded-md font-exo"
           >
             History
           </button>

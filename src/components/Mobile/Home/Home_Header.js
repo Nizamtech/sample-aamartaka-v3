@@ -2,9 +2,9 @@ import React from "react";
 
 const Home_Header = () => {
   return (
-    <>
-      <div className="homeBackground font-exo px-4 pb-12 pt-7">
-        <div className="flex justify-between items-center py-5">
+    <div className="relative mb-11">
+      <div className="gradientBG px-4 pb-12 pt-7 font-monster rounded-br-[40%]">
+        <div className="flex justify-between items-center py-5 -mt-5">
           <div>
             <h1 className="text-md text-white font-bold">
               My Commission
@@ -30,8 +30,7 @@ const Home_Header = () => {
           </button>
         </div>
       </div>
-
-      <div className="pt-3 pb-2 grid border-t-0 rounded-b-md grid-cols-2 place-content-between place-items-center shadow-md border-b bg-gray-50 w-full">
+      <div className="absolute top-40 pt-3 pb-2 grid rounded-md grid-cols-2 place-content-between place-items-center shadow-md border-b bg-gray-50 w-2/3 left-[20%] border border-gray-400">
         <div className="flex flex-col justify-between items-center w-full border-r  ">
           <h1 className=" font-bold text-slate-500 font-monster">
             Target Points
@@ -47,7 +46,7 @@ const Home_Header = () => {
           </h1>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

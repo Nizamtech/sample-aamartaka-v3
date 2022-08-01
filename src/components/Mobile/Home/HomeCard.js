@@ -1,12 +1,14 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 const HomeCard = ({ title, body, color, icon, anm }) => {
   return (
     <div>
       <div
         href="#"
-        className="flex flex-col justify-between items-center  p-3 h-[92px] w-20 max-w-sm min-w-min  bg-white rounded-lg border-gray-200  hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+        className="flex flex-col justify-center items-center py-3 px-1 h-[92px] w-[107px] bg-white rounded-lg border-gray-200 border shadow-2xl"
       >
         {body && (
           <h1 className={`text-center text-slate-900 text-4xl font-bold`}>
@@ -23,8 +25,7 @@ const HomeCard = ({ title, body, color, icon, anm }) => {
           />
         )}
         <h5
-          className={`mb-2 text-xs font-bold tracking-tigh text-[${color}] text-center mt-1`}
-        >
+          className={`my-1 text-xs font-bold tracking-tight text-[${color}] text-center`}>
           {title}
         </h5>
       </div>

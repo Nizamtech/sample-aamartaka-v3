@@ -36,7 +36,7 @@ const SubmittedSlide = () => {
   ];
   return (
     <div className=" mx-2 p-2 py-2 bg-white rounded-lg border border-gray-200 shadow-md ">
-      <h1 className=" text-md font-bold font-monster text-cyan-500 mb-1  ">
+      <h1 className=" text-md font-bold font-monster text-black mb-1  ">
         Submitted Files
       </h1>
       <Swiper

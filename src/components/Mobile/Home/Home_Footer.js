@@ -7,7 +7,7 @@ import Webcam from "react-webcam";
 import { useRouter } from "next/router";
 import plus from "../../../images/plus.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCirclePlus, faBook, faChartLine } from '@fortawesome/free-solid-svg-icons';
+import { faCirclePlus, faBook, faChartLine, faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Home_Footer = () => {
   const router = useRouter();
@@ -18,38 +18,65 @@ const Home_Footer = () => {
     setShowModal(true);
   };
 
+
+  function addClass(elem) {
+    for (let i = 0; i < elem.length; i++) {
+      elem[i].addEventListener("click", function (e) {
+        const current = this;
+        for (let i = 0; i < elem.length; i++) {
+          if (current !== elem[i]) {
+            elem[i].classList.remove("isActive");
+            elem[i].classList.add("notActive");
+          } else {
+            current.classList.add("isActive");
+            current.classList.remove("notActive");
+          }
+        }
+        e.preventDefault();
+      });
+    }
+  }
+  addClass(document.querySelectorAll(".link"));
+
   return (
     <div className="z-50 sticky bottom-0 mt-5">
-      {/* <Footer_modal showModal={showModal} setShowModal={setShowModal} /> */}
-      <div className="border-t rounded-lg px-2 py-1 bg-white border-gray-200 shadow-md grid grid-cols-3 place-content-between place-items-center">
-        <div>
-          <button
-            onClick={handleAttendance}
-            className="text-xl font-exo2 font-bold flex flex-col justify-center items-center my-1"
-          >
-            <FontAwesomeIcon icon={faBook} className="h-6 w-6 mx-auto text-[#2684FF]" />
-            <h1 className=" font-monster text-sm text-slate-700">Attendence</h1>
-          </button>
+      <nav className="tabbar w-full h-12 bg-[#4ec0ea] rounded-t-[30px] myShadow">
+        <div className="flex h-full relative">
+          <input id="menu-1" type="radio" name="menu" className="hidden" />
+          <label htmlFor="menu-1">
+            <svg>
+              <use href="#messageIcon" />
+            </svg>
+            <span>Attendance</span>
+          </label>
+          <input id="menu-2" type="radio" name="menu" className="hidden" checked />
+          <label htmlFor="menu-2">
+            <svg>
+              <use href="#imageIcon" />
+            </svg>
+            <span>Lead</span>
+          </label>
+          <input id="menu-3" type="radio" name="menu" className="hidden" />
+          <label htmlFor="menu-3">
+            <svg>
+              <use href="#settingsIcon" />
+            </svg>
+            <span>States</span>
+          </label>
+          <span></span>
+          <div style={{ display: "none" }}>
+            <button onClick={handleAttendance}>
+              <FontAwesomeIcon icon={faBook} className="w-7 h-7" id="messageIcon" />
+            </button>
+            <button onClick={() => router.push("/lead/newlead")}>
+              <FontAwesomeIcon icon={faCirclePlus} className=" w-6 h-6" id="imageIcon" />
+            </button>
+            <button onClick={() => () => router.push("/dashboard")}>
+              <FontAwesomeIcon icon={faChartLine} className="w-7 h-7" id="settingsIcon" />
+            </button>
+          </div>
         </div>
-        <div>
-          <button
-            onClick={() => router.push("/lead/newlead")}
-            className="p-4 relative top-[-40px] py-1 px-2 flex flex-col justify-center items-center">
-            <div className=" absolute h-8 w-16 top-[15px] rounded-b-full ">
-              <FontAwesomeIcon icon={faCirclePlus} className="h-10 w-10 rounded-full mx-auto mt-2 text-[#2684FF]" />
-            </div>
-          </button>
-        </div>
-        <div>
-          <button
-            onClick={() => () => router.push("/dashboard")}
-            className="text-xl font-exo2 font-bold flex flex-col justify-center items-center mt-1">
-            <FontAwesomeIcon icon={faChartLine} className="h-6 w-6 mx-auto text-[#2684FF]" />
-            <h1 className="font-monster text-sm text-slate-700">Stats</h1>
-          </button>
-        </div>
-        <Modal showModal={showModal} setShowModal={setShowModal} />
-      </div>
+      </nav>
     </div>
   );
 };
