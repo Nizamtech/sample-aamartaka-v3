@@ -30,7 +30,7 @@ const Home_Header = () => {
           </button>
         </div>
       </div>
-      <div className="absolute top-40 pt-3 pb-2 grid rounded-md grid-cols-2 place-content-between place-items-center shadow-md bg-gray-50 w-2/3 left-[20%] border border-sky-200">
+      <div className="absolute top-40 pt-3 pb-2 grid rounded-md grid-cols-2 place-content-between place-items-center shadow-md bg-gray-50 w-2/3 left-[18%] border border-sky-200">
         <div className="flex flex-col justify-between items-center w-full border-r border-r-sky-800">
           <h1 className=" font-bold text-black font-monster">
             Target Points
