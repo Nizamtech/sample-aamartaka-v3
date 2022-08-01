@@ -3,7 +3,7 @@ import React from "react";
 
 const MobileNavbar = () => {
   return (
-    <div>
+    <>
       <nav className="nav flex justify-between items-center h-16 font-monster bg-[#4EC0ED]">
         <h1 className="text-xl text-black font-semibold">
           Hi <span className="font-bold text-white text-lg">Jhon</span>
@@ -15,7 +15,7 @@ const MobileNavbar = () => {
           </h1>
         </div>
       </nav>
-    </div>
+    </>
   );
 };
 
