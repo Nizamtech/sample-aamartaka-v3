@@ -2,21 +2,19 @@ import React from "react";
 
 const ConvertedLeadCard = ({ title, body, color }) => {
   return (
-    <div className="grid grid-cols-4 gap-x-8 ">
-      <div className=" border p-2 h-[85px] w-24 max-w-sm min-w-min  bg-white rounded-lg border-gray-200  hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+    <>
+      <div className={`py-1 px-1 bg-white rounded-lg hover:bg-gray-100 shadow-lg`}>
         {body && (
-          <h1 className={`text-center text-[${color}] text-4xl font-bold`}>
+          <h1 className={`text-center text-[${color}] text-3xl font-bold border-2 border-sky-400 w-[58px] h-[55px] rounded-full mx-auto flex flex-col items-center justify-center mt-1`}>
             {body}
           </h1>
         )}
 
-        <h5
-          className={`mb-2 text-xs font-bold tracking-tigh text-slate-900  text-center mt-1`}
-        >
+        <h5 className={`text-sm font-bold tracking-tigh text-slate-700 text-center my-1`}>
           {title}
         </h5>
       </div>
-    </div>
+    </>
   );
 };
 

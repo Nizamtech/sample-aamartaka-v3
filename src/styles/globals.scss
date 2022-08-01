@@ -180,7 +180,8 @@ a {
   left: -18px;
   bottom: -15px;
   border-bottom-right-radius: 70%;
-  transform: rotate(-25deg);
+  // transform: rotate(-25deg);
+  clip-path: ellipse(130px 140px at 10% 20%);
 }
 
 .homeHeader {

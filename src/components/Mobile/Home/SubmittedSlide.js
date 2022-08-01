@@ -35,11 +35,26 @@ const SubmittedSlide = () => {
     },
   ];
   return (
-    <div className=" mx-2 p-2 py-2 bg-white rounded-lg border border-gray-200 shadow-md ">
-      <h1 className=" text-md font-bold font-monster text-black mb-1  ">
+    <div className="mx-2 p-2 py-2 bg-white rounded-lg border border-gray-200 shadow-md ">
+      <h1 className="text-md font-bold text-black mb-2">
         Submitted Files
       </h1>
-      <Swiper
+      <div className="grid grid-cols-4 gap-x-1 pb-3">
+        {data.map((item, key) => (
+          <>
+            <Link href={item.link} key={key}>
+              <a>
+                <SubmittedCard
+                  title={item.title}
+                  body={item.body}
+                  color={item.color}
+                />
+              </a>
+            </Link>
+          </>
+        ))}
+      </div>
+      {/* <Swiper
         loop={true}
         grabCursor={true}
         slidesPerView={3.333}
@@ -61,7 +76,7 @@ const SubmittedSlide = () => {
             </SwiperSlide>
           </>
         ))}
-      </Swiper>
+      </Swiper> */}
       {/* <Image
     width="50px"
     height="50px"
