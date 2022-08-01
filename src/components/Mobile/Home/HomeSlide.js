@@ -47,7 +47,7 @@ const HomeSlide = () => {
   ];
 
   return (
-    <div className="grid grid-cols-3 place-items-center place-content-center p-4 rounded-lg shadow-lg mt-8 gap-y-2">
+    <div className="grid grid-cols-3 place-items-center place-content-center p-4 rounded-lg shadow-lg mt-8 gap-y-2 bgShape">
       {data.map((item, key) => (
         <>
           <div key={key}>
@@ -60,26 +60,6 @@ const HomeSlide = () => {
           </div>
         </>
       ))}
-      {/* <Swiper
-        loop={true}
-        grabCursor={true}
-        slidesPerView={3.6}
-        spaceBetween={15}
-        className="mySwiper"
-      >
-        {data.map((item, key) => (
-          <>
-            <SwiperSlide key={key}>
-              <Link href={item.link}>
-                <a>
-                  {" "}
-                  <HomeCard title={item.title} icon={item.icon} />
-                </a>
-              </Link>
-            </SwiperSlide>
-          </>
-        ))}
-      </Swiper> */}
     </div>
   );
 };

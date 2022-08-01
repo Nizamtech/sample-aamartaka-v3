@@ -36,7 +36,7 @@ const SubmittedSlide = () => {
   ];
   return (
     <div className="mx-2 px-2 pt-2 pb-1 mb-2 bg-white rounded-lg border border-gray-200">
-      <h1 className="text-md font-bold text-black mb-2">
+      <h1 className="text-md font-bold text-black mb-2 bgShape">
         Submitted Files
       </h1>
       <div className="grid grid-cols-4 gap-x-1 pb-3">
