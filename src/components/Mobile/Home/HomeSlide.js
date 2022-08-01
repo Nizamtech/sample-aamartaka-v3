@@ -47,26 +47,24 @@ const HomeSlide = () => {
   ];
 
   return (
-    <div className="flex items-center mx-2 p-4 bg-white rounded-lg border border-gray-200 shadow-md mt-2">
-      <Swiper
+    <div className="grid grid-cols-3 place-items-center place-content-center p-4 rounded-lg border border-gray-200 shadow-lg mt-2 gap-y-2">
+      {data.map((item, key) => (
+        <>
+          <div key={key}>
+            <Link href={item.link}>
+              <a>
+                {" "}
+                <HomeCard title={item.title} icon={item.icon} />
+              </a>
+            </Link>
+          </div>
+        </>
+      ))}
+      {/* <Swiper
         loop={true}
         grabCursor={true}
         slidesPerView={3.6}
         spaceBetween={15}
-        // breakpoints={{
-        //   300: {
-        //     slidesPerView: 4,
-        //   },
-        //   550: {
-        //     slidesPerView: 4,
-        //   },
-        //   900: {
-        //     slidesPerView: 3,
-        //   },
-        //   1020: {
-        //     slidesPerView: 4,
-        //   },
-        // }}
         className="mySwiper"
       >
         {data.map((item, key) => (
@@ -81,13 +79,7 @@ const HomeSlide = () => {
             </SwiperSlide>
           </>
         ))}
-      </Swiper>
-      {/* <Image
-        width="50px"
-        height="50px"
-        src={"https://i.ibb.co/Ht67F5q/arrow-37-64.png"}
-        alt="Arrow"
-      /> */}
+      </Swiper> */}
     </div>
   );
 };
