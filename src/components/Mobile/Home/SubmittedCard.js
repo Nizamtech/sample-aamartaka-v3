@@ -13,7 +13,7 @@ const SubmittedCard = ({ title, body, color, icon, anm }) => {
           </h1>
         )}
 
-        <h5 className={`text-sm font-bold tracking-tigh text-slate-700 text-center my-1`}  >
+        <h5 className={`text-[14px] font-bold tracking-tight text-slate-700 text-center my-1`}  >
           {title}
         </h5>
       </div>

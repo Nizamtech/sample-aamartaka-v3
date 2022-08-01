@@ -55,29 +55,6 @@ const Converted_Lad_Slide = () => {
           </>
         ))}
       </div>
-      {/* <Swiper
-        loop={true}
-        grabCursor={true}
-        slidesPerView={3.333}
-        spaceBetween={15}
-        className="mySwiper"
-      >
-        {data.map((item, key) => (
-          <>
-            <SwiperSlide key={key}>
-              <Link href={"/"}>
-                <a>
-                  <ConvertedLeadCard
-                    title={item.title}
-                    body={item.body}
-                    color={item.color}
-                  />
-                </a>
-              </Link>
-            </SwiperSlide>
-          </>
-        ))}
-      </Swiper> */}
     </div>
   );
 };

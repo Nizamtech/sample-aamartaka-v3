@@ -61,13 +61,13 @@ const Home_Header = () => {
           <h1 className=" font-bold text-black font-monster">
             Target Points
           </h1>
-          <h1 className="text-md font-exo text-black font-bold tracking-[2px] border-4 border-sky-500 rounded-full p-1 h-9 w-9">15</h1>
+          <h1 className="text-md font-exo text-black font-bold tracking-widest border-4 border-sky-500 rounded-full p-1 h-9 w-9 text-center mx-auto">15</h1>
         </div>
         <div className="flex flex-col justify-between items-center ">
           <h1 className="font-bold text-black font-monster">
             Achive Points
           </h1>
-          <h1 className="text-md font-exo text-black font-bold tracking-[2px] border-4 border-sky-500 rounded-full p-1 h-9 w-9 ">
+          <h1 className="text-md font-exo text-black font-bold tracking-widest border-4 border-sky-500 rounded-full p-1 h-9 w-9 text-center mx-auto">
             10
           </h1>
         </div>
