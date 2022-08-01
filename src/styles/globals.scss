@@ -173,14 +173,14 @@ a {
 
 .gradientBG.px-4.pb-12.pt-7.font-monster.rounded-br-\[40\%\]::after {
   content: "";
-  height: 29px;
+  height: 41px;
   width: 120px;
-  background: #2332B7;
+  background-image: linear-gradient(-60deg, #2746BD, #2026B5);
   position: absolute;
-  left: -10px;
+  left: -18px;
   bottom: -15px;
-  border-bottom-right-radius: 90%;
-  transform: rotate(-10deg);
+  border-bottom-right-radius: 70%;
+  transform: rotate(-25deg);
 }
 
 .homeHeader {
