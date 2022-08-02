@@ -10,7 +10,7 @@ const ConvertedLeadCard = ({ title, body, color }) => {
           </h1>
         )}
 
-        <h5 className={`text-[14px] font-bold tracking-tight text-slate-700 text-center my-1`}>
+        <h5 className={`text-[14px] font-bold tracking-tight text-slate-500 text-center my-1`}>
           {title}
         </h5>
       </div>

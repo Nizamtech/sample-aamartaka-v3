@@ -54,35 +54,6 @@ const SubmittedSlide = () => {
           </>
         ))}
       </div>
-      {/* <Swiper
-        loop={true}
-        grabCursor={true}
-        slidesPerView={3.333}
-        spaceBetween={15}
-        className="mySwiper"
-      >
-        {data.map((item, key) => (
-          <>
-            <SwiperSlide key={key}>
-              <Link href={item.link}>
-                <a>
-                  <SubmittedCard
-                    title={item.title}
-                    body={item.body}
-                    color={item.color}
-                  />
-                </a>
-              </Link>
-            </SwiperSlide>
-          </>
-        ))}
-      </Swiper> */}
-      {/* <Image
-    width="50px"
-    height="50px"
-    src={"https://i.ibb.co/Ht67F5q/arrow-37-64.png"}
-    alt="Arrow"
-  /> */}
     </div>
   );
 };
