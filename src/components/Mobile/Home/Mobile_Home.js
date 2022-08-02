@@ -15,18 +15,20 @@ import Converted_Lad_Slide from "./Converted_Lad_Slide";
 import Mobile_Footer from "../../Shared/Mobile_Footer/Mobile_Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
+import Mobile_Bannar from "./Mobile_Bannar";
 const Mobile_Home = () => {
   const router = useRouter();
   return (
     <div>
       <MobileNavbar />
 
-      <Home_Header />
+      {/* <Home_Header /> */}
+      <Mobile_Bannar />
 
       <HomeSlide />
 
       {/* file collection section  */}
-      <div className="mx-2 bg-sky-500 text-white font-bold  px-4 py-2 rounded-md  mt-2">
+      <div className="mx-2 bg-[#0AB9F2] text-white font-bold  px-4 py-2 rounded-md  mt-2">
         <Link href={"/file_collection"}>
           <a className="flex justify-between">
             <h1 className="tracking-wider font-semibold">3 File Collection Pending</h1>

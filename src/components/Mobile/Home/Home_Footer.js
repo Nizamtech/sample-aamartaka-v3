@@ -42,17 +42,17 @@ const Home_Footer = () => {
   return (
     <>
       <div className="z-50 sticky bottom-0 mt-5">
-        <nav className="tabbar w-full h-[50px] footerGradient rounded-t-[30px] myShadow">
+        <nav className="tabbar w-full h-[50px] border-t border-gray-200 bg-white">
           <div className="flex h-full relative">
             <input id="menu-1" type="radio" name="menu" className="hidden" onClick={() => handleAttendance()} />
-            <label htmlFor="menu-1">
+            <label htmlFor="menu-1" className="divider">
               <svg>
                 <use href="#messageIcon" />
               </svg>
               <span>Attendance</span>
             </label>
             <input id="menu-2" type="radio" name="menu" className="hidden" checked onClick={() => router.push("/lead/newlead")} />
-            <label htmlFor="menu-2">
+            <label htmlFor="menu-2" className="divider">
               <svg>
                 <use href="#imageIcon" />
               </svg>

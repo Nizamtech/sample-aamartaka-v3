@@ -47,7 +47,7 @@ const HomeSlide = () => {
   ];
 
   return (
-    <div className="grid grid-cols-3 place-items-center place-content-center p-4 rounded-lg shadow-lg mt-8 gap-y-2 bgShape">
+    <div className="grid grid-cols-3 place-items-center place-content-center p-4 rounded-lg shadow-lg gap-y-2 bgShape">
       {data.map((item, key) => (
         <>
           <div key={key}>

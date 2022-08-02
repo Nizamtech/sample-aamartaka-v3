@@ -288,10 +288,8 @@ a {
 
 // Mobile Footer Style Here
 .tabbar {
-  --icon-inactive: #ffffff;
-  --text: #fff;
+  --text: #0AB9F2;
   --circle: #fff;
-  --shadow: grey;
 }
 
 .tabbar>div label {
@@ -318,7 +316,7 @@ a {
   width: 24px;
   height: 24px;
   margin: auto;
-  color: var(--icon-inactive);
+  color: #AFB4BD;
   transform-origin: 50% 50%;
 }
 
@@ -351,9 +349,9 @@ a {
 }
 
 .tabbar>div input:checked+label svg {
-  --y: -24px;
+  --y: -26px;
   --s: 1;
-  color: black;
+  color: #0AB9F2;
 }
 
 .tabbar>div input:checked+label span {
@@ -385,8 +383,9 @@ a {
   position: absolute;
   left: 50%;
   top: 0;
-  box-shadow: 0 2px 10px var(--shadow);
+  border: 1px solid lightgray;
   margin: -23px 0 0 -22px;
+  box-shadow: 0px 1px 5px rgb(201, 201, 201);
 }
 
 .bgShape {
@@ -395,4 +394,17 @@ a {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.divider::after {
+  content: "";
+  height: 35px;
+  width: 1px;
+  background-color: lightgray;
+  position: absolute;
+  right: 0px;
+}
+
+.bannar {
+  clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 97%, 68% 100%, 43% 100%, 0 97%, 0% 35%, 0 0);
 }
